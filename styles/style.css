@@ -1,0 +1,141 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6;
+  background-color: #fdfaf6;
+  color: #333;
+}
+
+/* Seção de Depoimentos */
+.testimonial-section {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.testimonial-section h2 {
+  font-family: 'Dosis', sans-serif;
+  font-size: 0.9rem;
+  color: #b89e74;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.testimonial-section .subtitle {
+  font-family: 'Cormorant Upright', serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 0.5rem 0 1.5rem;
+}
+
+.testimonial-card {
+  max-width: 600px;
+  background-color: #fff;
+  margin: 0 auto;
+  padding: 1.5rem;
+  border-left: 3px solid #b89e74;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+}
+
+.testimonial-card .quote {
+  font-family: 'Montserrat', sans-serif;
+  font-style: italic;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.person {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-weight: bold;
+}
+
+.person img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+/* Footer */
+.main-footer {
+  background-color: #d8bb90;
+  color: #333;
+  padding: 2rem 1rem;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.stats div {
+  margin: 1rem;
+}
+
+.stats h3 {
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.stats strong {
+  font-size: 2rem;
+  display: block;
+  color: #fff;
+}
+
+.mission {
+  max-width: 600px;
+  margin: 0 auto 2rem;
+}
+
+.mission h4 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.contact {
+  margin-bottom: 1.5rem;
+}
+
+.contact ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact li {
+  margin-bottom: 1rem;
+}
+
+.contact strong {
+  font-size: 1rem;
+}
+
+.copyright {
+  font-size: 0.8rem;
+  color: #444;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  .stats {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonial-card {
+    padding: 1rem;
+  }
+}

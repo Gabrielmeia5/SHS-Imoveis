@@ -5,9 +5,9 @@ export function criarCard(imovel) {
     const cardContainer = document.createElement('div');
     cardContainer.classList.add('card-container');
 
-    const imageCard = document.createElement('img');
-    imageCard.src = imovel.imagemPrincipal;
-    imageCard.classList.add(`card-image`)
+    const cardImage = document.createElement('img');
+    cardImage.src = imovel.imagemPrincipal;
+    cardImage.classList.add(`card-image`)
 
     // Tipo de card (ex: Venda)
     const cardType = document.createElement('div');
@@ -88,7 +88,7 @@ export function criarCard(imovel) {
 
     // Montando o card
     cardContent.append(cardTitle, cardFeatures, cardLocalization, cardValue);
-    cardContainer.append(cardType, cardContent);
+    cardContainer.append(cardImage, cardType, cardContent);
 
 
 

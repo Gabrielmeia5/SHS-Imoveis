@@ -1,2 +1,18 @@
-@import url(./catalogo.css);
+@import url('./catalogo.css');
+@import url('./footer.css');
+@import url('./header.css');
+@import url('./destaque.css');
+@import url('./imovel.css');
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6;
+  background-color: #fdfaf6;
+  color: #333;
+}

@@ -30,11 +30,11 @@
       "03 suítes espaçosas conforto e privacidade para toda a família."
     ],
     "corretor": "Hellen",
-    "imagemPrincipal": "/assets/images/anuncio.jpg",
+    "imagemPrincipal": "assets/images/anuncio.jpg",
     "midias": [
-      "/assets/images/anuncio2.jpg",
-      "/assets/images/anuncio2.jpg",
-      "/assets/images/anuncio2.jpg"
+      "assets/images/anuncio2.jpg",
+      "assets/images/anuncio2.jpg",
+      "assets/images/anuncio2.jpg"
     ],
     "videos": [
       "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
@@ -74,11 +74,11 @@
         "03 suítes espaçosas conforto e privacidade para toda a família."
       ],
       "corretor": "Hellen",
-      "imagemPrincipal": "../assets/images/anuncio2.jpg",
+      "imagemPrincipal": "assets/images/anuncio2.jpg",
       "midias": [
-        "../assets/images/anuncio2.jpg",
-        "../assets/images/anuncio2.jpg",
-        "../assets/images/anuncio2.jpg"
+        "assets/images/anuncio2.jpg",
+        "assets/images/anuncio2.jpg",
+        "assets/images/anuncio2.jpg"
       ],
       "videos": [
         "https://www.youtube.com/watch?v=example1"     ],
@@ -106,8 +106,8 @@
       "vagasGaragem": 1,
       "caracteristicas": ["Sala ampla", "Cozinha planejada", "Varanda gourmet"],
       "corretor": "Hellen",
-      "imagemPrincipal": "../assets/images/imovel1.jpg",
-      "midias": ["../assets/images/imovel1a.jpg", "../assets/images/imovel1b.jpg"],
+      "imagemPrincipal": "assets/images/imovel1.jpg",
+      "midias": ["assets/images/imovel1a.jpg", "assets/images/imovel1b.jpg"],
       "videos": ["https://www.youtube.com/watch?v=abc1"],
       "destaque": true,
       "relacionados": ["AP002", "AP003"]
@@ -187,8 +187,8 @@
       "vagasGaragem": 0,
       "caracteristicas": ["Próximo ao metrô", "Segurança 24h", "Academia"],
       "corretor": "Luciana",
-      "imagemPrincipal": "../assets/images/imovel3.jpg",
-      "midias": ["../assets/images/imovel3a.jpg"],
+      "imagemPrincipal": "/assets/images/anuncio.jpg",
+      "midias": ["/assets/images/imovel3a.jpg"],
       "videos": ["https://www.youtube.com/watch?v=abc3"],
       "destaque": false,
       "relacionados": ["AP001", "AP005"]

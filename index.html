@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles/destaque.css">
+    <link rel="stylesheet" href="styles/catalogo.css">
+    <link rel="stylesheet" href="styles/imovel.css">
+</head>
+
+<body>
+    <section id="destaque">
+        <div class="destaque_titulo">
+            <h1>Imóveis em destaque</h1>
+            <p>Conheça algumas das melhores oportunidades de negócios de imóveis de Patos de Minas.</p>
+        </div>
+        <div class="destaque_buttons">
+            <div class="setae"><img src="assets/images/setae.svg"></div>
+            <div class="setad"><img src="assets/images/setad.svg"></div>
+        </div>
+        <div class="destaque_imoveis">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper" id="destaques">
+                <!-- os slides dos imóveis serão inseridos aqui via JS -->
+              </div>
+            </div>
+          </div>
+          
+          <section id="catalogo">
+            <div class="catalogo_titulo">
+              <h1>Catálogo de Imóveis</h1>
+            </div>
+            <div class="card_imoveis">
+              <!-- os cards serão inseridos aqui via JS -->
+            </div>
+            <div class="verMais">
+              <button id="verMaisBtn">VER MAIS</button>
+            </div>
+          </section>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="scripts/destaque.js"></script>
+<script src="scripts/index.js" type="module"></script>
+</html>

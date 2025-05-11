@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    margin: 0;
+    overflow-x: hidden;
+}
+#detalhes-topo{
+    font-family: "Montserrat", sans-serif;
+    background-color:#2D2D2D ;
+    max-width: 1000em;
+    overflow-x: hidden;
+}
+
+.images-topo {
+    white-space: nowrap;
+    overflow-x: auto;
+}
+
+.images-topo img{
+    width: 20em;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    max-width: 100em;
+}
+.images-topo {
+    display: flex;
+    overflow: hidden;
+}
+
+.images-topo img {
+    flex-shrink: 0;
+    width: 20em;
+}
+.imovel-info{
+    padding: 2em;
+    background-color: #2D2D2D;
+}
+.imovel-valor{
+    height: 5rem;
+    display: flex;
+    background-color: #CAA872;
+}
+.Texto1 p{
+    color: white;
+    margin-top: 1em 0 0 2em;
+    text-align: left;
+}
+.Texto2 p{
+    color: white;
+    margin-top: 1em 0 1em 2em;
+    text-align: right;
+}
+.esquerda-valor {
+    margin: 2em;
+    text-align: left;
+    flex: 1;
+}
+
+.direita-valor {
+    display: flex;
+    margin: 2em;
+    text-align: right;
+    flex: 1;
+}
+#caracteristicas{
+    font-family: "Montserrat", sans-serif;
+    background-color: #FFEFE3;
+    display: flex;
+    gap: 5em;
+}
+.esquerda-caracteristicas {
+    margin: 0 0 5em 3em;
+    padding: 10px;
+    font-size: 1.3em;
+    background-color:#E5CCAB;
+    flex: 0.5; /* Reduz o tamanho relativo da div esquerda */
+    max-width: 40%; /* Define um limite máximo para o tamanho */
+}
+.esquerda-caracteristicas h4{
+    margin: 2em;
+}
+.esquerda-caracteristicas p{
+    margin: 2em;
+}
+.direita-caracteristicas {
+    margin: 0 3em 5em 1em; /* Adiciona espaço entre as duas divs */
+    padding: 2.7em;
+    background-color: #F5F5F5;
+    flex: 0.5; /* Define o tamanho relativo da div direita */
+    align-items: center; /* Centraliza horizontalmente */
+    word-wrap: break-word; /* Permite que o texto quebre e desça */
+    overflow-wrap: break-word; /* Compatibilidade adicional para quebra de texto */
+}
+
+.direita-caracteristicas h2 {
+    font-size: 2em;
+}
+.direita-caracteristicas li {
+    margin: 0.4em;
+    font-size: 1.2em;
+    text-align: left;
+}
+
+#descricao{
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    align-items: center;
+}
+.desc-detalhe{
+    margin: 1em auto;
+     width: 25em;
+     word-wrap: break-word; /* Permite que o texto quebre e desça */
+    overflow-wrap: break-word;
+}
+.play-btn {
+  width: 10em;
+  height: 10em;
+  border-radius: 50%;
+  border: 0.2em solid #b58d5b;
+  background-color: transparent;
+  color: #b58d5b;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.video-container {
+  display: none;
+}
+.video-container iframe {
+
+  margin-top: 2em;
+  width: 100%;
+  height: 50em;
+  border: none;
+}
+
+#helen-info{
+    text-align: center;
+    margin: 2em auto auto auto;
+    display: flex;
+}
+#helen-info h2{
+    text-align: center;
+}
+.helen-pic{
+    margin: auto 20em auto auto;
+}
+.helen-cont{
+    font-size: 1.6em;
+    width: 20em;
+    margin: auto auto auto 0;
+    word-wrap: break-word; /* Permite que o texto quebre e desça */
+    overflow-wrap: break-word;
+}
+.helen-cont button{
+    font-size: 1.2em;
+}
+#helen-info2{
+    display: none;
+}
+#info-corretora {
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;
+  padding: 1em;
+  background-color: #fff2e8; /* tom de fundo suave */
+  flex-wrap: wrap;
+}
+
+.caracteristicas-corretoras {
+  flex: 1;
+  font-size: 1.3em;
+  border: 1px solid #e0b486;
+  border-radius: 10px;
+  padding: 1.5em;
+  background-color: #fff6ee;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.caracteristicas-corretoras:hover {
+  transform: translateY(-5px);
+}
+
+.caracteristicas-corretoras h3 {
+  font-size: 1em;
+  font-weight: 600;
+  color: #d49a65;
+  margin-bottom: 0.8em;
+  text-transform: uppercase;
+}
+
+.caracteristicas-corretoras p {
+  font-size: 0.95em;
+  color: #333;
+  line-height: 1.4em;
+}
+@media (max-width: 768px) {
+  #info-corretora {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .caracteristicas-corretoras {
+    width: 90%;
+  }
+}
+@media (max-width: 1145px) {
+ 
+    
+    #helen-info{
+        display: none;
+    }
+    .Imovel-corre{
+        display: none;
+    }
+    .btn1{
+        display: none;
+    }
+    .Imovel-corre2{
+        margin: 1.2em 0 0 0 ;
+        font-size: 0.6em;
+    }
+    #helen-info2{
+        color: #F5F5F5;
+        background-color: #CAA872;
+
+        margin: 1em 0 0 0;
+        text-align: center;
+        font-size: 1.5em;
+        display: flex;
+        flex-direction: column;
+    }
+    .helen-cont2{
+        margin: 1em 0.5em;
+        font-size: 0.7em;
+    }
+    .helen-pic2 img{
+        width: 15em;
+    }
+    .btn2{
+        font-size: 1em;
+        margin-top: 2em;
+    }
+}
+/* MEDIA QUERY */
+@media (max-width: 1145px) {
+  .play-btn {
+    width: 4em;
+    height: 4em;
+    font-size: 1.5em;
+  }
+
+  .video-container iframe {
+    margin-top: 2em;
+    height: 2em;
+  }
+
+  .desc-detalhe {
+    width: 90%;
+  }
+}
+
+
+@media (max-width: 1145px) {
+
+  #caracteristicas {
+    flex-direction: column;
+  }
+
+  .esquerda-caracteristicas,
+  .direita-caracteristicas {
+    max-width: 100%;
+    margin: 0 0;
+  }
+
+  #descricao {
+    font-size: 1em;
+  }
+
+  .desc-detalhe {
+    width: 90%;
+  }
+  
+}
+

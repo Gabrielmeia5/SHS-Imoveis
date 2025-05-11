@@ -1,0 +1,60 @@
+/* Slide ocupa todo o espaço */
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    box-sizing: border-box;
+  }
+  
+  /* Card de imóvel */
+  .imovel {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 70em;
+    height: 32em;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+    overflow: hidden;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+  }
+  
+  .imovel:hover {
+    transform: scale(1.02);
+  }
+  
+  /* Área do conteúdo interno do card */
+  .imovel .conteudo {
+    background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+    padding: 1em;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  /* Estilização dos textos */
+  .imovel h2 {
+    font-size: 1.4em;
+    margin: 0 0 0.5em 0;
+  }
+  
+  .imovel .info {
+    display: flex;
+    gap: 1em;
+    margin-bottom: 0.5em;
+    font-size: 1em;
+  }
+  
+  .imovel .localizacao,
+  .imovel .preco {
+    font-size: 1em;
+    margin-bottom: 0.3em;
+  }

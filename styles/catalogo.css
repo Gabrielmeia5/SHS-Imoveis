@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#catalogo {
+    position: relative;
+    height: auto;
+    overflow: hidden;
+    background-color: rgb(202, 168, 114, 0.3);
+}
+
+.catalogo_titulo {
+    margin: 10% 0 0 7%;
+}
+
+.catalogo_titulo h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+}
+
+.card_imoveis {
+    display: flex;
+    overflow-x: auto;
+    gap: 1em;
+    flex-direction: column;
+    margin: 10% 5% 0 5%;
+}
+
+.card {
+    width: 27em;
+    height: 35em;
+    background-color: rgb(255, 0, 0, 0.2);
+    display: none;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.verMais button {
+    display: flex;
+    margin: 5% 0 0 39%;
+    font-family: "Montserrat", sans-serif;
+    background: none;
+    font-size: 17px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .card_imoveis {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .verMais button {
+        margin: 5% 0 0 43.5%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .card_imoveis {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .verMais button {
+        margin: 5% 0 0 45%;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1535px) {
+    .catalogo_titulo {
+        margin: 3em 0 0 6%;
+    }
+
+    .catalogo_titulo h1 {
+        font-family: "Advent Pro", sans-serif;
+        font-size: 32px;
+        font-weight: 600;
+    }
+
+    .card_imoveis {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 5em;
+        margin: 4em 5% 0 5%;
+    }
+
+    .verMais button {
+        margin: 5% 0 0 46.3%;
+    }
+}
+
+@media (min-width: 1536px) {
+    .catalogo_titulo {
+        margin: 3em 0 0 6%;
+    }
+
+    .catalogo_titulo h1 {
+        font-family: "Advent Pro", sans-serif;
+        font-size: 32px;
+        font-weight: 600;
+    }
+
+    .card_imoveis {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 5em;
+        margin: 4em 5% 0 5%;
+    }
+
+    .card {
+        width: 31em;
+        height: 40em;
+        
+    }
+
+    .verMais button {
+        margin: 5% 0 0 47%;
+    }
+}

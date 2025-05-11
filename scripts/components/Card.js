@@ -4,7 +4,9 @@ export function criarCard(imovel) {
     // Container principal
     const cardContainer = document.createElement('div');
     cardContainer.classList.add('card-container');
-
+    cardContainer.addEventListener('click', () => {
+    window.location.href = `detalhes.html?id=${imovel.id}`;
+    });
     const cardImage = document.createElement('img');
     cardImage.src = imovel.imagemPrincipal;
     cardImage.classList.add(`card-image`)

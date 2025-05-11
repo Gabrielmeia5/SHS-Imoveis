@@ -12,6 +12,8 @@ export default async function initHome() {
   renderizarLote();
   configurarEventos();
   inicializarSwiper();
+
+
 }
 
 function renderizarLote() {
@@ -40,3 +42,5 @@ function renderizarLote() {
 function configurarEventos() {
   document.getElementById('verMaisBtn').addEventListener('click', renderizarLote);
 }
+
+

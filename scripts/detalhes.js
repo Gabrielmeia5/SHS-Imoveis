@@ -1,135 +1,69 @@
-// Pega o ID da URL
-const params = new URLSearchParams(window.location.search);
-const id = params.get('id');
+import { fetchImoveis } from "./services/api.js";
 
-fetch('imoveis.json')
-  .then(res => res.json())
-  .then(imoveis => {
-    const imovel = imoveis.find(item => item.id === id);
+document.addEventListener("DOMContentLoaded", async () => {
+  const urlParams = new URLSearchParams(window.location.search);
+  const idImovel = urlParams.get("id");
+
+  if (!idImovel) {
+    alert("ID do imóvel não especificado.");
+    return;
+  }
+
+  try {
+    const imoveis = await fetchImoveis();
+  
+    const imovel = imoveis.find(item => item.id === idImovel);
 
     if (!imovel) {
-      console.error('Imóvel não encontrado!');
+      alert("Imóvel não encontrado.");
       return;
     }
 
-    // Pega os elementos do HTML prontos
-    const imagemImovel = document.getElementById('imagem-imovel');
-    const resumoImovel = document.getElementById('resumo-imovel');
-    const listaCaracteristicas = document.getElementById('lista-caracteristicas');
-    const descricao = document.getElementById('descricao');
+    console.log(imovel)
 
-    // LIMPA TUDO ANTES (por segurança)
-    imagemImovel.textContent = '';
-    resumoImovel.textContent = '';
-    listaCaracteristicas.textContent = '';
-    descricao.textContent = '';
+    // Preencher imagens do topo
+    const imgContainer = document.querySelector(".img-topo");
+    imgContainer.innerHTML = `
+      <img src="${imovel.imagemPrincipal}" alt="Imagem Principal do Imóvel">
+      ${imovel.midias.map(img => `<img src="${img}" alt="Imagem do imóvel">`).join("")}
+    `;
 
-    // --- IMAGEM PRINCIPAL ---
-    imagemImovel.style.backgroundImage = `url('${imovel.imagemPrincipal}')`;
+    // Título e atributos
+    document.querySelector(".Texto1 p").textContent = imovel.titulo;
+    document.querySelector(".imovel-valor .esquerda-valor p").textContent = imovel.tipo;
+    document.querySelector(".imovel-valor .direita-valor p").textContent = `Valor do Imóvel: R$ ${imovel.preco.toLocaleString('pt-BR')}`;
 
-    // --- RESUMO ---
-    const titulo = document.createElement('h1');
-    titulo.textContent = imovel.titulo;
-    resumoImovel.appendChild(titulo);
+    // Características principais (esquerda)
+    const esquerda = document.querySelector(".esquerda-p");
+    esquerda.innerHTML = `
+      <h4>Código do imóvel</h4>
+      <p>${imovel.id}</p>
+      <hr style="width: 35em; margin: auto;" color="F1DCC5">
+      <h4>Bairro</h4>
+      <p>${imovel.endereco.bairro}</p>
+      <hr style="width: 35em; margin: auto;" color="F1DCC5">
+      <h4>Tipo</h4>
+      <p>${imovel.finalidade}</p>
+      <hr style="width: 35em; margin: auto;" color="F1DCC5">
+      <h4>Cidade</h4>
+      <p>${imovel.endereco.cidade}</p>
+    `;
 
-    const preco = document.createElement('p');
-    const strongPreco = document.createElement('strong');
-    strongPreco.textContent = 'Preço: ';
-    preco.appendChild(strongPreco);
-    preco.append(`R$ ${Number(imovel.preco).toLocaleString('pt-BR')}`);
-    resumoImovel.appendChild(preco);
+    // Características (direita)
+    const lista = document.getElementById("lista-caracteristicas");
+    lista.innerHTML = imovel.caracteristicas.map(c => `<li>${c}</li>`).join("");
 
-    const endereco = document.createElement('p');
-    const strongEndereco = document.createElement('strong');
-    strongEndereco.textContent = 'Endereço: ';
-    endereco.appendChild(strongEndereco);
-    endereco.append(`${imovel.endereco.bairro} - ${imovel.endereco.cidade}/${imovel.endereco.estado}`);
-    resumoImovel.appendChild(endereco);
+    // Descrição
+    document.querySelector(".desc-detalhe p").textContent = imovel.descricao;
 
-    // --- DESCRIÇÃO ---
-    const descricaoTexto = document.createElement('p');
-    descricaoTexto.textContent = imovel.descricao || 'Descrição não disponível.';
-    descricao.appendChild(descricaoTexto);
 
-    // --- CARACTERÍSTICAS ---
-    const caracteristicas = [
-      { label: 'Área', valor: `${imovel.area} m²` },
-      { label: 'Área Construída', valor: `${imovel.areaConstruida} m²` },
-      { label: 'Quartos', valor: imovel.quartos },
-      { label: 'Suítes', valor: imovel.suites },
-      { label: 'Banheiros', valor: imovel.banheiros },
-      { label: 'Vagas de Garagem', valor: imovel.vagasGaragem },
-      { label: 'Andar', valor: imovel.andar || 'Não informado' },
-      { label: 'Ano de Construção', valor: imovel.anoConstrucao || 'Não informado' }
-    ];
+    // Corretores (já está fixo para Hellen, mas poderia ser dinâmico se quiser depois)
+    // Você pode ocultar a seção se o imovel.corretor !== "Hellen" futuramente
 
-    caracteristicas.forEach(item => {
-      const li = document.createElement('li');
-      li.textContent = `${item.label}: ${item.valor}`;
-      listaCaracteristicas.appendChild(li);
-    });
+  } catch (erro) {
+    console.error("Erro ao carregar os dados:", erro);
+    alert("Falha ao carregar os dados do imóvel.");
+  }
+});
 
-    // --- LISTAR OUTRAS CARACTERÍSTICAS (opcional) ---
-    if (imovel.caracteristicas && imovel.caracteristicas.length > 0) {
-      const tituloExtras = document.createElement('h3');
-      tituloExtras.textContent = 'Outras características:';
-      listaCaracteristicas.appendChild(tituloExtras);
 
-      imovel.caracteristicas.forEach(caract => {
-        const li = document.createElement('li');
-        li.textContent = caract;
-        listaCaracteristicas.appendChild(li);
-      });
-    }
-
-    // --- FOTOS EXTRAS ---
-    const fotosContainer = document.getElementById('fotos-adicionais');
-    if (fotosContainer && imovel.midias && imovel.midias.length > 0) {
-      fotosContainer.textContent = '';
-      imovel.midias.forEach(foto => {
-        const img = document.createElement('img');
-        img.src = foto;
-        img.alt = 'Foto adicional';
-        img.style.width = '100%';
-        img.style.maxWidth = '400px';
-        fotosContainer.appendChild(img);
-      });
-    }
-
-    // --- VÍDEOS (COM BOTÃO DE PLAY) ---
-    const videosContainer = document.getElementById('videos');
-    if (videosContainer && imovel.videos && imovel.videos.length > 0) {
-      videosContainer.textContent = '';
-      imovel.videos.forEach(video => {
-        const botao = document.createElement('button');
-        botao.textContent = '▶ Assistir Vídeo';
-        botao.style.padding = '10px 20px';
-        botao.style.margin = '10px';
-        botao.style.backgroundColor = '#e3b899';
-        botao.style.color = 'white';
-        botao.style.border = 'none';
-        botao.style.borderRadius = '5px';
-        botao.style.cursor = 'pointer';
-        botao.style.fontSize = '16px';
-
-        botao.addEventListener('click', () => {
-          const videoUrl = video.replace('watch?v=', 'embed/');
-          const fullscreenWindow = window.open('', '_blank', 'width=800,height=600');
-          fullscreenWindow.document.write(`
-            <html>
-              <head><title>Vídeo</title></head>
-              <body style="margin:0; background:black; display:flex; align-items:center; justify-content:center; height:100vh;">
-                <iframe width="100%" height="100%" src="${videoUrl}" frameborder="0" allowfullscreen></iframe>
-              </body>
-            </html>
-          `);
-        });
-
-        videosContainer.appendChild(botao);
-      });
-    }
-
-  })
-  .catch(error => {
-    console.error('Erro ao buscar o imóvel:', error);
-  });

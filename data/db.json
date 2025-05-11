@@ -106,7 +106,7 @@
       "vagasGaragem": 1,
       "caracteristicas": ["Sala ampla", "Cozinha planejada", "Varanda gourmet"],
       "corretor": "Hellen",
-      "imagemPrincipal": "assets/images/anuncio.jpg",
+      "imagemPrincipal": "assets/images/imagem-imovel.jpg",
       "midias": ["assets/images/imovel1a.jpg", "assets/images/imovel1b.jpg"],
       "videos": ["https://www.youtube.com/watch?v=abc1"],
       "destaque": true,

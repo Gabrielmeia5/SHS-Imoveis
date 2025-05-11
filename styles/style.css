@@ -115,9 +115,6 @@ body {
   padding: 0;
 }
 
-.contact li {
-  margin-bottom: 1rem;
-}
 
 .contact strong {
   font-size: 1rem;
@@ -139,3 +136,12 @@ body {
     padding: 1rem;
   }
 }
+
+.contact li a {
+  text-decoration: none;
+  color: #000;
+  display: flex;
+  justify-content: center ;
+  gap: 5px;
+  margin-bottom: ;
+}""

@@ -30,11 +30,11 @@
       "03 suítes espaçosas conforto e privacidade para toda a família."
     ],
     "corretor": "Hellen",
-    "imagemPrincipal": "/assets/images/anuncio.jpg",
+    "imagemPrincipal": "../../assets/images/anuncio.jpg",
     "midias": [
-      "/assets/images/anuncio2.jpg",
-      "/assets/images/anuncio2.jpg",
-      "/assets/images/anuncio2.jpg"
+      "./assets/images/anuncio2.jpg",
+      "./assets/images/anuncio2.jpg",
+      "./assets/images/anuncio2.jpg"
     ],
     "videos": [
       "https://www.youtube.com/watch?v=dQw4w9WgXcQ",

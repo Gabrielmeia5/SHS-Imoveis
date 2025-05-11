@@ -104,8 +104,12 @@ body {
   font-size: 1.1rem;
   margin-bottom: 0.5rem;
   font-weight: bold;
-}
+  color: #ffff;
 
+}
+.mission p{
+  color: #ffff;
+}
 .contact {
   margin-bottom: 1.5rem;
 }
@@ -122,7 +126,10 @@ body {
 
 .copyright {
   font-size: 0.8rem;
-  color: #444;
+  color: #ffff;
+  display:flex ;
+
+
 }
 
 /* Responsividade */
@@ -139,9 +146,28 @@ body {
 
 .contact li a {
   text-decoration: none;
-  color: #000;
+  color: #ffff;
   display: flex;
   justify-content: center ;
   gap: 5px;
-  margin-bottom: ;
-}""
+
+}
+
+.contact li {
+  margin-bottom: 20px;
+
+}
+
+.contact h1,h2{
+  color: #ffff;
+}
+
+.contact h2{
+  font-weight: 200;
+}
+
+.barra {
+  width: 90vw;
+  height: 1px;
+  background-color: #ffff;
+}

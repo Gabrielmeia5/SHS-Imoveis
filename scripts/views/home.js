@@ -24,6 +24,7 @@ function renderizarLote() {
 
   proximoLote.forEach(imovel => {
     const card = criarCard(imovel);
+    console.log(card)
     catalogo.appendChild(card);
 
     if (imovel.destaque && currentVisible === 0) {

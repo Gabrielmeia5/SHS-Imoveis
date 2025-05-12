@@ -156,7 +156,10 @@
 }
 
 .barra {
+  display: flex;
   width: 90vw;
   height: 1px;
   background-color: #ffff;
+  margin-left: auto;
+  margin-right: auto;
 }

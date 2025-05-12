@@ -57,13 +57,29 @@
     justify-content: center;
     align-items: center;
     border-radius: 5px;
+    width: 10em;
+    position: relative;
 }
 
-.swiper-slide img {
-    display: block;
+#destaque .card-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#destaque .card-container img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 5px;
+    z-index: -1;
+}
+
+#destaque .card-type, .card-content {
+    color: #fff;
 }
 
 .linha-play {

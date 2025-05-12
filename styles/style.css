@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 
 body {
@@ -65,12 +66,14 @@ body {
 }
 
 /* Footer */
-.main-footer {
+.main-footer{
   background-color: #d8bb90;
-  color: #333;
+  color: #ffff;
   padding: 2rem 1rem;
   text-align: center;
   font-family: 'Montserrat', sans-serif;
+  position: relative;
+  overflow: hidden;
 }
 
 .stats {
@@ -122,6 +125,7 @@ body {
 
 .contact strong {
   font-size: 1rem;
+  
 }
 
 .copyright {
@@ -171,3 +175,18 @@ body {
   height: 1px;
   background-color: #ffff;
 }
+ .main-footer::before {
+  content: '';
+  position: absolute;
+  top: -150px;   /* sobe para "cortar" a parte de cima */
+  right: -120px;  /* empurra para a direita para parecer cortado */
+  width: 215px;
+  height: 231px;
+  border: 30px solid #FFFEF3; /* Cor clara do fundo */
+  border-radius: 50%;
+  background-color: transparent;
+  transform: rotate(-31.61deg);
+  z-index: 1; /* pode ajustar conforme necessário */
+}
+
+

@@ -84,6 +84,7 @@
   height: 60px;
   padding-bottom: 2px; 
   text-align: center;
+  cursor: pointer;
 }
 
 .coontainercards2{
@@ -94,18 +95,16 @@
   gap: 10px;
 }
 
-.card {
+.card_menu {
   border: 1.5px solid #d8b27d;
   border-radius: 3px;
-  padding: 43px;
+  padding: 5em;
   display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  box-sizing: border-box;
   font-size: 0.7rem;
+  background: none;
+  cursor: pointer;
 }
+
 .filtro{
   text-align: center;
 }

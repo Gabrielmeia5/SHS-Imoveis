@@ -27,10 +27,12 @@ async function init() {
     }
 
     renderImovel(imovel);
-  } catch (erro) {
-    console.error("Erro ao carregar os dados:", erro);
-    showError("Falha ao carregar os dados do imóvel.");
-  } finally {
+}
+  //  catch (erro) {
+  //   console.error("Erro ao carregar os dados:", erro);
+  //   showError("Falha ao carregar os dados do imóvel.");
+  // } 
+    finally {
     toggleLoading(false);
   }
 }

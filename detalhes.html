@@ -6,6 +6,7 @@
   <title>Detalhes do Imóvel</title>
 <link rel="stylesheet" href="styles/detalhes.css">
 <link rel="stylesheet" href="styles/destaque.css">
+<link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 <body>
 
@@ -18,14 +19,46 @@
   <header></header> <!-- Criar depois um header componente para todas as paginas -->
     <main id="main-content">
         <section id="detalhes-topo">
-        <div class="images-topo"> <!--Imagem Principal + Imagens extras-->
+        <!-- <div class="images-topo"> Imagem Principal + Imagens extras
           <div class="img-topo">
           <img src="assets/images/anuncio.JPG" alt="">
           <img src="assets/images/anuncio.JPG" alt="">
           <img src="assets/images/anuncio.JPG" alt="">
           <img src="assets/images/anuncio.JPG" alt="">
           </div>
+        </div> -->
+
+        <!-- Slider main container -->
+        <div class="swiper-detalhes1">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="assets/images/anuncio.JPG" alt=""></div>
+            <div class="swiper-slide"><img src="assets/images/anuncio.JPG" alt=""></div>
+            <div class="swiper-slide"><img src="assets/images/anuncio2.JPG" alt=""></div>
+            ...
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+          <!-- If we need scrollbar -->
+          <div class="swiper-scrollbar"></div>
         </div>
+
+
+
+
+
+
+
+
+
+
+
         
         <div class="imovel-info"> <!--Nome, Quantia de CARROS E QUARTOS E AREA-->
           <div class="Texto1">
@@ -46,7 +79,7 @@
         <div class="esquerda-caracteristicas">
           <div class="esquerda-p">
             <h4>Codigo do imovel</h4>
-            <p>747346383</p>
+            <p id="value-codimovel">747346383</p>
             <hr style="width: 35em; margin: auto;" color="F1DCC5">
             <h4>Bairro</h4>
             <p>Nova FLoresta</p>
@@ -154,6 +187,7 @@
             </div>
       <footer></footer> <!-- Criar um componente para adicionar em todas paginas-->
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./scripts/detalhes.js" type="module"></script>
 </body>
 </html>

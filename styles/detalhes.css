@@ -55,28 +55,23 @@ html, body {
 .images-topo {
     white-space: nowrap;
     overflow-x: auto;
+    width: 100%;
+    max-width: 600px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 8px;
 }
 
 .images-topo img{
-    width: 20em;
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-    max-width: 100em;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .images-topo {
     display: flex;
     overflow: hidden;
 }
 
-.images-topo img {
-    flex-shrink: 0;
-    width: 20em;
-}
 .imovel-info{
     padding: 2em;
     background-color: #2D2D2D;
@@ -117,16 +112,16 @@ html, body {
 .esquerda-caracteristicas {
     margin: 0 0 5em 3em;
     padding: 10px;
-    font-size: 1.3em;
+    font-size: 0.8em;
     background-color:#E5CCAB;
     flex: 0.5; /* Reduz o tamanho relativo da div esquerda */
     max-width: 40%; /* Define um limite máximo para o tamanho */
 }
 .esquerda-caracteristicas h4{
-    margin: 2em;
+    margin: 1em;
 }
 .esquerda-caracteristicas p{
-    margin: 2em;
+    margin: 1em;
 }
 .direita-caracteristicas {
     margin: 0 3em 5em 1em; /* Adiciona espaço entre as duas divs */
@@ -139,11 +134,11 @@ html, body {
 }
 
 .direita-caracteristicas h2 {
-    font-size: 2em;
+    font-size: 1.5em;
 }
 .direita-caracteristicas li {
     margin: 0.4em;
-    font-size: 1.2em;
+    font-size: 1.0em;
     text-align: left;
 }
 

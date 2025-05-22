@@ -55,30 +55,26 @@ html, body {
 .images-topo {
     white-space: nowrap;
     overflow-x: auto;
+    width: 100%;
+    max-width: 600px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 8px;
 }
 
 .images-topo img{
-    width: 20em;
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-    max-width: 100em;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .images-topo {
     display: flex;
     overflow: hidden;
 }
 
-.images-topo img {
-    flex-shrink: 0;
-    width: 20em;
-}
 .imovel-info{
-    padding: 2em;
+  display: flex;
+    padding: 1.5em;
     background-color: #2D2D2D;
 }
 .imovel-valor{
@@ -87,26 +83,40 @@ html, body {
     background-color: #CAA872;
 }
 .Texto1 p{
+  font-size: 1.5em;
     color: white;
-    margin-top: 1em 0 0 2em;
+    margin-top: 0.5em 0 0 2em;
     text-align: left;
 }
+.icones-infotopo{
+  display: flex;
+  color: white;
+  margin: 0.7em 0 0 36em;
+}
+
+.icones-infotopo p{
+  font-size: 1em;
+  margin: 0 2.7em;
+}
+
 .Texto2 p{
     color: white;
     margin-top: 1em 0 1em 2em;
     text-align: right;
 }
 .esquerda-valor {
-    margin: 2em;
+  font-size: 1.4em;
+  color: white;
+    margin: 1.2em 0 0 7.9em;
     text-align: left;
     flex: 1;
 }
 
 .direita-valor {
+  font-size:1.4em;
+    color: white;
     display: flex;
-    margin: 2em;
-    text-align: right;
-    flex: 1;
+    margin: 1.2em 2em 0 0em;
 }
 #caracteristicas{
     font-family: "Montserrat", sans-serif;
@@ -115,18 +125,19 @@ html, body {
     gap: 5em;
 }
 .esquerda-caracteristicas {
-    margin: 0 0 5em 3em;
-    padding: 10px;
-    font-size: 1.3em;
+    margin: 0 0 3em 6em;
+    padding: 3em;
+    font-size: 0.8em;
     background-color:#E5CCAB;
     flex: 0.5; /* Reduz o tamanho relativo da div esquerda */
-    max-width: 40%; /* Define um limite máximo para o tamanho */
+    max-width: 25%; /* Define um limite máximo para o tamanho */
+    max-height: 45%;
 }
 .esquerda-caracteristicas h4{
-    margin: 2em;
+    margin: 1em;
 }
 .esquerda-caracteristicas p{
-    margin: 2em;
+    margin: 1em;
 }
 .direita-caracteristicas {
     margin: 0 3em 5em 1em; /* Adiciona espaço entre as duas divs */
@@ -139,30 +150,34 @@ html, body {
 }
 
 .direita-caracteristicas h2 {
-    font-size: 2em;
+    font-size: 1.5em;
 }
 .direita-caracteristicas li {
     margin: 0.4em;
-    font-size: 1.2em;
+    font-size: 1.0em;
     text-align: left;
 }
 
 #descricao{
     font-family: "Montserrat", sans-serif;
-    font-size: 1.2em;
+    font-size: 1.0em;
     text-align: center;
     align-items: center;
 }
 .desc-detalhe{
     margin: 1em auto;
-     width: 25em;
+     width: 40em;
      word-wrap: break-word; /* Permite que o texto quebre e desça */
     overflow-wrap: break-word;
 }
+
+.linha{
+ margin:5em;
+}
 .play-btn {
-  width: 10em;
-  height: 10em;
-  border-radius: 50%;
+  width: 5em !important;
+  height: 5em !important;
+  border-radius: 0%;
   border: 0.2em solid #b58d5b;
   background-color: transparent;
   color: #b58d5b;
@@ -183,24 +198,59 @@ html, body {
 
 #helen-info{
     text-align: center;
-    margin: 2em auto auto auto;
+    margin: 1.7em auto auto auto;
     display: flex;
 }
 #helen-info h2{
     text-align: center;
 }
 .helen-pic{
-    margin: auto 20em auto auto;
+    margin:4em 0 0 10em;
 }
+.helen-cont h2{
+  color: #2D2D2D ;
+  font-size: 1.6em;
+  margin-right: 6.6em;
+}
+.helen-cont h4{
+  color: #5e5c5c;
+  font-size: 1em;
+  margin-right: 10.6em;
+}
+.helen-cont p{
+  font-size: 1em;
+  text-align: justify;
+  }
 .helen-cont{
-    font-size: 1.6em;
-    width: 20em;
-    margin: auto auto auto 0;
-    word-wrap: break-word; /* Permite que o texto quebre e desça */
-    overflow-wrap: break-word;
+  font-size: 1.3em;
+  width: 20em;
+  margin: 14em 5em 0 0.8em;
+
+  }
+
+  .linha-vertical {
+  width: .02em;              /* Largura bem fina */
+  height: 25em;           /* Altura da linha vertical */
+  background-color: #000;  /* Cor da linha */
+  margin: 14em 0 0 4em ;          /* Espaçamento lateral, opcional */
+}
+
+.Imovel-corre{
+  margin-top: 4em;
+}
+
+.Imovel-corre h2{
+  font-family: 'Montserrat', sans-serif;
+font-weight: 600;
+  font-size: 2.0em !important;
 }
 .helen-cont button{
-    font-size: 1.2em;
+  margin-right: 10em;
+  margin-top: 1.3em;
+  border-style:solid #2D2D2D;
+  background-color: white;
+  padding: 0.5em;
+  font-size: 1.0em;
 }
 #helen-info2{
     display: none;
@@ -293,8 +343,8 @@ html, body {
 /* MEDIA QUERY */
 @media (max-width: 1145px) {
   .play-btn {
-    width: 4em;
-    height: 4em;
+    width: 2em;
+    height: 2em;
     font-size: 1.5em;
   }
 

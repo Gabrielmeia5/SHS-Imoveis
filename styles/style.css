@@ -68,43 +68,33 @@
   margin-bottom: 20px;
   color: #BF9B6F;
 }
-.containercards {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.cards-container{
+display: flex;
+flex-direction: column;
+gap: 0.3rem;
+align-items: center;
 }
-
-.vip {
+.card-destaque{
   display: flex;
   align-items: center;
   justify-content: center;
   border: 1.5px solid #d8b27d;
-  border-radius: 3px;
-  width: 93%;
-  height: 60px;
-  padding-bottom: 2px; 
-  text-align: center;
-}
-
-.coontainercards2{
-  display: flex;
-  justify-content: center;
-  padding-top: 1%;
-  padding-bottom: 40px;
-  gap: 10px;
-}
-
-.card {
-  border: 1.5px solid #d8b27d;
-  border-radius: 3px;
-  padding: 43px;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
+  width: 35vh;
+  padding: 13px;
   box-sizing: border-box;
-  font-size: 0.7rem;
+}
+.cards-baixo{
+  display: flex;
+  flex-direction: row;
+  gap: 0.3rem;
+  align-items: center;
+}
+.card{
+  border: 1.5px solid #d8b27d;
+  align-items: center;
+  display: flex;
+  padding: 1.1vh;
+
 }
 .filtro{
   text-align: center;
@@ -113,265 +103,82 @@
 .diamondicon{
   width: 20px;
   vertical-align: middle;
+  object-fit: contain;
 }
 .apartmenticon{
   width: 20px;
   margin-bottom: 8px;
+  object-fit: contain;
 }
 .houseicon{
   width: 20px;
   margin-bottom: 8px;
+  object-fit: contain;
 }
 .layersicon{
   width: 20px;
   margin-bottom: 8px;
+  object-fit: contain;
 }
 
-/* ===== Mobile grande (481px - 640px) ===== */
 @media (min-width: 481px) and  (max-width: 768px) {
-    /* Ajustes para celulares maiores */
-    .body{
-      background-color: #FFEFE3;
-      font-family: Montserrat;
-      font-size: 0.8rem;
-    }
-    .navbar{
-      display: flex;
-    }
-    .title{
-      width: 80%;
-      background-color:#FFEFE3;
-      padding: 10px;
-    }
-    .title-text{
-      font-size: 1.5rem;
-      font-family: Advent Pro, Arial;
-      margin: 0;
-    }
-    .title-subtext{
-      font-size: 0.8rem;
-      font-family: Advent Pro, Arial;
-    }
-    .iconsand{
-      width: 30px;
-      height: auto;
-    }
-    .navsand{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-color: #2D2D2D;
-      width: 20%;
-    }
-    .body-img{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .body-img-config{
-      width: 100%;
-      height: auto;
-    }
-    .imovel-ideal{
-      font-family: Montserrat;
-      display: flex;
-      flex-direction: column;
-    }
-    .imovel-ideal-text{
-      font-size: 1rem;
-      font-weight: bold;
-      margin-left: 6vh;
-      margin-top: 15px;
-      color: #262626;
-    }
-    .imovel-ideal-subtext{
-      font-size: 0.8rem;
-      margin-left: 6vh;
-      margin-top: 5px;
-      margin-bottom: 20px;
-      color: #BF9B6F;
-    }
-    .containercards {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    
-    .vip {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border: 1.5px solid #d8b27d;
-      border-radius: 3px;
-      width: 50vh;
-      height: 80px;
-      padding-bottom: 2px; 
-      text-align: center;
-    }
-    
-    .coontainercards2{
-      display: flex;
-      justify-content: center;
-      padding-top: 0.5vh;
-      padding-bottom: 40px;
-      gap: 1.3vh;
-    }
-    
-    .card {
-      border: 1.5px solid #d8b27d;
-      border-radius: 3px;
-      padding: 4.9vh;
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-      align-items: center;
-      justify-content: center;
-      box-sizing: border-box;
-      font-size: 0.7rem;
-    }
-    .filtro{
-      text-align: center;
-    }
-    
-    .diamondicon{
-      width: 20px;
-      vertical-align: middle;
-    }
-    .apartmenticon{
-      width: 20px;
-      margin-bottom: 8px;
-    }
-    .houseicon{
-      width: 20px;
-      margin-bottom: 8px;
-    }
-    .layersicon{
-      width: 20px;
-      margin-bottom: 8px;
-    }
-  }
-  /* ===== Tablets (modo paisagem) e Laptops pequenos (769px - 1023px) ===== */
+.cards-container{
+display: flex;
+flex-direction: column;
+gap: 0.3rem;
+align-items: center;
+}
+.card-destaque{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1.5px solid #d8b27d;
+  width: 35vh;
+  padding: 13px;
+  box-sizing: border-box;
+}
+.cards-baixo{
+  display: flex;
+  flex-direction: row;
+  gap: 0.3rem;
+  align-items: center;
+}
+.card{
+  border: 1.5px solid #d8b27d;
+  align-items: center;
+  display: flex;
+  padding: 1.1vh;
+}
+}
   @media (min-width: 769px) and (max-width: 1024px) {
-    /* Ajustes para tablets deitados e notebooks pequenos */
-    .body{
-      background-color: #FFEFE3;
-      font-family: Montserrat;
-      font-size: 0.8rem;
-    }
-    .navbar{
-      display: flex;
-    }
-    .title{
-      width: 80%;
-      background-color:#FFEFE3;
-      padding: 10px;
-    }
-    .title-text{
-      font-size: 1.5rem;
-      font-family: Advent Pro, Arial;
-      margin: 0;
-    }
-    .title-subtext{
-      font-size: 0.8rem;
-      font-family: Advent Pro, Arial;
-    }
-    .iconsand{
-      width: 30px;
-      height: auto;
-    }
-    .navsand{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-color: #2D2D2D;
-      width: 20%;
-    }
-    .body-img{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .body-img-config{
-      width: 100%;
-      height: auto;
-    }
-    .imovel-ideal{
-      font-family: Montserrat;
-      display: flex;
-      flex-direction: column;
-    }
-    .imovel-ideal-text{
-      font-size: 1rem;
-      font-weight: bold;
-      margin-left: 15px;
-      margin-top: 15px;
-      color: #262626;
-    }
-    .imovel-ideal-subtext{
-      font-size: 0.8rem;
-      margin-left: 15px;
-      margin-top: 5px;
-      margin-bottom: 20px;
-      color: #BF9B6F;
-    }
-    .containercards {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    
-    .vip {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border: 1.5px solid #d8b27d;
-      border-radius: 3px;
-      width: 50vh;
-      height: 80px;
-      padding-bottom: 2px; 
-      text-align: center;
-    }
-    
-    .coontainercards2{
-      display: flex;
-      justify-content: center;
-      padding-top: 0.5vh;
-      padding-bottom: 40px;
-      gap: 1.3vh;
-    }
-    
-    .card {
-      border: 1.5px solid #d8b27d;
-      border-radius: 3px;
-      padding: 6vh;
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-      align-items: center;
-      justify-content: center;
-      box-sizing: border-box;
-      font-size: 1rem;
-    }
-    .filtro{
-      text-align: center;
-    }
-    
-    .diamondicon{
-      width: 20px;
-      vertical-align: middle;
-    }
-    .apartmenticon{
-      width: 20px;
-      margin-bottom: 8px;
-    }
-    .houseicon{
-      width: 20px;
-      margin-bottom: 8px;
-    }
-    .layersicon{
-      width: 20px;
-      margin-bottom: 8px;
-    }
+   .cards-container{
+display: flex;
+flex-direction: column;
+gap: 0.3rem;
+align-items: center;
+}
+.card-destaque{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1.5px solid #d8b27d;
+  width: 35vh;
+  padding: 13px;
+  box-sizing: border-box;
+}
+.cards-baixo{
+  display: flex;
+  flex-direction: row;
+  gap: 0.3rem;
+  align-items: center;
+}
+.card{
+  border: 1.5px solid #d8b27d;
+  align-items: center;
+  display: flex;
+  padding: 1.1vh;
+
+}
   }
   /* ===== Laptops e desktops menores(1024px -1535px) ===== */
   @media (min-width: 1025px) and (max-width: 1280px) {

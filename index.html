@@ -5,68 +5,142 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Depoimentos e Footer</title>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@600&family=Dosis:wght@600&family=Montserrat:wght@300;400;500&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@600&family=Dosis:wght@600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/style.css" />
 </head>
 
 <body>
 
-  <!-- Seção de Depoimentos -->
+  <!-- Seção de Depoimentos com Carrossel -->
   <section class="testimonial-section">
     <h2>Depoimentos</h2>
     <p class="subtitle">O QUE AS PESSOAS DIZEM</p>
-    <div class="testimonial-card">
+
+    <div class="testimonial-carousel" id="carousel">
+      <div class="testimonial-card">
         <img src="assets/icons/icone_acima_dodepoimento.svg">
-      <p class="quote">"
-        “Tive o prazer de ser atendida pela Sheila e só tenho a agradecer pelo"
-        excelente atendimento, superou muito as expectativas, me explicou tudo
-        com paciência, sanou todas minhas dúvidas com profissionalismo. O
-        atendimento e atenção aos detalhes fazem toda a diferença.”
-      </p>
-      <div class="person">
-        <img src="assets/images/girl.png" alt="">
-        <span>Cliente</span>
+        <p class="quote">
+          “Tive o prazer de ser atendida pela Sheila e só tenho a agradecer pelo excelente atendimento, superou muito as expectativas, me explicou tudo com paciência, sanou todas minhas dúvidas com profissionalismo. O atendimento e atenção aos detalhes fazem toda a diferença.”
+        </p>
+        <div class="person">
+          <img src="assets/images/girl.png" alt="">
+          <span>Cliente</span>
+        </div>
       </div>
+
+      <div class="testimonial-card">
+        <img src="assets/icons/icone_acima_dodepoimento.svg">
+        <p class="quote">
+          “Equipe incrível! A Sheila e sua equipe foram extremamente profissionais, tiraram todas as dúvidas com paciência e me ajudaram a encontrar o imóvel perfeito.”
+        </p>
+        <div class="person">
+          <img src="assets/images/girl.png" alt="">
+          <span>Cliente 2</span>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <img src="assets/icons/icone_acima_dodepoimento.svg">
+        <p class="quote">
+          “Atendimento humanizado e muito acolhedor. Fui muito bem orientado em todo o processo. Recomendo demais.”
+        </p>
+        <div class="person">
+          <img src="assets/images/girl.png" alt="">
+          <span>Cliente 3</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="indicators">
+      <span class="active"></span>
+      <span></span>
+      <span></span>
     </div>
   </section>
 
-  <!-- Footer -->
+  <!-- Rodapé -->
   <footer class="main-footer">
+   <div class="elipse-decorativa">
+  <img src="assets/icons/Ellipse-top-right.svg" alt="Elipse decorativa no topo do footer">
+</div>
+
     <div class="stats">
-      <div>
-        <h3>+ de</h3>
-        <p><strong>02</strong><br />anos de experiência</p>
+      <div class="info-block">
+        <span class="info-prefix">+ de </span>
+        <span class="info-number">02</span>
+        <span class="info-description">anos de experiência</span>
       </div>
-      <div>
-        <h3>+ de</h3>
-        <p><strong>1000</strong><br />clientes atendidos</p>
+      <div class="info-block">
+        <span class="info-prefix">+ de</span>
+        <span class="info-number">1000</span>
+        <span class="info-description">casas vendidas</span>
       </div>
     </div>
+<div class="linha-dupla">
+  <div class="linha"></div>
+  <div class="linha"></div>
+</div>
+
+<div class="contact">
+</div>
 
     <div class="mission">
       <h4>Transformando a experiência em oportunidades</h4>
       <p>
-        Nada diz “Eu te amo” como o lar dos sonhos! Imagine começar uma nova fase com quem você ama em uma casa deslumbrante, perfeita para criar memórias inesquecíveis.
+        Nada diz “Eu te amo” como o lar dos sonhos!<br>
+        Imagine começar uma nova fase com quem você ama em uma casa deslumbrante, perfeita para criar memórias inesquecíveis.
       </p>
     </div>
+<div class="linha-dupla">
+  <div class="linha"></div>
+  <div class="linha"></div>
+</div>
+
+<div class="contact">
+</div>
 
     <div class="contact">
       <h1>Contato</h1>
       <ul>
-        <li><h2>Sara</h2><a href="#"><img src="assets/icons/icone.zap.svg" >(34) 9 9999-9999</a><a href="#"><img src="assets/icons/icone.insta.svg">@sheila_conceito</a> </li>
-        <li><h2>Sheila</h2><a href="#"><img src="assets/icons/icone.zap.svg" >(34) 9 9999-9999</a><a href="#"><img src="assets/icons/icone.insta.svg">@sheila_conceito</a> </li>
-        <li><h2>Hellen</h2><a href="#"><img src="assets/icons/icone.zap.svg" >(34) 9 9999-9999</a><a href="#"><img src="assets/icons/icone.insta.svg">@sheila_conceito</a> </li>
+        <li>
+          <h2><strong>Sara</strong></h2>
+          <a href="#"><img src="assets/icons/icone.zap.svg" alt="">(34) 9 9999-9999</a>
+          <a href="#"><img src="assets/icons/icone.insta.svg" alt="">@sheila_conceito</a>
+        </li>
+        <li>
+          <h2><strong>Sheila</strong></h2>
+          <a href="#"><img src="assets/icons/icone.zap.svg" alt="">(34) 9 9999-9999</a>
+          <a href="#"><img src="assets/icons/icone.insta.svg" alt="">@sheila_conceito</a>
+        </li>
+        <li>
+          <h2><strong>Hellen</strong></h2>
+          <a href="#"><img src="assets/icons/icone.zap.svg" alt="">(34) 9 9999-9999</a>
+          <a href="#"><img src="assets/icons/icone.insta.svg" alt="">@sheila_conceito</a>
+        </li>
         <div class="barra"></div>
       </ul>
     </div>
 
     <div class="copyright">
-      <p>©2025 Sheila Conceito.<br> Todos os direitos reservados.</p>
+      <p>©2025 Sheila Conceito.<br>Todos os direitos reservados.</p>
     </div>
   </footer>
 
-</body>
+  <!-- JavaScript do Carrossel -->
+  <script>
+    const carousel = document.getElementById("carousel");
+    const indicators = document.querySelectorAll(".indicators span");
 
+    carousel.addEventListener("scroll", () => {
+      const scrollLeft = carousel.scrollLeft;
+      const slideWidth = carousel.offsetWidth;
+      const index = Math.round(scrollLeft / slideWidth);
+
+      indicators.forEach((dot, i) => {
+        dot.classList.toggle("active", i === index);
+      });
+    });
+  </script>
+
+</body>
 </html>

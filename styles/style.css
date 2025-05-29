@@ -1,15 +1,14 @@
-/* Reset básico */
+/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
 }
 
 body {
   font-family: 'Montserrat', sans-serif;
   line-height: 1.6;
-  background-color: #fdfaf6;
+  background-color: #FFEFE3;
   color: #333;
 }
 
@@ -22,7 +21,7 @@ body {
 .testimonial-section h2 {
   font-family: 'Dosis', sans-serif;
   font-size: 0.9rem;
-  color: #b89e74;
+  color: #DF8C01;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
@@ -34,18 +33,29 @@ body {
   margin: 0.5rem 0 1.5rem;
 }
 
+/* Carrossel */
+.testimonial-carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
 .testimonial-card {
+  flex: 0 0 90%;
+  scroll-snap-align: center;
   max-width: 600px;
-  background-color: #fff;
+  background-color: #FFEFE3;
   margin: 0 auto;
-  padding: 1.5rem;
-  border-left: 3px solid #b89e74;
+  padding: 2rem 1.5rem;
+  border: 1.5px solid #d5b892;
+  border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  border-radius: 8px;
 }
 
 .testimonial-card .quote {
-  font-family: 'Montserrat', sans-serif;
   font-style: italic;
   color: #555;
   margin-bottom: 1rem;
@@ -65,128 +75,186 @@ body {
   border-radius: 50%;
 }
 
+/* Indicadores */
+.indicators {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.indicators span {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin: 0 4px;
+  background-color: #d5b892;
+  border-radius: 50%;
+  opacity: 0.5;
+  transition: opacity 0.3s;
+}
+
+.indicators span.active {
+  opacity: 1;
+}
+
 /* Footer */
-.main-footer{
-  background-color: #d8bb90;
-  color: #ffff;
+.main-footer {
+  background-color: #CAA872;
+  color: #fff;
   padding: 2rem 1rem;
   text-align: center;
   font-family: 'Montserrat', sans-serif;
   position: relative;
+  z-index: 1;
   overflow: hidden;
+
 }
 
 .stats {
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  margin-bottom: 1.5rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+  margin: 2rem 0;
 }
 
-.stats div {
-  margin: 1rem;
+.info-block {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.2;
 }
 
-.stats h3 {
-  font-size: 1.2rem;
-  color: #fff;
+.info-prefix {
+  font-size: 0.9rem;
+  font-weight: 300;
 }
 
-.stats strong {
-  font-size: 2rem;
-  display: block;
-  color: #fff;
+.info-number {
+  font-size: 2.2rem;
+  font-weight: 400;
+}
+
+.info-description {
+  font-size: 1rem;
+  font-weight: 300;
 }
 
 .mission {
   max-width: 600px;
   margin: 0 auto 2rem;
+  position: relative;
 }
 
 .mission h4 {
   font-size: 1.1rem;
   margin-bottom: 0.5rem;
   font-weight: bold;
-  color: #ffff;
+  position: relative;
+  padding-top: 2rem;
+}
 
+
+
+.mission p {
+  line-height: 1.6;
+  font-size: 1rem;
+  color: #fff;
+  text-align: center;
 }
-.mission p{
-  color: #ffff;
-}
+
 .contact {
   margin-bottom: 1.5rem;
+  position: relative;
 }
+
+.contact h1 {
+  color: #fff;
+  position: relative;
+  padding-top: 2rem;
+  text-transform: capitalize;
+}
+
+
 
 .contact ul {
   list-style: none;
   padding: 0;
 }
 
-
-.contact strong {
-  font-size: 1rem;
-  
+.contact li a {
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-weight: 400;
+  font-size: 0.95rem;
 }
+
+.contact li {
+  margin-bottom: 20px;
+}
+
+.contact h2 {
+  color: #fff;
+}
+
+.barra {
+  width: 90vw;
+  height: 1px;
+  background-color: #fff;
+}
+
+.elipse-decorativa {
+  position: absolute;
+  top: -100px;
+  right: -90px;
+  width: 250px;
+  background-image: url('assets/icons/Ellipse-top-right.svg');
+
+}
+
+.linha-dupla {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+.linha {
+  height: 1px;
+  background-color: #F5E4D5;
+  flex: 1;
+}
+
+.linha + .linha {
+  margin-left: 40px; /* Espaçamento entre as duas linhas */
+}
+
 
 .copyright {
-  font-size: 0.8rem;
-  color: #ffff;
-  display:flex ;
-
-
+  font-size: 0.75rem;
+  color: #fff;
+  text-align: center;
+  margin-top: 1.5rem;
+  line-height: 1.4;
 }
 
-/* Responsividade */
+/* Responsivo */
 @media (max-width: 600px) {
   .stats {
+    display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 2.5rem;
+    margin: 2rem 0 ;
   }
 
   .testimonial-card {
     padding: 1rem;
   }
 }
-
-.contact li a {
-  text-decoration: none;
-  color: #ffff;
-  display: flex;
-  justify-content: center ;
-  gap: 5px;
-
-}
-
-.contact li {
-  margin-bottom: 20px;
-
-}
-
-.contact h1,h2{
-  color: #ffff;
-}
-
-.contact h2{
-  font-weight: 200;
-}
-
-.barra {
-  width: 90vw;
-  height: 1px;
-  background-color: #ffff;
-}
- .main-footer::before {
-  content: '';
-  position: absolute;
-  top: -150px;   /* sobe para "cortar" a parte de cima */
-  right: -120px;  /* empurra para a direita para parecer cortado */
-  width: 215px;
-  height: 231px;
-  border: 30px solid #FFFEF3; /* Cor clara do fundo */
-  border-radius: 50%;
-  background-color: transparent;
-  transform: rotate(-31.61deg);
-  z-index: 1; /* pode ajustar conforme necessário */
-}
-
-

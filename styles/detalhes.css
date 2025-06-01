@@ -9,6 +9,7 @@
 html, body {
     margin: 0;
     overflow-x: hidden;
+    font-family: var(--font-primary, 'Montserrat', sans-serif);
 }
 
 #loading-overlay {
@@ -196,148 +197,124 @@ html, body {
   border: none;
 }
 
-#helen-info{
-    text-align: center;
-    margin: 1.7em auto auto auto;
+#caracteristicas {
     display: flex;
+    flex-direction: column; /* Coluna no mobile */
+    gap: 1.5rem; /* Espaçamento entre os blocos */
+    padding: 2rem 1rem;
+    background-color: var(--color-background, #FFEFE3); /* Usando variável do seu styles.css */
 }
-#helen-info h2{
+
+.esquerda-caracteristicas, .direita-caracteristicas {
+    width: 100%; /* Ocupa toda a largura no mobile */
+    box-sizing: border-box; /* Garante que padding não afete a largura */
+}
+
+/* Seção da Corretora: empilhada por padrão */
+#helen-info {
+    display: flex;
+    flex-direction: column; /* Coluna no mobile */
+    align-items: center; /* Centraliza tudo */
     text-align: center;
-}
-.helen-pic{
-    margin:4em 0 0 10em;
-}
-.helen-cont h2{
-  color: #2D2D2D ;
-  font-size: 1.6em;
-  margin-right: 6.6em;
-}
-.helen-cont h4{
-  color: #5e5c5c;
-  font-size: 1em;
-  margin-right: 10.6em;
-}
-.helen-cont p{
-  font-size: 1em;
-  text-align: justify;
-  }
-.helen-cont{
-  font-size: 1.3em;
-  width: 20em;
-  margin: 14em 5em 0 0.8em;
-
-  }
-
-  .linha-vertical {
-  width: .02em;              /* Largura bem fina */
-  height: 25em;           /* Altura da linha vertical */
-  background-color: #000;  /* Cor da linha */
-  margin: 14em 0 0 4em ;          /* Espaçamento lateral, opcional */
+    padding: 3rem 1rem;
+    gap: 1.5rem;
 }
 
-.Imovel-corre{
-  margin-top: 4em;
+.info-corretora-imagem {
+    max-width: 280px; /* Um tamanho razoável para a imagem no mobile */
+    height: auto;
+    border-radius: 8px; /* Borda levemente arredondada como no figma */
 }
 
-.Imovel-corre h2{
-  font-family: 'Montserrat', sans-serif;
-font-weight: 600;
-  font-size: 2.0em !important;
+.linha-vertical {
+    display: none; /* A linha vertical não existe no design mobile */
 }
-.helen-cont button{
-  margin-right: 10em;
-  margin-top: 1.3em;
-  border-style:solid #2D2D2D;
-  background-color: white;
-  padding: 0.5em;
-  font-size: 1.0em;
+
+.info-corretora-texto h2 {
+    font-size: var(--font-size-lg, 2rem);
+    color: var(--text-primary, #CAA872);
 }
-#helen-info2{
-    display: none;
+
+•.info-corretora-texto h4 {
+    font-size: var(--font-size-xxl, 1rem);
+    color: var(--color-primary, #2D2D2D);
+    margin-bottom: 1rem;
+    font-weight:lighter;
 }
+.info-corretora-texto p{
+    font-size: var(--font-size-md,1.25rem);
+}
+
+/* Cards de Busca/Suporte: empilhados por padrão */
 #info-corretora {
-  display: flex;
-  justify-content: space-between;
-  gap: 1em;
-  padding: 1em;
-  background-color: #fff2e8; /* tom de fundo suave */
-  flex-wrap: wrap;
+    display: flex;
+    flex-direction: column; /* Coluna no mobile */
+    gap: 1.5rem;
+    padding: 2rem 1rem;
 }
 
-.caracteristicas-corretoras {
-  flex: 1;
-  font-size: 1.3em;
-  border: 1px solid #e0b486;
-  border-radius: 10px;
-  padding: 1.5em;
-  background-color: #fff6ee;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-  transition: transform 0.3s ease;
-}
 
-.caracteristicas-corretoras:hover {
-  transform: translateY(-5px);
-}
+/* ================================================= */
+/* ADAPTAÇÃO PARA DESKTOP                */
+/* A partir de 1024px, baseado em Desktop.jpg   */
+/* ================================================= */
 
-.caracteristicas-corretoras h3 {
-  font-size: 1em;
-  font-weight: 600;
-  color: #d49a65;
-  margin-bottom: 0.8em;
-  text-transform: uppercase;
-}
+@media (min-width: 1024px) {
 
-.caracteristicas-corretoras p {
-  font-size: 0.95em;
-  color: #333;
-  line-height: 1.4em;
-}
-@media (max-width: 768px) {
-  #info-corretora {
-    flex-direction: column;
-    align-items: center;
-  }
+    /* Seção de Características: vira duas colunas */
+    #caracteristicas {
+        flex-direction: row; /* Linha no desktop */
+        align-items: flex-start; /* Alinha os itens ao topo */
+        justify-content: center;
+        gap: 2rem;
+        padding: 4rem 2rem;
+    }
 
-  .caracteristicas-corretoras {
-    width: 90%;
-  }
-}
-@media (max-width: 1145px) {
- 
+    .esquerda-caracteristicas {
+        flex: 0 0 350px; /* Base flexível: não cresce, não encolhe, base de 350px */
+    }
+
+    .direita-caracteristicas {
+        flex: 1; /* Ocupa o espaço restante */
+        max-width: 600px;
+    }
+
+    /* Seção da Corretora: vira duas colunas */
+    #helen-info {
+        flex-direction: row; /* Linha no desktop */
+        justify-content: center;
+        align-items: center;
+        text-align: left; /* Alinha o texto à esquerda no desktop */
+        gap: 3rem;
+        padding: 5rem 2rem;
+    }
+
+    .linha-vertical {
+        display: block; /* Mostra a linha no desktop */
+        width: 1px;
+        height: 15rem; /* Ajuste a altura conforme necessário */
+        background-color: #e0e0e0;
+    }
     
-    #helen-info{
-        display: none;
+    .info-corretora-imagem {
+        max-width: 350px;
     }
-    .Imovel-corre{
-        display: none;
+    
+    .info-corretora-texto {
+        max-width: 450px;
     }
-    .btn1{
-        display: none;
-    }
-    .Imovel-corre2{
-        margin: 1.2em 0 0 0 ;
-        font-size: 0.6em;
-    }
-    #helen-info2{
-        color: #F5F5F5;
-        background-color: #CAA872;
 
-        margin: 1em 0 0 0;
-        text-align: center;
-        font-size: 1.5em;
-        display: flex;
-        flex-direction: column;
+    /* Cards de Busca/Suporte: viram três colunas */
+    #info-corretora {
+        flex-direction: row; /* Linha no desktop */
+        justify-content: center;
+        align-items: stretch; /* Faz todos terem a mesma altura */
+        padding: 3rem 2rem;
     }
-    .helen-cont2{
-        margin: 1em 0.5em;
-        font-size: 0.7em;
-    }
-    .helen-pic2 img{
-        width: 15em;
-    }
-    .btn2{
-        font-size: 1em;
-        margin-top: 2em;
+
+    .caracteristicas-corretoras {
+        flex: 1; /* Divide o espaço igualmente */
+        max-width: 380px; /* Limita a largura máxima de cada card */
     }
 }
 /* MEDIA QUERY */

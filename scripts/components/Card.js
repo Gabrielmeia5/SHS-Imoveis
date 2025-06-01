@@ -74,10 +74,11 @@ export function criarCard(imovel) {
     const cardLocalization = document.createElement('div');
     cardLocalization.classList.add('card-localization');
     const iconLocation = document.createElement('i');
-    iconLocation.classList.add('fa-solid', 'fa-location-dot');
+    iconLocation.setAttribute('data-lucide', 'map-pin-house');
     const pLocal = document.createElement('p');
     pLocal.textContent = imovel.endereco.bairro;
     cardLocalization.append(iconLocation, pLocal);
+    lucide.createIcons();
 
     // Valor
     const cardValue = document.createElement('div');

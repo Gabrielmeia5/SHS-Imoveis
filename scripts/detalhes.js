@@ -74,13 +74,10 @@ function renderImovel(imovel) {
   esquerda.innerHTML = `
     <h4>Código do imóvel</h4>
     <p>${imovel.id}</p>
-    <hr style="width: 25em; margin: auto;" color="F1DCC5">
     <h4>Bairro</h4>
     <p>${imovel.endereco.bairro}</p>
-    <hr style="width: 25em; margin: auto;" color="F1DCC5">
     <h4>Tipo</h4>
     <p>${imovel.finalidade}</p>
-    <hr style="width: 25em; margin: auto;" color="F1DCC5">
     <h4>Cidade</h4>
     <p>${imovel.endereco.cidade}</p>
   `;

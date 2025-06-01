@@ -25,13 +25,28 @@
         </div>
         
         <div class="imovel-info"> <!--Nome, Quantia de CARROS E QUARTOS E AREA-->
-          <div class="Texto1 font-size-xs ">
+          <div class="Texto1 ">
+            <div>
             <p>Imovel DO DANIEL SAORES</p>
+            </div>
+            <div class="area">
+            <i data-lucide="maximize-2"></i>
+            <p class="icone-area">210²</p>
+            </div>
           </div>
           <div class="icones-infotopo">
+            <div class="icone-topo">
+            <i data-lucide="bed"></i>
             <p class="icone-quartos">02</p>   
+            </div>
+            <div class="icone-topo">
+            <i data-lucide="car-front"></i>
             <p class="icone-garagem">02</p>
+            </div>
+            <div class="icone-topo">
+            <i data-lucide="maximize-2"></i>
             <p class="icone-area">210²</p>
+            </div>
           </div>
 
         </div>
@@ -49,13 +64,10 @@
           <div class="esquerda-p">
             <h4>Codigo do imovel</h4>
             <p>747346383</p>
-            <hr style="width: 15em; margin: auto;" color="F1DCC5">
             <h4>Bairro</h4>
             <p>Nova FLoresta</p>
-            <hr style="width: 15em; margin: auto;" color="F1DCC5">
             <h4>Tipo</h4>
             <p>Venda</p>
-            <hr style="width: 15em; margin: auto;" color="F1DCC5">
             <h4>Cidade</h4>
             <p>Patos de Minas</p>
           </div>
@@ -63,12 +75,12 @@
         <div class="direita-caracteristicas">
         <h2>Características</h2>
         <ul id="lista-caracteristicas">
-          <li>KKKKKKKKKKKKKKKKKKKKKKKKKKKKKK</li>
-          <li>KKKKKKKKKKKKKKKKKKKKKKKKKKKKKK</li>
-          <li>KKKKKKKKKKKKKKKKKKKKKKKKKKKKKK</li>
-          <li>KKKKKKKKKKKKKKKKKKKKKKKKKKKKKK</li>
-          <li>KKKKKKKKKKKKKKKKKKKKKKKKKKKKKK</li>
-          <li>KKKKKKKKKKKKKKKKKKKKKKKKKKKKKK</li>
+          <li><i data-lucide="minus"></i>KKKKKKKKKKKKKKKKKKKKKKKKKKKKKK</li>
+          <li><i data-lucide="minus"></i>KKKKKKKKKKKKKKKKKKKKKKKKKKKKKK</li>
+          <li><i data-lucide="minus"></i>KKKKKKKKKKKKKKKKKKKKKKKKKKKKKK</li>
+          <li><i data-lucide="minus"></i>KKKKKKKKKKKKKKKKKKKKKKKKKKKKKK</li>
+          <li><i data-lucide="minus"></i>KKKKKKKKKKKKKKKKKKKKKKKKKKKKKK</li>
+          <li><i data-lucide="minus"></i>KKKKKKKKKKKKKKKKKKKKKKKKKKKKKK</li>
         </ul>
         </div>
       </section>
@@ -103,22 +115,22 @@
         <div class="info-corretora-texto">
           <h2>Hellen Cássia</h2>
           <h4>Corretora de imóveis</h4>
-          <p>Nada diz “Eu te amo” como o lar dos sonhos! Imagine começar uma nova fase com quem você ama...</p> 
-          <button class="btn-contato">Entre em Contato</button> </div>
+          <p>Nada diz “Eu te amo” como o lar dos sonhos! Imagine começar uma nova fase com quem você ama em uma casa deslumbrante, perfeita para criar memórias inesquecíveis.</p> 
+          <button class="btn-contato">ENTRE EM CONTATO <i data-lucide="move-up-right"></i></button> </div>
       </section>
 
       <section id="info-corretora">
           <div class="caracteristicas-corretoras">
             <h3>BUSCA ESPECIALIZADA</h3>
-            <p>Ajudamos você a encontrar o imóvel certo...</p>
+            <p>Ajudamos você a encontrar o imóvel certo, de forma rápida e alinhada às suas preferências.</p>
           </div>
           <div class="caracteristicas-corretoras">
             <h3>SUPORTE COMPLETO</h3>
-            <p>Estamos ao seu lado em cada decisão...</p>
+            <p>Estamos ao seu lado em cada decisão, acompanhamos você em todas as etapas, com apoio claro e eficiente..</p>
         </div>
           <div class="caracteristicas-corretoras">
             <h3>NEGOCIAÇÃO ESTRATÉGICA</h3>
-            <p>Negociamos com foco no seu benefício...</p>
+            <p>Negociamos com foco no seu benefício, garantindo as melhores condições possíveis.</p>
           </div>
       </section>
 
@@ -141,5 +153,9 @@
       <footer></footer> <!-- Criar um componente para adicionar em todas paginas-->
     </main>
     <script src="./scripts/detalhes.js" type="module"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    lucide.createIcons();
+  </script>
 </body>
 </html>

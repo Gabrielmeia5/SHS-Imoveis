@@ -73,13 +73,14 @@ display: flex;
 flex-direction: column;
 gap: 0.3rem;
 align-items: center;
+padding-bottom: 25px;
 }
 .card-destaque{
   display: flex;
   align-items: center;
   justify-content: center;
   border: 1.5px solid #d8b27d;
-  width: 35vh;
+  width: 36.5vh;
   padding: 13px;
   box-sizing: border-box;
 }
@@ -133,7 +134,7 @@ align-items: center;
   align-items: center;
   justify-content: center;
   border: 1.5px solid #d8b27d;
-  width: 35vh;
+  width: 36.5vh;
   padding: 13px;
   box-sizing: border-box;
 }
@@ -151,34 +152,7 @@ align-items: center;
 }
 }
   @media (min-width: 769px) and (max-width: 1024px) {
-   .cards-container{
-display: flex;
-flex-direction: column;
-gap: 0.3rem;
-align-items: center;
-}
-.card-destaque{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1.5px solid #d8b27d;
-  width: 35vh;
-  padding: 13px;
-  box-sizing: border-box;
-}
-.cards-baixo{
-  display: flex;
-  flex-direction: row;
-  gap: 0.3rem;
-  align-items: center;
-}
-.card{
-  border: 1.5px solid #d8b27d;
-  align-items: center;
-  display: flex;
-  padding: 1.1vh;
 
-}
   }
   /* ===== Laptops e desktops menores(1024px -1535px) ===== */
   @media (min-width: 1025px) and (max-width: 1280px) {

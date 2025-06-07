@@ -1,383 +1,594 @@
-/* Defalt Size */
 
-/* ===== Estilos base: Mobile First (0px até 480px) ===== */
-/* Aqui ficam os estilos padrões, pensando em celulares pequenos e normais */
+:root {
+  /* ========================================
+     Cores
+  ======================================== */
+  --color-primary: #caa872;
+  --color-background: #ffefe3;
+  --color-surface: #ffffff;
+  --color-dark: #2d2d2d;
+  --color-light: #f9f6f2;
+  --color-rent: #9cdd8f;
+  --color-accent-1: #df8c01;
+  --color-accent-2: #775217;
+
+  /* Texto */
+  --text-primary: #2d2d2d;
+  --text-inverted: #ffffff;
+  --text-muted: #8a8a8a;
+
+  /* ========================================
+     Tipografia
+  ======================================== */
+  --font-primary: "Montserrat", sans-serif;
+  --font-secondary: "Advent Pro", sans-serif;
+  --font-tertiary: "Cormorant Garamond", sans-serif;
+
+  /* Base para rem (1rem = 16px) */
+  --font-size-xs: 0.875rem; /* 14px */
+  --font-size-sm: 1rem; /* 16px */
+  --font-size-md: 1.25rem; /* 20px */
+  --font-size-lg: 1.75rem; /* 28px */
+  --font-size-xl: 2rem; /* 32px */
+  --font-size-xxl: 2.25rem; /* 36px */
+  --font-size-xxxl: 2.5rem; /* 40px */
+
+  /* ========================================
+     Espaçamentos (Padding / Margin)
+     Base de 4px = 0.25rem
+  ======================================== */
+  --spacing-xxs: 0.25rem; /* 4px */
+  --spacing-xs: 0.5rem; /* 8px */
+  --spacing-sm: 1rem; /* 16px */
+  --spacing-md: 1.5rem; /* 24px */
+  --spacing-lg: 2rem; /* 32px */
+  --spacing-xl: 3rem; /* 48px */
+  --spacing-xxl: 4rem; /* 64px */
+
+  /* ========================================
+     Bordas e Radius
+  ======================================== */
+  --border-radius-sm: 0.25rem; /* 4px */
+  --border-radius-md: 0.6rem; /* 10px */
+  --border-radius-lg: 1rem; /* 16px */
+  --border-radius-xl: 1.25rem; /* 20px */
+
+  /* ========================================
+     Sombras
+  ======================================== */
+  --shadow-soft: 0 2px 4px rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* ========================================
+   Reset e Base
+======================================== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-.body{
-  background-color: #FFEFE3;
-  font-family: Montserrat;
-  font-size: 0.8rem;
+
+body,
+html {
+  overflow-x: hidden;
 }
-.navbar{
+
+body {
+   overflow-y: hidden;
+}
+
+body {
+  background-color: var(--color-background);
+}
+
+
+/* ========================================
+   Header e Navegação
+======================================== */
+header {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.nav-bar-container {
   display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  height: 15vh;
+  background-color: transparent;
+  font-family: var(--font-secondary);
+  font-weight: 300;
+  color: var(--text-primary);
 }
-.title{
-  width: 80%;
-  background-color:#FFEFE3;
-  padding: 10px;
+
+.title-content {
+  margin-left: 5vw;
+  margin-top: 5vh;
 }
-.title-text{
-  font-size: 1.5rem;
-  font-family: Advent Pro, Arial;
-  margin: 0;
+
+.title-content h1 {
+  font-size: var(--font-size-lg);
+  font-weight: 400;
 }
-.title-subtext{
-  font-size: 0.8rem;
-  font-family: Advent Pro, Arial;
+
+.title-content p {
+  font-size: var(--font-size-xs);
+  font-weight: 300;
 }
-.iconsand{
-  width: 30px;
-  height: auto;
-}
-.navsand{
+
+.menu-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #2D2D2D;
-  width: 20%;
+  width: 15vh;
+  height: 100%;
+  background-color: var(--color-dark);
 }
-.body-img{
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
+/* ========================================
+   Menu Hamburger (From Uiverse.io by Cevorob)
+======================================== */
+.menu {
+  position: relative;
+  display: block;
+  width: 40px;
+  height: 30px;
+  background: transparent;
+  cursor: pointer;
 }
-.body-img-config{
+
+.menu input {
+  display: none;
+}
+
+.menu span {
+  position: absolute;
+  display: block;
+  left: 0;
   width: 100%;
-  height: auto;
+  height: 4px;
+  background: var(--text-inverted);
+  border-radius: 9px;
+  opacity: 1;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
 }
-.imovel-ideal{
-  font-family: Montserrat;
+
+.menu span:nth-of-type(1) {
+  top: 0px;
+  transform-origin: left center;
+}
+
+.menu span:nth-of-type(2) {
+  top: 50%;
+  transform: translateY(-50%);
+  transform-origin: left center;
+}
+
+.menu span:nth-of-type(3) {
+  top: 100%;
+  transform: translateY(-100%);
+  transform-origin: left center;
+}
+
+.menu input:checked ~ span:nth-of-type(1) {
+  top: 0px;
+  left: 5px;
+  transform: rotate(45deg);
+}
+
+.menu input:checked ~ span:nth-of-type(2) {
+  width: 0%;
+  opacity: 0;
+}
+
+.menu input:checked ~ span:nth-of-type(3) {
+  top: 28px;
+  left: 5px;
+  transform: rotate(-45deg);
+}
+
+nav {
+  display: none;
+  align-items: center;
+  gap: var(--spacing-xxl);
+  text-wrap: nowrap;
+}
+
+nav ul {
   display: flex;
-  flex-direction: column;
+  gap: var(--spacing-lg);
+  list-style: none;
+  font-size: var(--font-size-md);
+  text-decoration: none;
 }
-.imovel-ideal-text{
-  font-size: 1rem;
-  font-weight: bold;
-  margin-left: 15px;
-  margin-top: 15px;
-  color: #262626;
+
+/* ========================================
+   Home Background
+======================================== */
+.home-bg {
+  position: relative;
+  z-index: -2;
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+  object-position: center;
 }
-.imovel-ideal-subtext{
-  font-size: 0.8rem;
-  margin-left: 15px;
-  margin-top: 5px;
-  margin-bottom: 20px;
-  color: #BF9B6F;
+
+.bg-filter {
+  position: absolute;
+  top: 15vh;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 50%;
+  pointer-events: none;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 14%, rgba(0, 0, 0, 0.26) 38%, rgba(0, 0, 0, 0) 52%, rgba(0, 0, 0, 0.28) 77%, rgba(0, 0, 0, 0.5) 97%);
 }
-.containercards {
+
+/* ========================================
+   Filter Home Component
+======================================== */
+.filter-home {
+  padding: var(--spacing-md) var(--spacing-sm);
+  border-radius: var(--border-radius-md);
+  color: var(--text-primary);
+  font-family: var(--font-primary);
+}
+
+.filter-home-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.filter-home-header h2 {
+  font-size: var(--font-size-md);
+  font-weight: 500;
+  font-family: var(--font-secondary);
+}
+
+.filter-home-header p {
+  font-size: var(--font-size-sm);
+  font-weight: 300;
+  color: var(--color-primary);
+}
+
+.filter-home-header span {
+  font-size: var(--font-size-xs);
+  font-weight: 300;
+  letter-spacing: -0.05em;
+  text-align: center;
+  text-wrap: nowrap;
+  border-bottom: 1px solid var(--text-primary);
+}
+
+.filter-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: var(--spacing-md);
+   
+}
+
+.filter-home .filter-content .grid-template {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: var(--spacing-xs);
+  margin-top: var(--spacing-xs);
+  height: 100%;
+}
+
+.filter-home .filter-item {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.vip {
-  display: flex;
-  align-items: center;
   justify-content: center;
-  border: 1.5px solid #d8b27d;
-  border-radius: 3px;
-  width: 93%;
-  height: 60px;
-  padding-bottom: 2px; 
-  text-align: center;
-  cursor: pointer;
+  gap: var(--spacing-xs);
+  padding: var(--spacing-md) var(--spacing-sm);
+  border: 1px solid var(--color-primary);
+  border-radius: var(--border-radius-sm);
+  font-size: var(--font-size-xs);
 }
 
-.coontainercards2{
-  display: flex;
-  justify-content: center;
-  padding-top: 1%;
-  padding-bottom: 40px;
-  gap: 10px;
-}
+/* ========================================
+   Responsividade - Mobile First
+======================================== */
 
-.card_menu {
-  border: 1.5px solid #d8b27d;
-  border-radius: 3px;
-  padding: 5em;
-  display: flex;
-  font-size: 0.7rem;
-  background: none;
-  cursor: pointer;
-}
-
-.filtro{
-  text-align: center;
-}
-
-.diamondicon{
-  width: 20px;
-  vertical-align: middle;
-}
-.apartmenticon{
-  width: 20px;
-  margin-bottom: 8px;
-}
-.houseicon{
-  width: 20px;
-  margin-bottom: 8px;
-}
-.layersicon{
-  width: 20px;
-  margin-bottom: 8px;
-}
-
-/* ===== Mobile grande (481px - 640px) ===== */
-@media (min-width: 481px) and  (max-width: 768px) {
-    /* Ajustes para celulares maiores */
-    .body{
-      background-color: #FFEFE3;
-      font-family: Montserrat;
-      font-size: 0.8rem;
-    }
-    .navbar{
-      display: flex;
-    }
-    .title{
-      width: 80%;
-      background-color:#FFEFE3;
-      padding: 10px;
-    }
-    .title-text{
-      font-size: 1.5rem;
-      font-family: Advent Pro, Arial;
-      margin: 0;
-    }
-    .title-subtext{
-      font-size: 0.8rem;
-      font-family: Advent Pro, Arial;
-    }
-    .iconsand{
-      width: 30px;
-      height: auto;
-    }
-    .navsand{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-color: #2D2D2D;
-      width: 20%;
-    }
-    .body-img{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .body-img-config{
-      width: 100%;
-      height: auto;
-    }
-    .imovel-ideal{
-      font-family: Montserrat;
-      display: flex;
-      flex-direction: column;
-    }
-    .imovel-ideal-text{
-      font-size: 1rem;
-      font-weight: bold;
-      margin-left: 6vh;
-      margin-top: 15px;
-      color: #262626;
-    }
-    .imovel-ideal-subtext{
-      font-size: 0.8rem;
-      margin-left: 6vh;
-      margin-top: 5px;
-      margin-bottom: 20px;
-      color: #BF9B6F;
-    }
-    .containercards {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    
-    .vip {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border: 1.5px solid #d8b27d;
-      border-radius: 3px;
-      width: 50vh;
-      height: 80px;
-      padding-bottom: 2px; 
-      text-align: center;
-    }
-    
-    .coontainercards2{
-      display: flex;
-      justify-content: center;
-      padding-top: 0.5vh;
-      padding-bottom: 40px;
-      gap: 1.3vh;
-    }
-    
-    .card {
-      border: 1.5px solid #d8b27d;
-      border-radius: 3px;
-      padding: 4.9vh;
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-      align-items: center;
-      justify-content: center;
-      box-sizing: border-box;
-      font-size: 0.7rem;
-    }
-    .filtro{
-      text-align: center;
-    }
-    
-    .diamondicon{
-      width: 20px;
-      vertical-align: middle;
-    }
-    .apartmenticon{
-      width: 20px;
-      margin-bottom: 8px;
-    }
-    .houseicon{
-      width: 20px;
-      margin-bottom: 8px;
-    }
-    .layersicon{
-      width: 20px;
-      margin-bottom: 8px;
-    }
+/* Mobile grande (481px - 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .filter-home {
+    padding: var(--spacing-xl) var(--spacing-xl);
   }
-  /* ===== Tablets (modo paisagem) e Laptops pequenos (769px - 1023px) ===== */
-  @media (min-width: 769px) and (max-width: 1024px) {
-    /* Ajustes para tablets deitados e notebooks pequenos */
-    .body{
-      background-color: #FFEFE3;
-      font-family: Montserrat;
-      font-size: 0.8rem;
-    }
-    .navbar{
-      display: flex;
-    }
-    .title{
-      width: 80%;
-      background-color:#FFEFE3;
-      padding: 10px;
-    }
-    .title-text{
-      font-size: 1.5rem;
-      font-family: Advent Pro, Arial;
-      margin: 0;
-    }
-    .title-subtext{
-      font-size: 0.8rem;
-      font-family: Advent Pro, Arial;
-    }
-    .iconsand{
-      width: 30px;
-      height: auto;
-    }
-    .navsand{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-color: #2D2D2D;
-      width: 20%;
-    }
-    .body-img{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .body-img-config{
-      width: 100%;
-      height: auto;
-    }
-    .imovel-ideal{
-      font-family: Montserrat;
-      display: flex;
-      flex-direction: column;
-    }
-    .imovel-ideal-text{
-      font-size: 1rem;
-      font-weight: bold;
-      margin-left: 15px;
-      margin-top: 15px;
-      color: #262626;
-    }
-    .imovel-ideal-subtext{
-      font-size: 0.8rem;
-      margin-left: 15px;
-      margin-top: 5px;
-      margin-bottom: 20px;
-      color: #BF9B6F;
-    }
-    .containercards {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    
-    .vip {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border: 1.5px solid #d8b27d;
-      border-radius: 3px;
-      width: 50vh;
-      height: 80px;
-      padding-bottom: 2px; 
-      text-align: center;
-    }
-    
-    .coontainercards2{
-      display: flex;
-      justify-content: center;
-      padding-top: 0.5vh;
-      padding-bottom: 40px;
-      gap: 1.3vh;
-    }
-    
-    .card {
-      border: 1.5px solid #d8b27d;
-      border-radius: 3px;
-      padding: 6vh;
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-      align-items: center;
-      justify-content: center;
-      box-sizing: border-box;
-      font-size: 1rem;
-    }
-    .filtro{
-      text-align: center;
-    }
-    
-    .diamondicon{
-      width: 20px;
-      vertical-align: middle;
-    }
-    .apartmenticon{
-      width: 20px;
-      margin-bottom: 8px;
-    }
-    .houseicon{
-      width: 20px;
-      margin-bottom: 8px;
-    }
-    .layersicon{
-      width: 20px;
-      margin-bottom: 8px;
-    }
+
+  .filter-home-header h2 {
+    font-size: var(--font-size-lg);
   }
-  /* ===== Laptops e desktops menores(1024px -1535px) ===== */
-  @media (min-width: 1025px) and (max-width: 1280px) {
-    /* Ajustes para laptops e desktops padrão */
+
+  .filter-home-header p {
+    font-size: var(--font-size-sm);
+  }
+
+  .filter-home .filter-item {
+    gap: var(--spacing-sm);
+    padding: var(--spacing-lg) var(--spacing-sm);
+    font-size: var(--font-size-xs);
+  }
+}
+
+/* Desktop (1024px+) */
+@media (min-width: 1024px) {
+  /* Navegação Desktop */
+  .menu-container {
+    display: none;
+  }
+
+  .nav-bar-container {
+    position: absolute;
+    top: 5vh;
+    left: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: var(--spacing-xxl);
+    font-family: var(--font-secondary);
+    font-weight: 300;
+    color: var(--text-inverted);
+    text-wrap: nowrap;
+  }
+
+  .nav-bar-container ul {
+    display: flex;
+    gap: var(--spacing-lg);
+    list-style: none;
+    font-size: var(--font-size-md);
+    text-decoration: none;
+  }
+
+  nav {
+    display: flex;
+    margin-top: calc(5vh - 5px);
+  }
+
+  /* Title Content Desktop */
+  .title-content {
+    position: relative;
+    margin-right: 5vh;
+  }
+
+  .title-content h1 {
+    font-size: var(--font-size-lg);
+    font-weight: 300;
+  }
+
+  .title-content p {
+    font-size: var(--font-size-xs);
+    font-weight: 200;
+    text-align: right;
+  }
+
+  .title-content::before {
+    content: "";
+    position: absolute;
+    top: -5%;
+    right: -10%;
+    width: 1px;
+    height: 110%;
+    background: var(--text-inverted);
+    border-radius: var(--border-radius-lg);
+  }
+
+  /* Home Background Desktop */
+  .home-bg {
+    width: 100%;
+    height: 90%;
+  }
+
+  .bg-filter {
+    top: 0;
+    width: 100%;
+    height: 90%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 14%, rgba(0, 0, 0, 0.26) 38%, rgba(0, 0, 0, 0) 52%, rgba(0, 0, 0, 0.28) 77%, rgba(0, 0, 0, 0.5) 97%);
+  }
+
+  /* Filter Home Desktop */
+  .filter-home {
+    position: absolute;
+    left: 10vw;
+    bottom: 5px;
+    width: 45vw;
+    padding: var(--spacing-md) var(--spacing-xl);
+    background-color: var(--color-dark);
+    color: var(--text-inverted);
+  }
+
+  .filter-home-header h2 {
+    font-size: var(--font-size-xl);
+    font-weight: 300;
+  }
+
+  .filter-home-header p {
+    font-size: var(--font-size-sm);
+    font-weight: 300;
+    color: var(--color-primary);
+  }
+
+  .filter-home-header span {
+    font-size: var(--font-size-sm);
+    font-weight: 300;
+    border-bottom: 1px solid var(--text-inverted);
+  }
+
+  .filter-home .filter-content .grid-template {
+    gap: var(--spacing-sm);
+  }
+
+  .filter-home .filter-content  {
+    flex-direction: column;
+  }
+
+  .filter-home .filter-content .grid-template{
+    flex-direction: column;
+  }
+
+  .filter-home .filter-item {
+    display: flex;
+    flex-direction: row;
+    gap: var(--spacing-xxs);
+    padding: var(--spacing-md) var(--spacing-sm);
+    border: 1px solid var(--color-primary);
+  }
+
+    .filter-home .filter-content .grid-template{
+    gap: var(--spacing-sm);
+    margin-top: 0;
+  }
+
+  .filter-item {
+    margin-top: 5px;
+  }
+
+   .filter-home .filter-item {
+    padding: var(--spacing-lg) var(--spacing-sm);
+  }
+
+}
+
+
+
+
+/* Laptops e desktops menores (1024px - 1535px) */
+@media (min-width: 1024px) and (max-width: 1535px) {
+  .filter-home {
+    left: 8vw;
+    bottom: 5px;
+    padding: var(--spacing-md) var(--spacing-lg);
+  }
+
+  .filter-home-header h2 {
+    font-size: var(--font-size-lg);
+    margin-bottom: var(--spacing-xs);
+  }
+
+  .filter-home-header p,
+  .filter-home-header span {
+    font-size: var(--font-size-xs);
+  }
+
+  .filter-content img {
+    width: var(--font-size-md);
+    height: auto;
+  }
+
+  .filter-home .filter-content {
+    gap: var(--spacing-xs);
+  }
+}
+
+/* Desktop grandes (1536px+) */
+@media (min-width: 1536px) {
+  .filter-home {
+    padding: var(--spacing-xl) var(--spacing-xxl);
+    width: 40vw;
+  }
+
+  .filter-home .filter-content .grid-template{
+    gap: var(--spacing-sm);
+    margin-top: 0;
+  }
+
+  .filter-item {
+    margin-top: 8px;
+    padding: var(--spacing-md) var(--spacing-sm);
   }
   
-  /* ===== Desktop Normais  (1536px +) ===== */
-  @media (min-width: 1536px) {
-    /* Ajustes para telas ultra grandes: 2K, 4K, UltraWide */
-  } 
+   .filter-home .filter-item {
+    padding: var(--spacing-lg) var(--spacing-sm);
+  }
+
+  
+}
+
+
+.about-section-desktop {
+    width: 100vw;
+    height: 80vh;
+
+    display: grid;
+    gap: 5vw;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5vh;
+    padding: 5vh 10vw;
+    
+}
+
+.about-section-desktop img{
+    width: 100%;
+    height: 100%;
+    max-width: 600px;
+    max-height: 600px;
+    object-fit: cover;
+}
+
+
+
+.about-section-desktop .about-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: var(--font-primary);
+    justify-content: center;
+    align-items: center;
+}
+
+.about-section-desktop .about-content * {
+    color: var(--text-primary);
+    font-weight: 300;
+    text-align: center;
+}
+
+.about-section-desktop .about-content h3 {
+    font-family: var(--font-tertiary);
+    font-size: var(--font-size-md);
+    margin-bottom: var(--spacing-xs);
+}
+
+.about-section-desktop .about-content h4 {
+    font-family: var(--font-secondary);
+    font-size: var(--font-size-xxxl);
+    margin-bottom: var(--spacing-md);
+}
+
+.about-section-desktop .about-content p {
+   width: 90%;
+}
+
+.about-section-desktop .about-content button {
+   background-color: transparent;
+   border: 1px solid var(--color-dark);
+   width: max-content;
+   padding: var(--spacing-sm) var(--spacing-md);
+   margin-top: var(--spacing-md);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: var(--spacing-md);
+}
+
+@media (max-width: 1024px) {
+   .about-section-desktop {
+    display: none;
+   }
+}
+
+
+@media (min-width: 1536px) {
+   .about-section-desktop {
+      padding: 0 35vh;
+   }
+
+}

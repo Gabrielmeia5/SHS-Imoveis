@@ -22,51 +22,94 @@
 
 <body>
 
-  <!-- Topo / Navegação -->
-  <nav class="navbar">
-    <div class="title">
-      <p class="title-text">Catálogo de Imóveis</p>
-      <span class="title-subtext">Cuidado e Exclusividade</span>
-    </div>
-    <div class="navsand">
-      <img src="assets/icons/sandmenu.svg" class="iconsand" alt="">
-    </div>
-  </nav>
-
-  <!-- Seção Inicial -->
-  <section class="body">
-    <div class="body-img"><img src="assets/images/casa.jpg" alt="" class="body-img-config"></div>
-    <div class="imovel-ideal">
-      <p class="imovel-ideal-text">Encontre o Imóvel Ideal</p>
-      <span class="imovel-ideal-subtext">Selecione os tipos de Imóveis que você procura.</span>
-    </div>
-
-    <!-- Cards de tipos -->
-    <section class="cards">
-      <div class="containercards">
-        <div class="vip">
-          <img src="assets/icons/diamondicon.svg" alt="" class="diamondicon">
-          Imóveis Vip
+  <header>
+        
+    <div class="nav-bar-container">
+        <div class="title-content">
+            <h1>Catálogo de Imóveis</h1>
+            <p>cuidado e exclusividade</p>
         </div>
-        <div class="coontainercards2">
-          <div class="card_menu">
-            <img src="assets/icons/apartmenticon.svg" alt="" class="apartmenticon">
-            Apartamentos 
-          </div>
-          <div class="card_menu">
-            <img src="assets/icons/houseicon.svg" alt="" class="houseicon">
-            Casas
-          </div>
-          <div class="card_menu">
-            <img src="assets/icons/layersicon.svg" alt="" class="layersicon">
-            Terrenos 
-          </div>
+        <nav>
+            <ul class="nav-ul">
+                <li class="nav-item">
+                    SOBRE NÓS
+                </li>
+                <li class="nav-item">
+                    IMÓVEIS EM DESTAQUE
+                </li>
+                <li class="nav-item">
+                    GALERIA
+                </li>
+                <li class="nav-item">
+                    CONTATO
+                </li>
+                <li class="nav-item">
+                    CADASTRAR IMÓVEL
+                </li>
+            </ul>
+        </nav>
+        <div class="menu-container">
+            <label class="menu" for="menu">
+                <input type="checkbox" id="menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
         </div>
-      </div>
-    </section>
+    </div>
 
-    <div class="filtro">busca avançada</div>
-  </section>
+
+    <img src="./assets/images/imovel-1.jpg" class="home-bg" alt="">
+    <div class="bg-filter"></div>
+
+
+    <div class="filter-home">
+        <div class="filter-home-header">
+            <div>
+                <h2>Encontre o Imóvel Ideal</h2>
+                <p>Selecione os tipos de imóvel que você procura</p>
+            </div>
+            <span>busca-avançada</span>
+        </div>
+        <div class="filter-content">
+            <div class="filter-item item1">
+                <img src="./assets/icons/icon-diamond.svg" alt="Icone">
+                <p>Imóvel Vip</p>
+            </div>
+            <div class="grid-template">
+                <div class="filter-item item2">
+                    <img src="./assets/icons/icon-apartament.svg" alt="Icone">
+                    <p>Apartamentos</p>
+                </div>
+                <div class="filter-item item3">
+                    <img src="./assets/icons/icon-home.svg" alt="Icone">
+                    <p>Casas</p>
+                </div>
+                <div class="filter-item item4">
+                    <img src="./assets/icons/icon-layer.svg" alt="Icone">
+                    <p>Terrenos</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+</header>
+<section class="about-section-desktop">
+    <img src="assets/images/about-img.jpg" alt="">
+    <div class="about-content">
+        <h3>UM POUCO SOBRE NÓS</h3>
+        <h4>Sheila, Lara e Hellen</h4>
+        <p>Somos uma equipe unida pela missão de transformar sonhos em conquistas no mercado imobiliário. Com acesso a todo o mercado e ampla experiência, oferecemos um atendimento personalizado, seguro e estratégico em cada etapa da sua jornada. Da escolha do imóvel ideal à negociação e finalização do negócio, estamos ao seu lado, com profissionalismo e dedicação. Confiança não é questão de sorte, é resultado — e é isso que entregamos a cada cliente.</p>
+        <button>
+            ANUNCIE UM IMÓVEL
+            <svg width="16" height="20" viewBox="0 0 16 16" fill="none" style="vertical-align: middle;" xmlns="http://www.w3.org/2000/svg">
+                <line x1="4" y1="12" x2="12" y2="4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
+                <polyline points="7,4 12,4 12,9" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
+    </div>
+</section>
 
   <!-- Seção de Destaque -->
   <section id="destaque">

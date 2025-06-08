@@ -27,11 +27,7 @@ export function criarCard(imovel) {
     // Título
     const cardTitle = document.createElement('p');
     cardTitle.classList.add('card-tittle');
-    const spanId = document.createElement('span');
-    spanId.classList.add('card-id');
-    spanId.textContent = imovel.id;
-    cardTitle.appendChild(spanId);
-    cardTitle.append(` - ${imovel.titulo}`);
+    cardTitle.append(`${imovel.id} - ${imovel.titulo}`);
 
     // Recursos (quartos, vagas, área)
     const cardFeatures = document.createElement('div');
@@ -86,14 +82,12 @@ export function criarCard(imovel) {
     const iconValue = document.createElement('div');
     iconValue.classList.add('icon-value');
     const pValor = document.createElement('p');
-    pValor.textContent = `R$ ${formatarPreco(imovel.preco)}`;
+    pValor.textContent = `${formatarPreco(imovel.preco)}`;
     cardValue.append(iconValue, pValor);
 
     // Montando o card
     cardContent.append(cardTitle, cardFeatures, cardLocalization, cardValue);
     cardContainer.append(cardImage, cardType, cardContent);
-
-
 
     console.log(cardContainer)
     return cardContainer;

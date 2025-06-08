@@ -1,0 +1,1411 @@
+[
+  {
+    "id": "AP123",
+    "titulo": "Apartamento Moderno no Centro",
+    "tipo": "Apartamento",
+    "finalidade": "Venda",
+    "descricao": "Uma casa que une conforto, tecnologia e estilo de vida moderno. Com 250m² de área construída e 435m² de terreno, este imóvel foi projetado para quem busca o equilíbrio perfeito entre privacidade e funcionalidade.",
+    "preco": 450000,
+    "condominio": 850,
+    "andar": 12,
+    "aceitaFinanciamento": true,
+    "mobiliado": false,
+    "anoConstrucao": 2018,
+    "endereco": {
+      "bairro": "Centro",
+      "cidade": "São Paulo",
+      "estado": "SP"
+    },
+    "area": 120,
+    "areaConstruida": 100,
+    "quartos": 3,
+    "suites": 1,
+    "banheiros": 2,
+    "vagasGaragem": 2,
+    "caracteristicas": [
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família."
+    ],
+    "corretor": "Hellen",
+    "imagemPrincipal": "assets/images/imovel-10.jpg",
+    "midias": [
+      "assets/images/imovel-9.jpg",
+      "assets/images/imovel-6.jpg",
+      "assets/images/imovel-4.jpg"
+    ],
+    "videos": [
+      "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "https://www.youtube.com/watch?v=POFpepdSUug"
+    ],
+    "destaque": true,
+    "relacionados": ["AP123", "AP124"]
+  },
+  {
+    "id": "AP124",
+    "titulo": "Apartamento Moderno no Centro",
+    "tipo": "Apartamento",
+    "finalidade": "Venda",
+    "descricao": "Uma casa que une conforto, tecnologia e estilo de vida moderno. Com 250m² de área construída e 435m² de terreno, este imóvel foi projetado para quem busca o equilíbrio perfeito entre privacidade e funcionalidade.",
+    "preco": 450000,
+    "condominio": 850,
+    "andar": 12,
+    "aceitaFinanciamento": true,
+    "mobiliado": false,
+    "anoConstrucao": 2018,
+    "endereco": {
+      "bairro": "Centro",
+      "cidade": "São Paulo",
+      "estado": "SP"
+    },
+    "area": 120,
+    "areaConstruida": 100,
+    "quartos": 3,
+    "suites": 1,
+    "banheiros": 2,
+    "vagasGaragem": 2,
+    "caracteristicas": [
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família."
+    ],
+    "corretor": "Hellen",
+    "imagemPrincipal": "assets/images/imovel-5.jpg",
+    "midias": [
+      "assets/images/imovel-6.jpg",
+      "assets/images/imovel-2.jpg",
+      "assets/images/imovel-3.jpg"
+    ],
+    "videos": [
+      "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "https://www.youtube.com/watch?v=POFpepdSUug"
+    ],
+    "destaque": true,
+    "relacionados": ["AP123", "AP124"]
+  },
+  {
+    "id": "AP125",
+    "titulo": "Apartamento Moderno no Centro",
+    "tipo": "Apartamento",
+    "finalidade": "Venda",
+    "descricao": "Uma casa que une conforto, tecnologia e estilo de vida moderno. Com 250m² de área construída e 435m² de terreno, este imóvel foi projetado para quem busca o equilíbrio perfeito entre privacidade e funcionalidade.",
+    "preco": 450000,
+    "condominio": 850,
+    "andar": 12,
+    "aceitaFinanciamento": true,
+    "mobiliado": false,
+    "anoConstrucao": 2018,
+    "endereco": {
+      "bairro": "Centro",
+      "cidade": "São Paulo",
+      "estado": "SP"
+    },
+    "area": 120,
+    "areaConstruida": 100,
+    "quartos": 3,
+    "suites": 1,
+    "banheiros": 2,
+    "vagasGaragem": 2,
+    "caracteristicas": [
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família."
+    ],
+    "corretor": "Hellen",
+    "imagemPrincipal": "assets/images/imovel-2.jpg",
+    "midias": [
+      "assets/images/imovel-1.jpg",
+      "assets/images/imovel-6.jpg",
+      "assets/images/imovel-8.jpg"
+    ],
+    "videos": [
+      "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "https://www.youtube.com/watch?v=POFpepdSUug"
+    ],
+    "destaque": true,
+    "relacionados": ["AP123", "AP124"]
+  },
+  {
+    "id": "AP126",
+    "titulo": "Apartamento Moderno no Centro",
+    "tipo": "Apartamento",
+    "finalidade": "Venda",
+    "descricao": "Uma casa que une conforto, tecnologia e estilo de vida moderno. Com 250m² de área construída e 435m² de terreno, este imóvel foi projetado para quem busca o equilíbrio perfeito entre privacidade e funcionalidade.",
+    "preco": 450000,
+    "condominio": 850,
+    "andar": 12,
+    "aceitaFinanciamento": true,
+    "mobiliado": false,
+    "anoConstrucao": 2018,
+    "endereco": {
+      "bairro": "Centro",
+      "cidade": "São Paulo",
+      "estado": "SP"
+    },
+    "area": 120,
+    "areaConstruida": 100,
+    "quartos": 3,
+    "suites": 1,
+    "banheiros": 2,
+    "vagasGaragem": 2,
+    "caracteristicas": [
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família."
+    ],
+    "corretor": "Hellen",
+    "imagemPrincipal": "assets/images/imovel-7.jpg",
+    "midias": [
+      "assets/images/imovel-1.jpg",
+      "assets/images/imovel-8.jpg",
+      "assets/images/imovel-9.jpg"
+    ],
+    "videos": [
+      "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "https://www.youtube.com/watch?v=POFpepdSUug"
+    ],
+    "destaque": true,
+    "relacionados": ["AP123", "AP124"]
+  },
+  {
+    "id": "AP127",
+    "titulo": "Apartamento Moderno no Centro",
+    "tipo": "Apartamento",
+    "finalidade": "Venda",
+    "descricao": "Uma casa que une conforto, tecnologia e estilo de vida moderno. Com 250m² de área construída e 435m² de terreno, este imóvel foi projetado para quem busca o equilíbrio perfeito entre privacidade e funcionalidade.",
+    "preco": 450000,
+    "condominio": 850,
+    "andar": 12,
+    "aceitaFinanciamento": true,
+    "mobiliado": false,
+    "anoConstrucao": 2018,
+    "endereco": {
+      "bairro": "Centro",
+      "cidade": "São Paulo",
+      "estado": "SP"
+    },
+    "area": 120,
+    "areaConstruida": 100,
+    "quartos": 3,
+    "suites": 1,
+    "banheiros": 2,
+    "vagasGaragem": 2,
+    "caracteristicas": [
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família."
+    ],
+    "corretor": "Hellen",
+    "imagemPrincipal": "assets/images/imovel-4.jpg",
+    "midias": [
+      "assets/images/imovel-10.jpg",
+      "assets/images/imovel-5.jpg",
+      "assets/images/imovel-4.jpg"
+    ],
+    "videos": [
+      "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "https://www.youtube.com/watch?v=POFpepdSUug"
+    ],
+    "destaque": true,
+    "relacionados": ["AP123", "AP124"]
+  },
+  {
+    "id": "AP128",
+    "titulo": "Apartamento Moderno no Centro",
+    "tipo": "Apartamento",
+    "finalidade": "Venda",
+    "descricao": "Uma casa que une conforto, tecnologia e estilo de vida moderno. Com 250m² de área construída e 435m² de terreno, este imóvel foi projetado para quem busca o equilíbrio perfeito entre privacidade e funcionalidade.",
+    "preco": 450000,
+    "condominio": 850,
+    "andar": 12,
+    "aceitaFinanciamento": true,
+    "mobiliado": false,
+    "anoConstrucao": 2018,
+    "endereco": {
+      "bairro": "Centro",
+      "cidade": "São Paulo",
+      "estado": "SP"
+    },
+    "area": 120,
+    "areaConstruida": 100,
+    "quartos": 3,
+    "suites": 1,
+    "banheiros": 2,
+    "vagasGaragem": 2,
+    "caracteristicas": [
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família."
+    ],
+    "corretor": "Hellen",
+    "imagemPrincipal": "assets/images/imovel-5.jpg",
+    "midias": [
+      "assets/images/imovel-7.jpg",
+      "assets/images/imovel-6.jpg",
+      "assets/images/imovel-2.jpg"
+    ],
+    "videos": [
+      "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "https://www.youtube.com/watch?v=POFpepdSUug"
+    ],
+    "destaque": true,
+    "relacionados": ["AP123", "AP124"]
+  },
+  {
+    "id": "AP129",
+    "titulo": "Apartamento Moderno no Centro",
+    "tipo": "Apartamento",
+    "finalidade": "Venda",
+    "descricao": "Uma casa que une conforto, tecnologia e estilo de vida moderno. Com 250m² de área construída e 435m² de terreno, este imóvel foi projetado para quem busca o equilíbrio perfeito entre privacidade e funcionalidade.",
+    "preco": 450000,
+    "condominio": 850,
+    "andar": 12,
+    "aceitaFinanciamento": true,
+    "mobiliado": false,
+    "anoConstrucao": 2018,
+    "endereco": {
+      "bairro": "Centro",
+      "cidade": "São Paulo",
+      "estado": "SP"
+    },
+    "area": 120,
+    "areaConstruida": 100,
+    "quartos": 3,
+    "suites": 1,
+    "banheiros": 2,
+    "vagasGaragem": 2,
+    "caracteristicas": [
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família."
+    ],
+    "corretor": "Hellen",
+    "imagemPrincipal": "assets/images/imovel-1.jpg",
+    "midias": [
+      "assets/images/imovel-2.jpg",
+      "assets/images/imovel-2.jpg",
+      "assets/images/imovel-3.jpg"
+    ],
+    "videos": [
+      "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "https://www.youtube.com/watch?v=POFpepdSUug"
+    ],
+    "destaque": true,
+    "relacionados": ["AP123", "AP124"]
+  },
+  {
+    "id": "AP130",
+    "titulo": "Apartamento Moderno no Centro",
+    "tipo": "Apartamento",
+    "finalidade": "Venda",
+    "descricao": "Uma casa que une conforto, tecnologia e estilo de vida moderno. Com 250m² de área construída e 435m² de terreno, este imóvel foi projetado para quem busca o equilíbrio perfeito entre privacidade e funcionalidade.",
+    "preco": 450000,
+    "condominio": 850,
+    "andar": 12,
+    "aceitaFinanciamento": true,
+    "mobiliado": false,
+    "anoConstrucao": 2018,
+    "endereco": {
+      "bairro": "Centro",
+      "cidade": "São Paulo",
+      "estado": "SP"
+    },
+    "area": 120,
+    "areaConstruida": 100,
+    "quartos": 3,
+    "suites": 1,
+    "banheiros": 2,
+    "vagasGaragem": 2,
+    "caracteristicas": [
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família."
+    ],
+    "corretor": "Hellen",
+    "imagemPrincipal": "assets/images/imovel-1.jpg",
+    "midias": [
+      "assets/images/imovel-2.jpg",
+      "assets/images/imovel-2.jpg",
+      "assets/images/imovel-3.jpg"
+    ],
+    "videos": [
+      "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "https://www.youtube.com/watch?v=POFpepdSUug"
+    ],
+    "destaque": true,
+    "relacionados": ["AP123", "AP124"]
+  },
+    {
+    "id": "AP123",
+    "titulo": "Apartamento Moderno no Centro",
+    "tipo": "Apartamento",
+    "finalidade": "Venda",
+    "descricao": "Uma casa que une conforto, tecnologia e estilo de vida moderno. Com 250m² de área construída e 435m² de terreno, este imóvel foi projetado para quem busca o equilíbrio perfeito entre privacidade e funcionalidade.",
+    "preco": 450000,
+    "condominio": 850,
+    "andar": 12,
+    "aceitaFinanciamento": true,
+    "mobiliado": false,
+    "anoConstrucao": 2018,
+    "endereco": {
+      "bairro": "Centro",
+      "cidade": "São Paulo",
+      "estado": "SP"
+    },
+    "area": 120,
+    "areaConstruida": 100,
+    "quartos": 3,
+    "suites": 1,
+    "banheiros": 2,
+    "vagasGaragem": 2,
+    "caracteristicas": [
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família."
+    ],
+    "corretor": "Hellen",
+    "imagemPrincipal": "assets/images/imovel-10.jpg",
+    "midias": [
+      "assets/images/imovel-9.jpg",
+      "assets/images/imovel-6.jpg",
+      "assets/images/imovel-4.jpg"
+    ],
+    "videos": [
+      "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "https://www.youtube.com/watch?v=POFpepdSUug"
+    ],
+    "destaque": true,
+    "relacionados": ["AP123", "AP124"]
+  },
+  {
+    "id": "AP124",
+    "titulo": "Apartamento Moderno no Centro",
+    "tipo": "Apartamento",
+    "finalidade": "Venda",
+    "descricao": "Uma casa que une conforto, tecnologia e estilo de vida moderno. Com 250m² de área construída e 435m² de terreno, este imóvel foi projetado para quem busca o equilíbrio perfeito entre privacidade e funcionalidade.",
+    "preco": 450000,
+    "condominio": 850,
+    "andar": 12,
+    "aceitaFinanciamento": true,
+    "mobiliado": false,
+    "anoConstrucao": 2018,
+    "endereco": {
+      "bairro": "Centro",
+      "cidade": "São Paulo",
+      "estado": "SP"
+    },
+    "area": 120,
+    "areaConstruida": 100,
+    "quartos": 3,
+    "suites": 1,
+    "banheiros": 2,
+    "vagasGaragem": 2,
+    "caracteristicas": [
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família."
+    ],
+    "corretor": "Hellen",
+    "imagemPrincipal": "assets/images/imovel-5.jpg",
+    "midias": [
+      "assets/images/imovel-6.jpg",
+      "assets/images/imovel-2.jpg",
+      "assets/images/imovel-3.jpg"
+    ],
+    "videos": [
+      "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "https://www.youtube.com/watch?v=POFpepdSUug"
+    ],
+    "destaque": true,
+    "relacionados": ["AP123", "AP124"]
+  },
+  {
+    "id": "AP125",
+    "titulo": "Apartamento Moderno no Centro",
+    "tipo": "Apartamento",
+    "finalidade": "Venda",
+    "descricao": "Uma casa que une conforto, tecnologia e estilo de vida moderno. Com 250m² de área construída e 435m² de terreno, este imóvel foi projetado para quem busca o equilíbrio perfeito entre privacidade e funcionalidade.",
+    "preco": 450000,
+    "condominio": 850,
+    "andar": 12,
+    "aceitaFinanciamento": true,
+    "mobiliado": false,
+    "anoConstrucao": 2018,
+    "endereco": {
+      "bairro": "Centro",
+      "cidade": "São Paulo",
+      "estado": "SP"
+    },
+    "area": 120,
+    "areaConstruida": 100,
+    "quartos": 3,
+    "suites": 1,
+    "banheiros": 2,
+    "vagasGaragem": 2,
+    "caracteristicas": [
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família."
+    ],
+    "corretor": "Hellen",
+    "imagemPrincipal": "assets/images/imovel-2.jpg",
+    "midias": [
+      "assets/images/imovel-1.jpg",
+      "assets/images/imovel-6.jpg",
+      "assets/images/imovel-8.jpg"
+    ],
+    "videos": [
+      "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "https://www.youtube.com/watch?v=POFpepdSUug"
+    ],
+    "destaque": true,
+    "relacionados": ["AP123", "AP124"]
+  },
+  {
+    "id": "AP126",
+    "titulo": "Apartamento Moderno no Centro",
+    "tipo": "Apartamento",
+    "finalidade": "Venda",
+    "descricao": "Uma casa que une conforto, tecnologia e estilo de vida moderno. Com 250m² de área construída e 435m² de terreno, este imóvel foi projetado para quem busca o equilíbrio perfeito entre privacidade e funcionalidade.",
+    "preco": 450000,
+    "condominio": 850,
+    "andar": 12,
+    "aceitaFinanciamento": true,
+    "mobiliado": false,
+    "anoConstrucao": 2018,
+    "endereco": {
+      "bairro": "Centro",
+      "cidade": "São Paulo",
+      "estado": "SP"
+    },
+    "area": 120,
+    "areaConstruida": 100,
+    "quartos": 3,
+    "suites": 1,
+    "banheiros": 2,
+    "vagasGaragem": 2,
+    "caracteristicas": [
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família."
+    ],
+    "corretor": "Hellen",
+    "imagemPrincipal": "assets/images/imovel-7.jpg",
+    "midias": [
+      "assets/images/imovel-1.jpg",
+      "assets/images/imovel-8.jpg",
+      "assets/images/imovel-9.jpg"
+    ],
+    "videos": [
+      "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "https://www.youtube.com/watch?v=POFpepdSUug"
+    ],
+    "destaque": true,
+    "relacionados": ["AP123", "AP124"]
+  },
+  {
+    "id": "AP127",
+    "titulo": "Apartamento Moderno no Centro",
+    "tipo": "Apartamento",
+    "finalidade": "Venda",
+    "descricao": "Uma casa que une conforto, tecnologia e estilo de vida moderno. Com 250m² de área construída e 435m² de terreno, este imóvel foi projetado para quem busca o equilíbrio perfeito entre privacidade e funcionalidade.",
+    "preco": 450000,
+    "condominio": 850,
+    "andar": 12,
+    "aceitaFinanciamento": true,
+    "mobiliado": false,
+    "anoConstrucao": 2018,
+    "endereco": {
+      "bairro": "Centro",
+      "cidade": "São Paulo",
+      "estado": "SP"
+    },
+    "area": 120,
+    "areaConstruida": 100,
+    "quartos": 3,
+    "suites": 1,
+    "banheiros": 2,
+    "vagasGaragem": 2,
+    "caracteristicas": [
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família."
+    ],
+    "corretor": "Hellen",
+    "imagemPrincipal": "assets/images/imovel-4.jpg",
+    "midias": [
+      "assets/images/imovel-10.jpg",
+      "assets/images/imovel-5.jpg",
+      "assets/images/imovel-4.jpg"
+    ],
+    "videos": [
+      "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "https://www.youtube.com/watch?v=POFpepdSUug"
+    ],
+    "destaque": true,
+    "relacionados": ["AP123", "AP124"]
+  },
+  {
+    "id": "AP128",
+    "titulo": "Apartamento Moderno no Centro",
+    "tipo": "Apartamento",
+    "finalidade": "Venda",
+    "descricao": "Uma casa que une conforto, tecnologia e estilo de vida moderno. Com 250m² de área construída e 435m² de terreno, este imóvel foi projetado para quem busca o equilíbrio perfeito entre privacidade e funcionalidade.",
+    "preco": 450000,
+    "condominio": 850,
+    "andar": 12,
+    "aceitaFinanciamento": true,
+    "mobiliado": false,
+    "anoConstrucao": 2018,
+    "endereco": {
+      "bairro": "Centro",
+      "cidade": "São Paulo",
+      "estado": "SP"
+    },
+    "area": 120,
+    "areaConstruida": 100,
+    "quartos": 3,
+    "suites": 1,
+    "banheiros": 2,
+    "vagasGaragem": 2,
+    "caracteristicas": [
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família."
+    ],
+    "corretor": "Hellen",
+    "imagemPrincipal": "assets/images/imovel-5.jpg",
+    "midias": [
+      "assets/images/imovel-7.jpg",
+      "assets/images/imovel-6.jpg",
+      "assets/images/imovel-2.jpg"
+    ],
+    "videos": [
+      "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "https://www.youtube.com/watch?v=POFpepdSUug"
+    ],
+    "destaque": true,
+    "relacionados": ["AP123", "AP124"]
+  },
+  {
+    "id": "AP129",
+    "titulo": "Apartamento Moderno no Centro",
+    "tipo": "Apartamento",
+    "finalidade": "Venda",
+    "descricao": "Uma casa que une conforto, tecnologia e estilo de vida moderno. Com 250m² de área construída e 435m² de terreno, este imóvel foi projetado para quem busca o equilíbrio perfeito entre privacidade e funcionalidade.",
+    "preco": 450000,
+    "condominio": 850,
+    "andar": 12,
+    "aceitaFinanciamento": true,
+    "mobiliado": false,
+    "anoConstrucao": 2018,
+    "endereco": {
+      "bairro": "Centro",
+      "cidade": "São Paulo",
+      "estado": "SP"
+    },
+    "area": 120,
+    "areaConstruida": 100,
+    "quartos": 3,
+    "suites": 1,
+    "banheiros": 2,
+    "vagasGaragem": 2,
+    "caracteristicas": [
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família."
+    ],
+    "corretor": "Hellen",
+    "imagemPrincipal": "assets/images/imovel-1.jpg",
+    "midias": [
+      "assets/images/imovel-2.jpg",
+      "assets/images/imovel-2.jpg",
+      "assets/images/imovel-3.jpg"
+    ],
+    "videos": [
+      "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "https://www.youtube.com/watch?v=POFpepdSUug"
+    ],
+    "destaque": true,
+    "relacionados": ["AP123", "AP124"]
+  },
+  {
+    "id": "AP130",
+    "titulo": "Apartamento Moderno no Centro",
+    "tipo": "Apartamento",
+    "finalidade": "Venda",
+    "descricao": "Uma casa que une conforto, tecnologia e estilo de vida moderno. Com 250m² de área construída e 435m² de terreno, este imóvel foi projetado para quem busca o equilíbrio perfeito entre privacidade e funcionalidade.",
+    "preco": 450000,
+    "condominio": 850,
+    "andar": 12,
+    "aceitaFinanciamento": true,
+    "mobiliado": false,
+    "anoConstrucao": 2018,
+    "endereco": {
+      "bairro": "Centro",
+      "cidade": "São Paulo",
+      "estado": "SP"
+    },
+    "area": 120,
+    "areaConstruida": 100,
+    "quartos": 3,
+    "suites": 1,
+    "banheiros": 2,
+    "vagasGaragem": 2,
+    "caracteristicas": [
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família."
+    ],
+    "corretor": "Hellen",
+    "imagemPrincipal": "assets/images/imovel-1.jpg",
+    "midias": [
+      "assets/images/imovel-2.jpg",
+      "assets/images/imovel-2.jpg",
+      "assets/images/imovel-3.jpg"
+    ],
+    "videos": [
+      "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "https://www.youtube.com/watch?v=POFpepdSUug"
+    ],
+    "destaque": true,
+    "relacionados": ["AP123", "AP124"]
+  },
+    {
+    "id": "AP123",
+    "titulo": "Apartamento Moderno no Centro",
+    "tipo": "Apartamento",
+    "finalidade": "Venda",
+    "descricao": "Uma casa que une conforto, tecnologia e estilo de vida moderno. Com 250m² de área construída e 435m² de terreno, este imóvel foi projetado para quem busca o equilíbrio perfeito entre privacidade e funcionalidade.",
+    "preco": 450000,
+    "condominio": 850,
+    "andar": 12,
+    "aceitaFinanciamento": true,
+    "mobiliado": false,
+    "anoConstrucao": 2018,
+    "endereco": {
+      "bairro": "Centro",
+      "cidade": "São Paulo",
+      "estado": "SP"
+    },
+    "area": 120,
+    "areaConstruida": 100,
+    "quartos": 3,
+    "suites": 1,
+    "banheiros": 2,
+    "vagasGaragem": 2,
+    "caracteristicas": [
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família."
+    ],
+    "corretor": "Hellen",
+    "imagemPrincipal": "assets/images/imovel-10.jpg",
+    "midias": [
+      "assets/images/imovel-9.jpg",
+      "assets/images/imovel-6.jpg",
+      "assets/images/imovel-4.jpg"
+    ],
+    "videos": [
+      "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "https://www.youtube.com/watch?v=POFpepdSUug"
+    ],
+    "destaque": true,
+    "relacionados": ["AP123", "AP124"]
+  },
+  {
+    "id": "AP124",
+    "titulo": "Apartamento Moderno no Centro",
+    "tipo": "Apartamento",
+    "finalidade": "Venda",
+    "descricao": "Uma casa que une conforto, tecnologia e estilo de vida moderno. Com 250m² de área construída e 435m² de terreno, este imóvel foi projetado para quem busca o equilíbrio perfeito entre privacidade e funcionalidade.",
+    "preco": 450000,
+    "condominio": 850,
+    "andar": 12,
+    "aceitaFinanciamento": true,
+    "mobiliado": false,
+    "anoConstrucao": 2018,
+    "endereco": {
+      "bairro": "Centro",
+      "cidade": "São Paulo",
+      "estado": "SP"
+    },
+    "area": 120,
+    "areaConstruida": 100,
+    "quartos": 3,
+    "suites": 1,
+    "banheiros": 2,
+    "vagasGaragem": 2,
+    "caracteristicas": [
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família."
+    ],
+    "corretor": "Hellen",
+    "imagemPrincipal": "assets/images/imovel-5.jpg",
+    "midias": [
+      "assets/images/imovel-6.jpg",
+      "assets/images/imovel-2.jpg",
+      "assets/images/imovel-3.jpg"
+    ],
+    "videos": [
+      "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "https://www.youtube.com/watch?v=POFpepdSUug"
+    ],
+    "destaque": true,
+    "relacionados": ["AP123", "AP124"]
+  },
+  {
+    "id": "AP125",
+    "titulo": "Apartamento Moderno no Centro",
+    "tipo": "Apartamento",
+    "finalidade": "Venda",
+    "descricao": "Uma casa que une conforto, tecnologia e estilo de vida moderno. Com 250m² de área construída e 435m² de terreno, este imóvel foi projetado para quem busca o equilíbrio perfeito entre privacidade e funcionalidade.",
+    "preco": 450000,
+    "condominio": 850,
+    "andar": 12,
+    "aceitaFinanciamento": true,
+    "mobiliado": false,
+    "anoConstrucao": 2018,
+    "endereco": {
+      "bairro": "Centro",
+      "cidade": "São Paulo",
+      "estado": "SP"
+    },
+    "area": 120,
+    "areaConstruida": 100,
+    "quartos": 3,
+    "suites": 1,
+    "banheiros": 2,
+    "vagasGaragem": 2,
+    "caracteristicas": [
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família."
+    ],
+    "corretor": "Hellen",
+    "imagemPrincipal": "assets/images/imovel-2.jpg",
+    "midias": [
+      "assets/images/imovel-1.jpg",
+      "assets/images/imovel-6.jpg",
+      "assets/images/imovel-8.jpg"
+    ],
+    "videos": [
+      "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "https://www.youtube.com/watch?v=POFpepdSUug"
+    ],
+    "destaque": true,
+    "relacionados": ["AP123", "AP124"]
+  },
+  {
+    "id": "AP126",
+    "titulo": "Apartamento Moderno no Centro",
+    "tipo": "Apartamento",
+    "finalidade": "Venda",
+    "descricao": "Uma casa que une conforto, tecnologia e estilo de vida moderno. Com 250m² de área construída e 435m² de terreno, este imóvel foi projetado para quem busca o equilíbrio perfeito entre privacidade e funcionalidade.",
+    "preco": 450000,
+    "condominio": 850,
+    "andar": 12,
+    "aceitaFinanciamento": true,
+    "mobiliado": false,
+    "anoConstrucao": 2018,
+    "endereco": {
+      "bairro": "Centro",
+      "cidade": "São Paulo",
+      "estado": "SP"
+    },
+    "area": 120,
+    "areaConstruida": 100,
+    "quartos": 3,
+    "suites": 1,
+    "banheiros": 2,
+    "vagasGaragem": 2,
+    "caracteristicas": [
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família."
+    ],
+    "corretor": "Hellen",
+    "imagemPrincipal": "assets/images/imovel-7.jpg",
+    "midias": [
+      "assets/images/imovel-1.jpg",
+      "assets/images/imovel-8.jpg",
+      "assets/images/imovel-9.jpg"
+    ],
+    "videos": [
+      "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "https://www.youtube.com/watch?v=POFpepdSUug"
+    ],
+    "destaque": true,
+    "relacionados": ["AP123", "AP124"]
+  },
+  {
+    "id": "AP127",
+    "titulo": "Apartamento Moderno no Centro",
+    "tipo": "Apartamento",
+    "finalidade": "Venda",
+    "descricao": "Uma casa que une conforto, tecnologia e estilo de vida moderno. Com 250m² de área construída e 435m² de terreno, este imóvel foi projetado para quem busca o equilíbrio perfeito entre privacidade e funcionalidade.",
+    "preco": 450000,
+    "condominio": 850,
+    "andar": 12,
+    "aceitaFinanciamento": true,
+    "mobiliado": false,
+    "anoConstrucao": 2018,
+    "endereco": {
+      "bairro": "Centro",
+      "cidade": "São Paulo",
+      "estado": "SP"
+    },
+    "area": 120,
+    "areaConstruida": 100,
+    "quartos": 3,
+    "suites": 1,
+    "banheiros": 2,
+    "vagasGaragem": 2,
+    "caracteristicas": [
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família."
+    ],
+    "corretor": "Hellen",
+    "imagemPrincipal": "assets/images/imovel-4.jpg",
+    "midias": [
+      "assets/images/imovel-10.jpg",
+      "assets/images/imovel-5.jpg",
+      "assets/images/imovel-4.jpg"
+    ],
+    "videos": [
+      "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "https://www.youtube.com/watch?v=POFpepdSUug"
+    ],
+    "destaque": true,
+    "relacionados": ["AP123", "AP124"]
+  },
+  {
+    "id": "AP128",
+    "titulo": "Apartamento Moderno no Centro",
+    "tipo": "Apartamento",
+    "finalidade": "Venda",
+    "descricao": "Uma casa que une conforto, tecnologia e estilo de vida moderno. Com 250m² de área construída e 435m² de terreno, este imóvel foi projetado para quem busca o equilíbrio perfeito entre privacidade e funcionalidade.",
+    "preco": 450000,
+    "condominio": 850,
+    "andar": 12,
+    "aceitaFinanciamento": true,
+    "mobiliado": false,
+    "anoConstrucao": 2018,
+    "endereco": {
+      "bairro": "Centro",
+      "cidade": "São Paulo",
+      "estado": "SP"
+    },
+    "area": 120,
+    "areaConstruida": 100,
+    "quartos": 3,
+    "suites": 1,
+    "banheiros": 2,
+    "vagasGaragem": 2,
+    "caracteristicas": [
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família."
+    ],
+    "corretor": "Hellen",
+    "imagemPrincipal": "assets/images/imovel-5.jpg",
+    "midias": [
+      "assets/images/imovel-7.jpg",
+      "assets/images/imovel-6.jpg",
+      "assets/images/imovel-2.jpg"
+    ],
+    "videos": [
+      "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "https://www.youtube.com/watch?v=POFpepdSUug"
+    ],
+    "destaque": true,
+    "relacionados": ["AP123", "AP124"]
+  },
+  {
+    "id": "AP129",
+    "titulo": "Apartamento Moderno no Centro",
+    "tipo": "Apartamento",
+    "finalidade": "Venda",
+    "descricao": "Uma casa que une conforto, tecnologia e estilo de vida moderno. Com 250m² de área construída e 435m² de terreno, este imóvel foi projetado para quem busca o equilíbrio perfeito entre privacidade e funcionalidade.",
+    "preco": 450000,
+    "condominio": 850,
+    "andar": 12,
+    "aceitaFinanciamento": true,
+    "mobiliado": false,
+    "anoConstrucao": 2018,
+    "endereco": {
+      "bairro": "Centro",
+      "cidade": "São Paulo",
+      "estado": "SP"
+    },
+    "area": 120,
+    "areaConstruida": 100,
+    "quartos": 3,
+    "suites": 1,
+    "banheiros": 2,
+    "vagasGaragem": 2,
+    "caracteristicas": [
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família."
+    ],
+    "corretor": "Hellen",
+    "imagemPrincipal": "assets/images/imovel-1.jpg",
+    "midias": [
+      "assets/images/imovel-2.jpg",
+      "assets/images/imovel-2.jpg",
+      "assets/images/imovel-3.jpg"
+    ],
+    "videos": [
+      "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "https://www.youtube.com/watch?v=POFpepdSUug"
+    ],
+    "destaque": true,
+    "relacionados": ["AP123", "AP124"]
+  },
+  {
+    "id": "AP130",
+    "titulo": "Apartamento Moderno no Centro",
+    "tipo": "Apartamento",
+    "finalidade": "Venda",
+    "descricao": "Uma casa que une conforto, tecnologia e estilo de vida moderno. Com 250m² de área construída e 435m² de terreno, este imóvel foi projetado para quem busca o equilíbrio perfeito entre privacidade e funcionalidade.",
+    "preco": 450000,
+    "condominio": 850,
+    "andar": 12,
+    "aceitaFinanciamento": true,
+    "mobiliado": false,
+    "anoConstrucao": 2018,
+    "endereco": {
+      "bairro": "Centro",
+      "cidade": "São Paulo",
+      "estado": "SP"
+    },
+    "area": 120,
+    "areaConstruida": 100,
+    "quartos": 3,
+    "suites": 1,
+    "banheiros": 2,
+    "vagasGaragem": 2,
+    "caracteristicas": [
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família."
+    ],
+    "corretor": "Hellen",
+    "imagemPrincipal": "assets/images/imovel-1.jpg",
+    "midias": [
+      "assets/images/imovel-2.jpg",
+      "assets/images/imovel-2.jpg",
+      "assets/images/imovel-3.jpg"
+    ],
+    "videos": [
+      "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "https://www.youtube.com/watch?v=POFpepdSUug"
+    ],
+    "destaque": true,
+    "relacionados": ["AP123", "AP124"]
+  },
+    {
+    "id": "AP123",
+    "titulo": "Apartamento Moderno no Centro",
+    "tipo": "Apartamento",
+    "finalidade": "Venda",
+    "descricao": "Uma casa que une conforto, tecnologia e estilo de vida moderno. Com 250m² de área construída e 435m² de terreno, este imóvel foi projetado para quem busca o equilíbrio perfeito entre privacidade e funcionalidade.",
+    "preco": 450000,
+    "condominio": 850,
+    "andar": 12,
+    "aceitaFinanciamento": true,
+    "mobiliado": false,
+    "anoConstrucao": 2018,
+    "endereco": {
+      "bairro": "Centro",
+      "cidade": "São Paulo",
+      "estado": "SP"
+    },
+    "area": 120,
+    "areaConstruida": 100,
+    "quartos": 3,
+    "suites": 1,
+    "banheiros": 2,
+    "vagasGaragem": 2,
+    "caracteristicas": [
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família."
+    ],
+    "corretor": "Hellen",
+    "imagemPrincipal": "assets/images/imovel-10.jpg",
+    "midias": [
+      "assets/images/imovel-9.jpg",
+      "assets/images/imovel-6.jpg",
+      "assets/images/imovel-4.jpg"
+    ],
+    "videos": [
+      "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "https://www.youtube.com/watch?v=POFpepdSUug"
+    ],
+    "destaque": true,
+    "relacionados": ["AP123", "AP124"]
+  },
+  {
+    "id": "AP124",
+    "titulo": "Apartamento Moderno no Centro",
+    "tipo": "Apartamento",
+    "finalidade": "Venda",
+    "descricao": "Uma casa que une conforto, tecnologia e estilo de vida moderno. Com 250m² de área construída e 435m² de terreno, este imóvel foi projetado para quem busca o equilíbrio perfeito entre privacidade e funcionalidade.",
+    "preco": 450000,
+    "condominio": 850,
+    "andar": 12,
+    "aceitaFinanciamento": true,
+    "mobiliado": false,
+    "anoConstrucao": 2018,
+    "endereco": {
+      "bairro": "Centro",
+      "cidade": "São Paulo",
+      "estado": "SP"
+    },
+    "area": 120,
+    "areaConstruida": 100,
+    "quartos": 3,
+    "suites": 1,
+    "banheiros": 2,
+    "vagasGaragem": 2,
+    "caracteristicas": [
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família."
+    ],
+    "corretor": "Hellen",
+    "imagemPrincipal": "assets/images/imovel-5.jpg",
+    "midias": [
+      "assets/images/imovel-6.jpg",
+      "assets/images/imovel-2.jpg",
+      "assets/images/imovel-3.jpg"
+    ],
+    "videos": [
+      "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "https://www.youtube.com/watch?v=POFpepdSUug"
+    ],
+    "destaque": true,
+    "relacionados": ["AP123", "AP124"]
+  },
+  {
+    "id": "AP125",
+    "titulo": "Apartamento Moderno no Centro",
+    "tipo": "Apartamento",
+    "finalidade": "Venda",
+    "descricao": "Uma casa que une conforto, tecnologia e estilo de vida moderno. Com 250m² de área construída e 435m² de terreno, este imóvel foi projetado para quem busca o equilíbrio perfeito entre privacidade e funcionalidade.",
+    "preco": 450000,
+    "condominio": 850,
+    "andar": 12,
+    "aceitaFinanciamento": true,
+    "mobiliado": false,
+    "anoConstrucao": 2018,
+    "endereco": {
+      "bairro": "Centro",
+      "cidade": "São Paulo",
+      "estado": "SP"
+    },
+    "area": 120,
+    "areaConstruida": 100,
+    "quartos": 3,
+    "suites": 1,
+    "banheiros": 2,
+    "vagasGaragem": 2,
+    "caracteristicas": [
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família."
+    ],
+    "corretor": "Hellen",
+    "imagemPrincipal": "assets/images/imovel-2.jpg",
+    "midias": [
+      "assets/images/imovel-1.jpg",
+      "assets/images/imovel-6.jpg",
+      "assets/images/imovel-8.jpg"
+    ],
+    "videos": [
+      "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "https://www.youtube.com/watch?v=POFpepdSUug"
+    ],
+    "destaque": true,
+    "relacionados": ["AP123", "AP124"]
+  },
+  {
+    "id": "AP126",
+    "titulo": "Apartamento Moderno no Centro",
+    "tipo": "Apartamento",
+    "finalidade": "Venda",
+    "descricao": "Uma casa que une conforto, tecnologia e estilo de vida moderno. Com 250m² de área construída e 435m² de terreno, este imóvel foi projetado para quem busca o equilíbrio perfeito entre privacidade e funcionalidade.",
+    "preco": 450000,
+    "condominio": 850,
+    "andar": 12,
+    "aceitaFinanciamento": true,
+    "mobiliado": false,
+    "anoConstrucao": 2018,
+    "endereco": {
+      "bairro": "Centro",
+      "cidade": "São Paulo",
+      "estado": "SP"
+    },
+    "area": 120,
+    "areaConstruida": 100,
+    "quartos": 3,
+    "suites": 1,
+    "banheiros": 2,
+    "vagasGaragem": 2,
+    "caracteristicas": [
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família."
+    ],
+    "corretor": "Hellen",
+    "imagemPrincipal": "assets/images/imovel-7.jpg",
+    "midias": [
+      "assets/images/imovel-1.jpg",
+      "assets/images/imovel-8.jpg",
+      "assets/images/imovel-9.jpg"
+    ],
+    "videos": [
+      "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "https://www.youtube.com/watch?v=POFpepdSUug"
+    ],
+    "destaque": true,
+    "relacionados": ["AP123", "AP124"]
+  },
+  {
+    "id": "AP127",
+    "titulo": "Apartamento Moderno no Centro",
+    "tipo": "Apartamento",
+    "finalidade": "Venda",
+    "descricao": "Uma casa que une conforto, tecnologia e estilo de vida moderno. Com 250m² de área construída e 435m² de terreno, este imóvel foi projetado para quem busca o equilíbrio perfeito entre privacidade e funcionalidade.",
+    "preco": 450000,
+    "condominio": 850,
+    "andar": 12,
+    "aceitaFinanciamento": true,
+    "mobiliado": false,
+    "anoConstrucao": 2018,
+    "endereco": {
+      "bairro": "Centro",
+      "cidade": "São Paulo",
+      "estado": "SP"
+    },
+    "area": 120,
+    "areaConstruida": 100,
+    "quartos": 3,
+    "suites": 1,
+    "banheiros": 2,
+    "vagasGaragem": 2,
+    "caracteristicas": [
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família."
+    ],
+    "corretor": "Hellen",
+    "imagemPrincipal": "assets/images/imovel-4.jpg",
+    "midias": [
+      "assets/images/imovel-10.jpg",
+      "assets/images/imovel-5.jpg",
+      "assets/images/imovel-4.jpg"
+    ],
+    "videos": [
+      "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "https://www.youtube.com/watch?v=POFpepdSUug"
+    ],
+    "destaque": true,
+    "relacionados": ["AP123", "AP124"]
+  },
+  {
+    "id": "AP128",
+    "titulo": "Apartamento Moderno no Centro",
+    "tipo": "Apartamento",
+    "finalidade": "Venda",
+    "descricao": "Uma casa que une conforto, tecnologia e estilo de vida moderno. Com 250m² de área construída e 435m² de terreno, este imóvel foi projetado para quem busca o equilíbrio perfeito entre privacidade e funcionalidade.",
+    "preco": 450000,
+    "condominio": 850,
+    "andar": 12,
+    "aceitaFinanciamento": true,
+    "mobiliado": false,
+    "anoConstrucao": 2018,
+    "endereco": {
+      "bairro": "Centro",
+      "cidade": "São Paulo",
+      "estado": "SP"
+    },
+    "area": 120,
+    "areaConstruida": 100,
+    "quartos": 3,
+    "suites": 1,
+    "banheiros": 2,
+    "vagasGaragem": 2,
+    "caracteristicas": [
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família."
+    ],
+    "corretor": "Hellen",
+    "imagemPrincipal": "assets/images/imovel-5.jpg",
+    "midias": [
+      "assets/images/imovel-7.jpg",
+      "assets/images/imovel-6.jpg",
+      "assets/images/imovel-2.jpg"
+    ],
+    "videos": [
+      "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "https://www.youtube.com/watch?v=POFpepdSUug"
+    ],
+    "destaque": true,
+    "relacionados": ["AP123", "AP124"]
+  },
+  {
+    "id": "AP129",
+    "titulo": "Apartamento Moderno no Centro",
+    "tipo": "Apartamento",
+    "finalidade": "Venda",
+    "descricao": "Uma casa que une conforto, tecnologia e estilo de vida moderno. Com 250m² de área construída e 435m² de terreno, este imóvel foi projetado para quem busca o equilíbrio perfeito entre privacidade e funcionalidade.",
+    "preco": 450000,
+    "condominio": 850,
+    "andar": 12,
+    "aceitaFinanciamento": true,
+    "mobiliado": false,
+    "anoConstrucao": 2018,
+    "endereco": {
+      "bairro": "Centro",
+      "cidade": "São Paulo",
+      "estado": "SP"
+    },
+    "area": 120,
+    "areaConstruida": 100,
+    "quartos": 3,
+    "suites": 1,
+    "banheiros": 2,
+    "vagasGaragem": 2,
+    "caracteristicas": [
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família."
+    ],
+    "corretor": "Hellen",
+    "imagemPrincipal": "assets/images/imovel-1.jpg",
+    "midias": [
+      "assets/images/imovel-2.jpg",
+      "assets/images/imovel-2.jpg",
+      "assets/images/imovel-3.jpg"
+    ],
+    "videos": [
+      "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "https://www.youtube.com/watch?v=POFpepdSUug"
+    ],
+    "destaque": true,
+    "relacionados": ["AP123", "AP124"]
+  },
+  {
+    "id": "AP130",
+    "titulo": "Apartamento Moderno no Centro",
+    "tipo": "Apartamento",
+    "finalidade": "Venda",
+    "descricao": "Uma casa que une conforto, tecnologia e estilo de vida moderno. Com 250m² de área construída e 435m² de terreno, este imóvel foi projetado para quem busca o equilíbrio perfeito entre privacidade e funcionalidade.",
+    "preco": 450000,
+    "condominio": 850,
+    "andar": 12,
+    "aceitaFinanciamento": true,
+    "mobiliado": false,
+    "anoConstrucao": 2018,
+    "endereco": {
+      "bairro": "Centro",
+      "cidade": "São Paulo",
+      "estado": "SP"
+    },
+    "area": 120,
+    "areaConstruida": 100,
+    "quartos": 3,
+    "suites": 1,
+    "banheiros": 2,
+    "vagasGaragem": 2,
+    "caracteristicas": [
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família.",
+      "03 suítes espaçosas conforto e privacidade para toda a família."
+    ],
+    "corretor": "Hellen",
+    "imagemPrincipal": "assets/images/imovel-1.jpg",
+    "midias": [
+      "assets/images/imovel-2.jpg",
+      "assets/images/imovel-2.jpg",
+      "assets/images/imovel-3.jpg"
+    ],
+    "videos": [
+      "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "https://www.youtube.com/watch?v=POFpepdSUug"
+    ],
+    "destaque": true,
+    "relacionados": ["AP123", "AP124"]
+  }
+  
+  ]

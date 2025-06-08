@@ -1,68 +1,162 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="styles/destaque.css">
-    <link rel="stylesheet" href="styles/catalogo.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Catálogo de Imóveis</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100..900&family=Montserrat:wght@100..900&family=Cormorant+Upright:wght@600&family=Dosis:wght@600&display=swap"
+    rel="stylesheet">
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="styles/styles.css">
+
+  <!-- Swiper (slider) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
-    <section id="destaque">
-        <div class="destaque_titulo">
-            <h1>Imóveis em destaque</h1>
-            <p>Conheça algumas das melhores oportunidades de negócios de imóveis de Patos de Minas.</p>
+
+  <!-- Topo / Navegação -->
+  <nav class="navbar">
+    <div class="title">
+      <p class="title-text">Catálogo de Imóveis</p>
+      <span class="title-subtext">Cuidado e Exclusividade</span>
+    </div>
+    <div class="navsand">
+      <img src="assets/icons/sandmenu.svg" class="iconsand" alt="">
+    </div>
+  </nav>
+
+  <!-- Seção Inicial -->
+  <section class="body">
+    <div class="body-img"><img src="assets/images/casa.jpg" alt="" class="body-img-config"></div>
+    <div class="imovel-ideal">
+      <p class="imovel-ideal-text">Encontre o Imóvel Ideal</p>
+      <span class="imovel-ideal-subtext">Selecione os tipos de Imóveis que você procura.</span>
+    </div>
+
+    <!-- Cards de tipos -->
+    <section class="cards">
+      <div class="containercards">
+        <div class="vip">
+          <img src="assets/icons/diamondicon.svg" alt="" class="diamondicon">
+          Imóveis Vip
         </div>
-        <div class="destaque_buttons">
-            <div class="setae"><img src="assets/images/setae.svg"></div>
-            <div class="setad"><img src="assets/images/setad.svg"></div>
+        <div class="coontainercards2">
+          <div class="card_menu">
+            <img src="assets/icons/apartmenticon.svg" alt="" class="apartmenticon">
+            Apartamentos 
+          </div>
+          <div class="card_menu">
+            <img src="assets/icons/houseicon.svg" alt="" class="houseicon">
+            Casas
+          </div>
+          <div class="card_menu">
+            <img src="assets/icons/layersicon.svg" alt="" class="layersicon">
+            Terrenos 
+          </div>
         </div>
-        <div class="destaque_imoveis">
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">1</div>
-                    <div class="swiper-slide">2</div>
-                    <div class="swiper-slide">3</div>
-                    <div class="swiper-slide">4</div>
-                    <div class="swiper-slide">5</div>
-                    <div class="swiper-slide">6</div>
-                    <div class="swiper-slide">7</div>
-                    <div class="swiper-slide">8</div>
-                    <div class="swiper-slide">9</div>
-                    <div class="swiper-slide">10</div>
-                </div>
-            </div>
-        </div>
+      </div>
     </section>
-    <section id="catalogo">
-        <div class="catalogo_titulo">
-            <h1>Catálogo de Imóveis</h1>
+
+    <div class="filtro">busca avançada</div>
+  </section>
+
+  <!-- Seção de Destaque -->
+  <section id="destaque">
+    <div class="destaque_titulo">
+      <h1>Imóveis em destaque</h1>
+      <p>Conheça algumas das melhores oportunidades de negócios de imóveis de Patos de Minas.</p>
+    </div>
+    <div class="destaque_buttons">
+      <div class="setae"><img src="assets/images/setae.svg"></div>
+      <div class="setad"><img src="assets/images/setad.svg"></div>
+    </div>
+    <div class="destaque_imoveis">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper" id="destaques">
+          <!-- os slides dos imóveis serão inseridos aqui via JS -->
         </div>
-        <div class="card_imoveis">
-            <div class="card">1</div>
-            <div class="card">2</div>
-            <div class="card">3</div>
-            <div class="card">4</div>
-            <div class="card">5</div>
-            <div class="card">6</div>
-            <div class="card">7</div>
-            <div class="card">8</div>
-            <div class="card">9</div>
-            <div class="card">10</div>
-            <div class="card">11</div>
-            <div class="card">12</div>
-            <div class="card">13</div>
-            <div class="card">14</div>
-            <div class="card">15</div>
-        </div>
-        <div class="verMais">
-            <button id="verMaisBtn">VER MAIS</button>
-        </div>
-    </section>
+      </div>
+    </div>
+  </section>
+
+  <!-- Catálogo -->
+  <section id="catalogo">
+    <div class="catalogo_titulo">
+      <h1>Catálogo de Imóveis</h1>
+    </div>
+    <div class="card_imoveis">
+      <!-- os cards serão inseridos aqui via JS -->
+    </div>
+    <div class="verMais">
+      <button id="verMaisBtn">VER MAIS</button>
+    </div>
+  </section>
+
+  <!-- Depoimentos -->
+  <section class="testimonial-section">
+    <h2>Depoimentos</h2>
+    <p class="subtitle">O QUE AS PESSOAS DIZEM</p>
+    <div class="testimonial-card">
+      <p class="quote">
+        “Tive o prazer de ser atendida pela Sheila e só tenho a agradecer pelo excelente atendimento...”
+      </p>
+      <div class="person">
+        <img src="assets/images/girl.png" alt="">
+        <span>Cliente</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="stats">
+      <div>
+        <h3>+ de</h3>
+        <p><strong>02</strong><br />anos de experiência</p>
+      </div>
+      <div>
+        <p><strong>1000</strong><br />clientes atendidos</p>
+      </div>
+    </div>
+
+    <div class="mission">
+      <h4>Transformando a experiência em oportunidades</h4>
+      <p>
+        Nada diz “Eu te amo” como o lar dos sonhos! Imagine começar uma nova fase com quem você ama...
+      </p>
+    </div>
+
+    <div class="contact">
+      <h1>Contato</h1>
+      <ul>
+        <li><h2>Sara</h2><a href="#"><img src="assets/images/icone.zap.svg">(34) 9 9999-9999</a><a href="#"><img src="assets/images/icone.insta.svg">@sheila_conceito</a> </li>
+        <li><h2>Sheila</h2><a href="#"><img src="assets/images/icone.zap.svg">(34) 9 9999-9999</a><a href="#"><img src="assets/images/icone.insta.svg">@sheila_conceito</a> </li>
+        <li><h2>Hellen</h2><a href="#"><img src="assets/images/icone.zap.svg">(34) 9 9999-9999</a><a href="#"><img src="assets/images/icone.insta.svg">@sheila_conceito</a> </li>
+        <div class="barra"></div>
+      </ul>
+    </div>
+
+    <div class="copyright">
+      <p>©2025 Sheila Conceito.<br> Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="scripts/index.js" type="module"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+
 </body>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script src="scripts/destaque.js"></script>
-<script src="scripts/catalogo.js"></script>
+
 </html>

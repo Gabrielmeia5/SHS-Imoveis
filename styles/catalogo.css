@@ -40,14 +40,23 @@
     border-radius: 5px;
 }
 
+#catalogo .card-type, .card-tittle, .card-localization, .card-value {
+    color: #000;
+}
+
 .verMais button {
-    display: flex;
-    margin: 5% 0 0 39%;
+    margin: 5% 0 2% 0;
     font-family: "Montserrat", sans-serif;
     background: none;
     font-size: 17px;
     border-radius: 5px;
     padding: 5px;
+    cursor: pointer;
+}
+
+.verMais {
+    display: flex;
+    justify-content: center;
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
@@ -55,10 +64,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-    }
-
-    .verMais button {
-        margin: 5% 0 0 43.5%;
     }
 }
 
@@ -69,10 +74,6 @@
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-    }
-
-    .verMais button {
-        margin: 5% 0 0 45%;
     }
 }
 
@@ -95,10 +96,6 @@
         align-items: center;
         gap: 5em;
         margin: 4em 5% 0 5%;
-    }
-
-    .verMais button {
-        margin: 5% 0 0 46.3%;
     }
 }
 
@@ -126,10 +123,5 @@
     .card {
         width: 31em;
         height: 40em;
-        
-    }
-
-    .verMais button {
-        margin: 5% 0 0 47%;
     }
 }

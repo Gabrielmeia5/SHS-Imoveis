@@ -1,0 +1,78 @@
+@import url('./catalogo.css');
+@import url('./footer.css');
+@import url('./header.css');
+@import url('./destaque.css');
+@import url('./imovel.css');
+
+:root {
+  /* ========================================
+     Cores
+  ======================================== */
+  --color-primary: #CAA872;
+  --color-background: #FFEFE3;
+  --color-surface: #FFFFFF;
+  --color-dark: #2D2D2D;
+  --color-light: #F9F6F2;
+  --color-rent: #9CDD8F; 
+  --color-accent-1: #DF8C01;
+  --color-accent-2: #775217;
+
+  /* Texto */
+  --text-primary: #2D2D2D;
+  --text-inverted: #FFFFFF;
+  --text-muted: #8A8A8A;
+
+  /* ========================================
+     Tipografia
+  ======================================== */
+  --font-primary: 'Montserrat', sans-serif;
+  --font-secondary: 'Advent Pro', sans-serif;
+
+  /* Base para rem (1rem = 16px) */
+  --font-size-xs: 0.875rem;  /* 14px */
+  --font-size-sm: 1rem;      /* 16px */
+  --font-size-md: 1.25rem;   /* 20px */
+  --font-size-lg: 2rem;      /* 32px */
+  --font-size-xl: 2.25rem;   /* 36px */
+  --font-size-xxl: 2.5rem;   /* 40px */
+
+  /* ========================================
+     Espaçamentos (Padding / Margin)
+     Base de 4px = 0.25rem
+  ======================================== */
+  --spacing-xxs: 0.25rem;  /* 4px */
+  --spacing-xs: 0.5rem;    /* 8px */
+  --spacing-sm: 1rem;      /* 16px */
+  --spacing-md: 1.5rem;    /* 24px */
+  --spacing-lg: 2rem;      /* 32px */
+  --spacing-xl: 3rem;      /* 48px */
+  --spacing-xxl: 4rem;     /* 64px */
+
+  /* ========================================
+     Bordas e Radius
+  ======================================== */
+  --border-radius-sm: 0.25rem;  /* 4px */
+  --border-radius-md: 0.5rem;   /* 8px */
+  --border-radius-lg: 1rem;     /* 16px */
+  --border-radius-xl: 1.25rem;  /* 20px */
+
+  /* ========================================
+     Sombras
+  ======================================== */
+  --shadow-soft: 0 2px 4px rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6;
+  background-color: #fdfaf6;
+  color: #333;
+}

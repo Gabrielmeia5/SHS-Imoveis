@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Detalhes do Imóvel</title>
+<link rel="stylesheet" href="styles/detalhes.css">
+<link rel="stylesheet" href="styles/destaque.css">
+</head>
+<body>
+
+  <div id="loading-overlay">
+    <div class="loader"></div>
+  </div>
+
+
+
+  <header></header> <!-- Criar depois um header componente para todas as paginas -->
+    <main id="main-content">
+        <section id="detalhes-topo">
+        <div class="images-topo"> <!--Imagem Principal + Imagens extras-->
+          <div class="img-topo">
+
+          </div>
+        </div>
+        
+        <div class="imovel-info"> <!--Nome, Quantia de CARROS E QUARTOS E AREA-->
+          <div class="Texto1 ">
+            <div>
+            <p>Imovel DO DANIEL SAORES</p>
+            </div>
+            <div class="area">
+            <i data-lucide="maximize-2"></i>
+            <p class="icone-area">210²</p>
+            </div>
+          </div>
+          <div class="icones-infotopo">
+            <div class="icone-topo">
+            <i data-lucide="bed"></i>
+            <p class="icone-quartos">02</p>   
+            </div>
+            <div class="icone-topo">
+            <i data-lucide="car-front"></i>
+            <p class="icone-garagem">02</p>
+            </div>
+            <div class="icone-topo">
+            <i data-lucide="maximize-2"></i>
+            <p class="icone-area">210²</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="imovel-valor">
+          <div class="esquerda-valor">
+          <p>Fixa do Imovel</p>
+          </div>  
+          <div class="direita-valor">
+          <p>Valor do Imovel:</p>
+          </div>
+        </div>
+      </section>
+      <section id="caracteristicas">
+        <div class="esquerda-caracteristicas">
+          <div class="esquerda-p">
+            <h4>Codigo do imovel</h4>
+            <p>747346383</p>
+            <h4>Bairro</h4>
+            <p>Nova FLoresta</p>
+            <h4>Tipo</h4>
+            <p>Venda</p>
+            <h4>Cidade</h4>
+            <p>Patos de Minas</p>
+          </div>
+        </div>
+        <div class="direita-caracteristicas">
+        <h2>Características</h2>
+        <ul id="lista-caracteristicas">
+          <li><i data-lucide="minus"></i>KKKKKKKKKKKKKKKKKKKKKKKKKKKKKK</li>
+          <li><i data-lucide="minus"></i>KKKKKKKKKKKKKKKKKKKKKKKKKKKKKK</li>
+          <li><i data-lucide="minus"></i>KKKKKKKKKKKKKKKKKKKKKKKKKKKKKK</li>
+          <li><i data-lucide="minus"></i>KKKKKKKKKKKKKKKKKKKKKKKKKKKKKK</li>
+          <li><i data-lucide="minus"></i>KKKKKKKKKKKKKKKKKKKKKKKKKKKKKK</li>
+          <li><i data-lucide="minus"></i>KKKKKKKKKKKKKKKKKKKKKKKKKKKKKK</li>
+        </ul>
+        </div>
+      </section>
+    
+      <section id="descricao">
+        <h2>Mais sobre esse imóvel</h2>
+        <div class="desc-detalhe">
+        <p>Uma casa que une conforto, tecnologia e estilo de vida moderno. Com 250m² de área construída e 435m² de terreno, este imóvel foi projetado para quem busca o equilíbrio perfeito entre privacidade e funcionalidade.
+        </div>
+        </p>
+      </section>
+
+      <section id="videos">
+        <div class="linha-play">
+          <div class="linha"></div>
+          <button class="play-btn" onclick="mostrarVideo()">▶</button>
+          <div class="linha"></div>
+        </div>
+
+
+      </section>
+      
+      <!-- AQUI a div onde o JS da Helen vai colocar o conteúdo -->
+      <div class="Imovel-corre">
+        <h2 style="text-align: center; font-size: 2.6em;">Imóvel sob consultoria de...</h2>
+      </div>
+      <section id="helen-info" >
+        <img src="assets/images/helen.png" alt="Foto da corretora Helen" class="info-corretora-imagem">
+
+        <div class="linha-vertical"></div>
+
+        <div class="info-corretora-texto">
+          <h2>Hellen Cássia</h2>
+          <h4>Corretora de imóveis</h4>
+          <p>Nada diz “Eu te amo” como o lar dos sonhos! Imagine começar uma nova fase com quem você ama em uma casa deslumbrante, perfeita para criar memórias inesquecíveis.</p> 
+          <button class="btn-contato">ENTRE EM CONTATO <i data-lucide="move-up-right"></i></button> </div>
+      </section>
+
+      <section id="info-corretora">
+          <div class="caracteristicas-corretoras">
+            <h3>BUSCA ESPECIALIZADA</h3>
+            <p>Ajudamos você a encontrar o imóvel certo, de forma rápida e alinhada às suas preferências.</p>
+          </div>
+          <div class="caracteristicas-corretoras">
+            <h3>SUPORTE COMPLETO</h3>
+            <p>Estamos ao seu lado em cada decisão, acompanhamos você em todas as etapas, com apoio claro e eficiente..</p>
+        </div>
+          <div class="caracteristicas-corretoras">
+            <h3>NEGOCIAÇÃO ESTRATÉGICA</h3>
+            <p>Negociamos com foco no seu benefício, garantindo as melhores condições possíveis.</p>
+          </div>
+      </section>
+
+        <section id="destaque">
+          <div class="destaque_titulo">
+              <h1>Imóveis Relacionados</h1>
+              <p>Conheça algumas das melhores oportunidades de negócios de imóveis de Patos de Minas.</p>
+          </div>
+          <div class="destaque_buttons">
+              <div class="setae"><img src="assets/images/setae.svg"></div>
+              <div class="setad"><img src="assets/images/setad.svg"></div>
+          </div>
+          <div class="destaque_imoveis">
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper" id="destaques">
+                  <!-- os slides dos imóveis serão inseridos aqui via JS -->
+                </div>
+              </div>
+            </div>
+      <footer></footer> <!-- Criar um componente para adicionar em todas paginas-->
+    </main>
+    <script src="./scripts/detalhes.js" type="module"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>

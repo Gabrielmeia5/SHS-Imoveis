@@ -1,0 +1,549 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    margin: 0;
+    overflow-x: hidden;
+    font-family: var(--font-primary, 'Montserrat', sans-serif);
+}
+
+#loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff; /* Ou alguma cor com branding */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  transition: opacity 0.5s ease;
+}
+
+#loading-overlay.fade-out {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.loader {
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #444;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+
+
+#detalhes-topo{
+    font-family: "Montserrat", sans-serif;
+    background-color:#2D2D2D ;
+    max-width: 1000em;
+    overflow-x: hidden;
+}
+
+.images-topo {
+    white-space: nowrap;
+    overflow-x: auto;
+    width: 100%;
+    max-width: 600px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.images-topo img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.images-topo {
+    display: flex;
+    overflow: hidden;
+}
+
+.imovel-info{
+    display: flex;
+    padding: 1.5em;
+    background-color: #2D2D2D;
+}
+.imovel-valor{
+    height: 5rem;
+    display: flex;
+    background-color: #CAA872;
+}
+.Texto1{
+  display: flex;
+  }
+.Texto1 p{
+  font-size: 1.5em;
+    color: white;
+    text-align: left;
+}
+.icones-infotopo{
+  display: none;
+  color: white;
+  margin: 0.7em 0 0 36em;
+}
+
+.icone-topo{
+  display: none;
+  gap: 5px;
+  display: flex;
+  font-size: 1em;
+  margin: 0 2.7em;
+}
+.area{
+
+    gap: 5px;
+  display: flex;
+  font-size: 1em;
+  margin: 0 2.7em;
+}
+
+.Texto2 p{
+    color: white;
+    margin-top: 1em 0 1em 2em;
+    text-align: right;
+}
+.esquerda-valor {
+  display: none;
+  font-size: 1.4em;
+  color: white;
+  margin: 1.2em 0 0 ;
+  text-align: left;
+  flex: 1;
+}
+
+.direita-valor {
+  font-size:1.4em;
+    color: white;
+    display: flex;
+    margin: auto;
+}
+#caracteristicas{
+    font-family: "Montserrat", sans-serif;
+    background-color: #FFEFE3;
+    display: flex;
+    gap: 5em;
+}
+.esquerda-caracteristicas {
+    margin: 0 0 3em 6em;
+    padding: 3em;
+    font-size: 0.8em;
+    background-color:#E5CCAB;
+    flex: 0.5; /* Reduz o tamanho relativo da div esquerda */
+    max-width: 25%; /* Define um limite máximo para o tamanho */
+    max-height: 45%;
+}
+.esquerda-caracteristicas h4{
+    margin: 1em;
+}
+.esquerda-caracteristicas p{
+    margin: 1em;
+}
+.direita-caracteristicas {
+    margin: 0 3em 5em 1em; /* Adiciona espaço entre as duas divs */
+    padding: 2.7em;
+    background-color: #F5F5F5;
+    flex: 0.5; /* Define o tamanho relativo da div direita */
+    align-items: center; /* Centraliza horizontalmente */
+    word-wrap: break-word; /* Permite que o texto quebre e desça */
+    overflow-wrap: break-word; /* Compatibilidade adicional para quebra de texto */
+}
+
+.direita-caracteristicas h2 {
+    font-size: 1.5em;
+}
+.direita-caracteristicas li {
+    margin: 0.4em;
+    font-size: 1.0em;
+    text-align: left;
+}
+
+#descricao{
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.0em;
+    text-align: center;
+    align-items: center;
+}
+.desc-detalhe{
+    margin: 1em auto;
+     width: 40em;
+     word-wrap: break-word; /* Permite que o texto quebre e desça */
+    overflow-wrap: break-word;
+}
+
+.linha{
+ margin:5em;
+}
+.play-btn {
+  width: 5em !important;
+  height: 5em !important;
+  border-radius: 0%;
+  border: 0.2em solid #b58d5b;
+  background-color: transparent;
+  color: #b58d5b;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.video-container {
+  display: none;
+}
+.video-container iframe {
+
+  margin-top: 2em;
+  width: 100%;
+  height: 50em;
+  border: none;
+}
+
+#caracteristicas {
+    display: flex;
+    flex-direction: column; /* Coluna no mobile */
+    gap: 1.5rem; /* Espaçamento entre os blocos */
+    background-color: var(--color-background, #FFEFE3); /* Usando variável do seu styles.css */
+}
+
+.esquerda-caracteristicas, .direita-caracteristicas {
+    width: 100%; /* Ocupa toda a largura no mobile */
+    box-sizing: border-box; /* Garante que padding não afete a largura */
+}
+.Imovel-corre{
+     padding:var(--spacing-lg,2.5rem) ;
+
+  color: #fff;
+  background-color:#CAA872 ;
+}
+
+/* Seção da Corretora: empilhada por padrão */
+#helen-info {
+    color: #FFF;
+    background-color: #CAA872;
+    display: flex;
+    flex-direction: column-reverse; /* Coluna no mobile */
+    align-items: center; /* Centraliza tudo */
+    text-align: center;
+    padding: 3rem 1rem;
+    gap: 1.5rem;
+}
+
+.info-corretora-imagem {
+    max-width: 280px; /* Um tamanho razoável para a imagem no mobile */
+    height: auto;
+    border-radius: 8px; /* Borda levemente arredondada como no figma */
+}
+
+.linha-vertical {
+  width: 3rem;
+  color: #2D2D2D;
+}
+
+.info-corretora-texto h2 {
+    font-size: var(--font-size-lg, 2rem);
+    color: var(--text-primary, #FFF);
+}
+
+•.info-corretora-texto h4 {
+    font-size: var(--font-size-xxl, 1rem);
+    color: var(--color-primary, #FFF);
+    margin-bottom: 1rem;
+    font-weight:lighter;
+}
+.info-corretora-texto p{
+    margin: var(--spacing-lg,2rem) 0;
+    font-size: var(--font-size-md,1.25rem);
+    font-weight: normal;
+    color: #FFF;
+}
+
+/* Cards de Busca/Suporte: empilhados por padrão */
+#info-corretora {
+
+    display: flex;
+    flex-direction: column; /* Coluna no mobile */
+    gap: 1.5rem;
+    padding: 2rem 1rem;
+}
+.btn-contato {
+  /* Cores e Borda */
+  background-color: transparent; /* Fundo transparente para o efeito "fantasma" */
+  border: 2px solid var(--text-primary, #FFF); /* Borda sólida com a cor do texto principal */
+  color: var(--text-primary, #FFF); /* Cor do texto igual à da borda */
+
+  /* Espaçamento e Tamanho */
+  padding: 0.8rem 1.8rem; /* Espaçamento interno (vertical e horizontal). Ajuste com o Figma! */
+  
+  /* Tipografia */
+  font-family: var(--font-primary, 'Montserrat', sans-serif);
+  font-size: var(--font-size,1rem); /* Tamanho da fonte */
+  font-weight: 600; /* Um pouco mais forte que o normal */
+  letter-spacing: 1px; /* Leve espaçamento entre as letras */
+
+  /* Outros */
+  cursor: pointer; /* Muda o cursor para a "mãozinha" */
+  border-radius: 8px; /* Bordas levemente arredondadas. Ajuste com o Figma! */
+  
+  /* Transição suave para o efeito de hover */
+  transition: all 0.3s ease;
+}
+
+/* Efeito ao passar o mouse por cima */
+.btn-contato:hover {
+  background-color: var(--text-primary, #2D2D2D); /* O fundo se torna a cor da borda */
+  color: var(--color-surface, #FFFFFF); /* O texto se torna branco (ou a cor do fundo da página) */
+}
+
+/* ================================================= */
+/* SEÇÃO DE CARACTERÍSTICAS DA CORRETORA         */
+/* Adicione isso ao final de styles/detalhes.css     */
+/* ================================================= */
+
+/* Estilo para o container da seção inteira */
+#info-corretora {
+  display: flex;
+  flex-direction: column; /* Padrão mobile: empilhado */
+  gap: 1.5rem; /* Espaço entre os cards no mobile */
+  padding: 3rem 1.5rem; /* Espaçamento da seção (vertical e horizontal) */
+  background-color: var(--color-light, #F9F6F2); /* Cor de fundo da seção */
+  justify-content: center;
+}
+
+/* Estilo para CADA CARD individual */
+.caracteristicas-corretoras {
+  background-color: var(--color-surface, #FFFFFF); /* Fundo branco do card */
+  border: 1px solid #E0CDB6; /* Cor da borda, pegue a cor exata do Figma */
+  border-radius: 12px; /* Cantos arredondados */
+  padding: 2rem; /* Espaçamento interno do card */
+  text-align: center; /* Centraliza o texto */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Sombra suave para dar profundidade */
+  
+  /* Transição suave para o efeito de hover */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efeito ao passar o mouse por cima do card */
+.caracteristicas-corretoras:hover {
+  transform: translateY(-5px); /* Levanta o card sutilmente */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08); /* Aumenta um pouco a sombra */
+}
+
+/* Estilo do título H3 dentro do card */
+.caracteristicas-corretoras h3 {
+  color: var(--color-primary, #CAA872); /* Cor de destaque para o título */
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 0.8rem; /* Espaço abaixo do título */
+}
+
+/* Estilo do parágrafo dentro do card */
+.caracteristicas-corretoras p {
+  color: var(--text-muted, #8A8A8A); /* Cor de texto mais suave */
+  line-height: 1.6;
+}
+
+/* ================================================= */
+/* ADAPTAÇÃO PARA DESKTOP                */
+/* A partir de 1024px, baseado em Desktop.jpg   */
+/* ================================================= */
+
+@media (min-width: 1024px) {
+
+  .imovel-valor{
+    display: flex;
+  }
+
+    .esquerda-valor {  
+    display:inline;
+    font-size: 1.4em;
+    color: white;
+    margin: 1.2em 0 0 11.5rem;
+    text-align: left;
+    flex: 1;
+    }
+
+    .direita-valor{
+    margin: 1.2em 11.5rem 0 0;
+    }
+
+
+    .icones-infotopo{
+      display: flex;
+      color: white;
+      margin: 0.7em 0 0 36em;
+    }
+
+    .area{
+      display: none;
+    }
+
+
+
+    /* Seção de Características: vira duas colunas */
+    #caracteristicas {
+        flex-direction: row; /* Linha no desktop */
+        align-items: flex-start; /* Alinha os itens ao topo */
+        margin: 0 var(--spacing-xl,7rem);
+        gap: 2rem;
+
+    }
+
+    .esquerda-caracteristicas {
+      margin: 0;
+    }
+
+    .direita-caracteristicas {
+        margin: var(--font-size-xl,2.25rem) 0 var(--font-size-xl,2.5rem) var(--font-size-xl,2.25rem);
+        flex: 1; /* Ocupa o espaço restante */
+        max-width: 600px;
+    }
+
+    .Imovel-corre{
+      margin:var(--spacing-lg,2.5rem) 0;
+      font-size: var(--font-size-lg,0.875rem);
+      font-weight: bold;
+      color: #2D2D2D;
+      background-color: #FFF;
+    }
+
+    /* Seção da Corretora: vira duas colunas */
+    #helen-info {
+        color: #2D2D2D;
+        background-color: #fff;
+        flex-direction: row; /* Linha no desktop */
+        justify-content: center;
+        align-items: center;
+        text-align: left; /* Alinha o texto à esquerda no desktop */
+        gap: 3rem;
+        padding: 5rem 2rem;
+    }
+
+    .linha-vertical {
+        display: block; /* Mostra a linha no desktop */
+        width: 1px;
+        height: 15rem; /* Ajuste a altura conforme necessário */
+        background-color: #000000;
+    }
+    
+    .info-corretora-imagem {
+        max-width: 480px;
+    }
+    
+    .info-corretora-texto {
+        color: #2D2D2D !important;
+        max-width: 450px;
+    }
+          .info-corretora-texto h2 {
+          font-size: var(--font-size-lg, 2rem);
+          color: var(--text-primary, #CAA872);
+      }
+
+      •.info-corretora-texto h4 {
+          font-size: var(--font-size-xxl, 1rem);
+          color: var(--color-primary, #2D2D2D);
+          margin-bottom: 1rem;
+          font-weight:lighter;
+      }
+      .info-corretora-texto p{
+          margin: var(--spacing-lg,2rem) 0;
+          font-size: var(--font-size-md,1.25rem);
+          font-weight: normal;
+          color: #2D2D2D;
+      }
+
+    /* Cards de Busca/Suporte: viram três colunas */
+    #info-corretora {
+        color: #2D2D2D;
+        flex-direction: row; /* Linha no desktop */
+        justify-content: center;
+        align-items: stretch; /* Faz todos terem a mesma altura */
+        padding: 3rem 2rem;
+    }
+        #info-corretora {
+        color: #2D2D2D;
+        flex-direction: row; /* Linha no desktop */
+        justify-content: center;
+        align-items: stretch; /* Faz todos terem a mesma altura */
+        padding: 3rem 2rem;
+    }
+        #info-corretora {
+        color: #2D2D2D;
+        flex-direction: row; /* Linha no desktop */
+        justify-content: center;
+        align-items: stretch; /* Faz todos terem a mesma altura */
+        padding: 3rem 2rem;
+    }
+        #info-corretora-texto p {
+        color: #2D2D2D;    
+    }
+
+    .caracteristicas-corretoras {
+        flex: 1; /* Divide o espaço igualmente */
+        max-width: 380px; /* Limita a largura máxima de cada card */
+    }
+
+    .btn-contato {
+      /* Cores e Borda */
+      background-color: transparent; /* Fundo transparente para o efeito "fantasma" */
+      border: 2px solid var(--text-primary, #2D2D2D); /* Borda sólida com a cor do texto principal */
+      color: var(--text-primary, #2D2D2D); /* Cor do texto igual à da borda */
+    }
+
+
+ /*FIM DO MODO PC*/
+}
+
+
+/* MEDIA QUERY */
+@media (max-width: 1145px) {
+  .play-btn {
+    width: 2em;
+    height: 2em;
+    font-size: 1.5em;
+  }
+
+  .video-container iframe {
+    margin-top: 2em;
+    height: 2em;
+  }
+
+  .desc-detalhe {
+    width: 90%;
+  }
+}
+
+
+@media (max-width: 1145px) {
+
+  #caracteristicas {
+    flex-direction: column;
+  }
+
+  .esquerda-caracteristicas,
+  .direita-caracteristicas {
+    max-width: 100%;
+    margin: 0 0;
+  }
+
+  #descricao {
+    font-size: 1em;
+  }
+
+  .desc-detalhe {
+    width: 90%;
+  }
+  
+}
+

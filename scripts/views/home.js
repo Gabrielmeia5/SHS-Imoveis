@@ -18,7 +18,7 @@ export default async function initHome() {
 
 function renderizarLote() {
   const catalogo = document.querySelector('.card_imoveis');
-  const destaques = document.querySelector('.swiper-wrapper');
+  const destaques = document.querySelector('#destaque .swiper-wrapper');
 
   const proximoLote = imoveis.slice(currentVisible, currentVisible + batchSize);
 

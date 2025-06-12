@@ -26,8 +26,8 @@
         
     <div class="nav-bar-container">
         <div class="title-content">
-            <h1>Catálogo de Imóveis</h1>
-            <p>cuidado e exclusividade</p>
+            <h1>Catálogo de <span>Imóveis</span></h1>
+            <p>Cuidado e exclusividade</p>
         </div>
         <nav>
             <ul class="nav-ul">
@@ -59,8 +59,25 @@
     </div>
 
 
-    <img src="./assets/images/imovel-1.jpg" class="home-bg" alt="">
-    <div class="bg-filter"></div>
+    <div class="swiper home-bg-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="./assets/images/imovel-1.jpg" alt="">
+          <div class="bg-filter"></div>
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/images/imovel-2.jpg" alt="">
+          <div class="bg-filter"></div>
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/images/imovel-3.jpg" alt="">
+          <div class="bg-filter"></div>
+        </div>
+        <!-- Adicione mais slides conforme necessário -->
+      </div>
+      <div class="swiper-pagination-home"></div>
+  </div>
+    
 
 
     <div class="filter-home">
@@ -92,8 +109,6 @@
             </div>
         </div>
     </div>
-    
-
 </header>
 <section class="about-section-desktop">
     <img src="assets/images/about-img.jpg" alt="">

@@ -1,16 +1,14 @@
-
-
-
-
 /* ========================================
-   Header e Navegação
+   HEADER E NAVEGAÇÃO
 ======================================== */
+
+/* Header Principal */
 header {
   position: relative;
   width: 100vw;
-  height: 100vh;
 }
 
+/* Container da Barra de Navegação */
 .nav-bar-container {
   display: flex;
   justify-content: space-between;
@@ -22,6 +20,9 @@ header {
   color: var(--text-primary);
 }
 
+
+
+/* Conteúdo do Título */
 .title-content {
   margin-left: 5vw;
   margin-top: 5vh;
@@ -32,11 +33,32 @@ header {
   font-weight: 400;
 }
 
+.title-content h1 span {
+  font-weight: 500;
+}
+
 .title-content p {
   font-size: var(--font-size-xs);
   font-weight: 300;
 }
 
+/* Navegação Desktop (inicialmente oculta) */
+nav {
+  display: none;
+  align-items: center;
+  gap: var(--spacing-xxl);
+  text-wrap: nowrap;
+}
+
+nav ul {
+  display: flex;
+  gap: var(--spacing-lg);
+  list-style: none;
+  font-size: var(--font-size-md);
+  text-decoration: none;
+}
+
+/* Container do Menu Hamburger */
 .menu-container {
   display: flex;
   align-items: center;
@@ -47,7 +69,8 @@ header {
 }
 
 /* ========================================
-   Menu Hamburger (From Uiverse.io by Cevorob)
+   MENU HAMBURGER
+   (Créditos: Uiverse.io by Cevorob)
 ======================================== */
 .menu {
   position: relative;
@@ -72,7 +95,7 @@ header {
   border-radius: 9px;
   opacity: 1;
   transform: rotate(0deg);
-  transition: .25s ease-in-out;
+  transition: 0.25s ease-in-out;
 }
 
 .menu span:nth-of-type(1) {
@@ -92,6 +115,7 @@ header {
   transform-origin: left center;
 }
 
+/* Animações do Menu Hamburger */
 .menu input:checked ~ span:nth-of-type(1) {
   top: 0px;
   left: 5px;
@@ -109,47 +133,77 @@ header {
   transform: rotate(-45deg);
 }
 
-nav {
-  display: none;
-  align-items: center;
-  gap: var(--spacing-xxl);
-  text-wrap: nowrap;
-}
-
-nav ul {
-  display: flex;
-  gap: var(--spacing-lg);
-  list-style: none;
-  font-size: var(--font-size-md);
-  text-decoration: none;
-}
-
 /* ========================================
-   Home Background
+   SWIPER BACKGROUND HOME
 ======================================== */
-.home-bg {
+.home-bg-swiper {
   position: relative;
   z-index: -2;
-  width: 100%;
-  height: 50%;
-  object-fit: cover;
-  object-position: center;
+  width: 100vw;
+  height: 50vh;
 }
 
+.home-bg-swiper .swiper-slide {
+  width: 100vw;
+  position: relative;
+}
+
+.home-bg-swiper .swiper-slide img {
+  width: 100%;
+  position: relative;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: -2;
+}
+
+/* Paginação do Swiper */
+.home-bg-swiper .swiper-pagination-home {
+  position: absolute;
+  text-align: right;
+  bottom: 10px;
+  right: 15px;
+  z-index: 10;
+}
+
+.home-bg-swiper .swiper-pagination-home .swiper-pagination-bullet {
+  width: 6px;
+  height: 6px;
+  background: var(--color-primary);
+  opacity: 0.3;
+  transition: background 0.3s, opacity 0.3s, transform 0.3s;
+}
+
+.home-bg-swiper .swiper-pagination-home .swiper-pagination-bullet-active {
+  background: var(--color-primary);
+  opacity: 0.8;
+  transform: scale(1.1);
+}
+
+/* Filtro de Background */
 .bg-filter {
   position: absolute;
-  top: 15vh;
+  top: 0;
   left: 0;
   z-index: -1;
-  width: 100%;
-  height: 50%;
+  width: 100vw;
+  height: 50vh;
   pointer-events: none;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 14%, rgba(0, 0, 0, 0.26) 38%, rgba(0, 0, 0, 0) 52%, rgba(0, 0, 0, 0.28) 77%, rgba(0, 0, 0, 0.5) 97%);
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.5) 14%,
+    rgba(0, 0, 0, 0.26) 38%,
+    rgba(0, 0, 0, 0) 52%,
+    rgba(0, 0, 0, 0.28) 77%,
+    rgba(0, 0, 0, 0.5) 97%
+  );
 }
 
 /* ========================================
-   Filter Home Component
+   COMPONENTE FILTER HOME
 ======================================== */
+
+/* Container Principal do Filter */
 .filter-home {
   padding: var(--spacing-md) var(--spacing-sm);
   border-radius: var(--border-radius-md);
@@ -157,6 +211,7 @@ nav ul {
   font-family: var(--font-primary);
 }
 
+/* Cabeçalho do Filter */
 .filter-home-header {
   display: flex;
   align-items: center;
@@ -166,12 +221,14 @@ nav ul {
 .filter-home-header h2 {
   font-size: var(--font-size-md);
   font-weight: 500;
+  color: var(--text-primary);
   font-family: var(--font-secondary);
+  margin-bottom: var(--spacing-xs);
 }
 
 .filter-home-header p {
   font-size: var(--font-size-sm);
-  font-weight: 300;
+  font-weight: 400;
   color: var(--color-primary);
 }
 
@@ -184,11 +241,11 @@ nav ul {
   border-bottom: 1px solid var(--text-primary);
 }
 
+/* Conteúdo do Filter */
 .filter-content {
-    display: flex;
-    flex-direction: column;
-    margin-top: var(--spacing-md);
-   
+  display: flex;
+  flex-direction: column;
+  margin-top: var(--spacing-md);
 }
 
 .filter-home .filter-content .grid-template {
@@ -199,6 +256,7 @@ nav ul {
   height: 100%;
 }
 
+/* Items do Filter */
 .filter-home .filter-item {
   display: flex;
   flex-direction: column;
@@ -209,13 +267,203 @@ nav ul {
   border: 1px solid var(--color-primary);
   border-radius: var(--border-radius-sm);
   font-size: var(--font-size-xs);
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ========================================
-   Responsividade - Mobile First
+   ANIMAÇÕES DOS FILTER ITEMS
 ======================================== */
 
-/* Mobile grande (481px - 768px) */
+/* Efeito de preenchimento de fundo */
+.filter-home .filter-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  background: var(--color-primary);
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  z-index: -1;
+  border-radius: inherit;
+}
+
+.filter-home .filter-item:hover::before {
+  left: 0;
+  right: 0;
+}
+
+.filter-home .filter-item:hover {
+  transform: translateY(-3px);
+}
+
+/* Animações do texto */
+.filter-home .filter-item p {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  z-index: 1;
+}
+
+.filter-home .filter-item:hover p {
+  color: var(--text-inverted);
+  transform: scale(1.05);
+  font-weight: 400;
+}
+
+/* Animações do ícone */
+.filter-home .filter-item img {
+  transition: all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+  z-index: 1;
+  position: relative;
+}
+
+.filter-home .filter-item:hover img {
+  filter: brightness(0) invert(1);
+  transform: scale(1.08) translateY(-1px);
+}
+
+/* Efeito de borda sutil */
+.filter-home .filter-item::after {
+  content: '';
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  right: -1px;
+  bottom: -1px;
+  border: 1px solid var(--color-primary);
+  border-radius: inherit;
+  opacity: 0;
+  transform: scale(1);
+  transition: all 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  z-index: 0;
+}
+
+.filter-home .filter-item:hover::after {
+  opacity: 0.2;
+  transform: scale(1.02);
+}
+
+/* Animações de entrada */
+.filter-home .filter-item {
+  animation: fadeInUp 0.6s cubic-bezier(0.4, 0, 0.2, 1) both;
+}
+
+.filter-home .filter-item.item1 { animation-delay: 0.1s; }
+.filter-home .filter-item.item2 { animation-delay: 0.15s; }
+.filter-home .filter-item.item3 { animation-delay: 0.2s; }
+.filter-home .filter-item.item4 { animation-delay: 0.25s; }
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Estados especiais */
+.filter-home .filter-item:active {
+  transform: translateY(0) scale(0.98);
+  transition: all 0.1s ease;
+}
+
+.filter-home .filter-item:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(202, 168, 114, 0.4);
+}
+
+/* Animação especial para item VIP */
+.filter-home .filter-item.item1 {
+  animation: fadeInUp 0.6s cubic-bezier(0.4, 0, 0.2, 1) both,
+             subtleGlow 5s ease-in-out 3s infinite;
+}
+
+@keyframes subtleGlow {
+  0%, 100% { 
+    box-shadow: 0 0 0 rgba(202, 168, 114, 0); 
+  }
+  50% { 
+    box-shadow: 0 0 6px rgba(202, 168, 114, 0.08); 
+  }
+}
+
+/* ========================================
+   SEÇÃO ABOUT (DESKTOP)
+======================================== */
+.about-section-desktop {
+  width: 100vw;
+  height: 80vh;
+  display: grid;
+  gap: 5vw;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5vh;
+  padding: 5vh 10vw;
+}
+
+.about-section-desktop img {
+  width: 100%;
+  height: 100%;
+  max-width: 600px;
+  max-height: 600px;
+  object-fit: cover;
+}
+
+.about-section-desktop .about-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-family: var(--font-primary);
+  justify-content: center;
+  align-items: center;
+}
+
+.about-section-desktop .about-content * {
+  color: var(--text-primary);
+  font-weight: 300;
+  text-align: center;
+}
+
+.about-section-desktop .about-content h3 {
+  font-family: var(--font-tertiary);
+  font-size: var(--font-size-md);
+  margin-bottom: var(--spacing-xs);
+}
+
+.about-section-desktop .about-content h4 {
+  font-family: var(--font-secondary);
+  font-size: var(--font-size-xxxl);
+  margin-bottom: var(--spacing-md);
+}
+
+.about-section-desktop .about-content p {
+  width: 90%;
+}
+
+.about-section-desktop .about-content button {
+  background-color: transparent;
+  border: 1px solid var(--color-dark);
+  width: max-content;
+  padding: var(--spacing-sm) var(--spacing-md);
+  margin-top: var(--spacing-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-md);
+}
+
+/* ========================================
+   RESPONSIVIDADE - MOBILE FIRST
+======================================== */
+
+/* Mobile Grande (481px - 768px) */
 @media (min-width: 481px) and (max-width: 768px) {
   .filter-home {
     padding: var(--spacing-xl) var(--spacing-xl);
@@ -236,15 +484,78 @@ nav ul {
   }
 }
 
+/* Tablet (768px - 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .filter-home {
+    padding: calc(var(--spacing-md) + 5vh) calc(var(--spacing-sm) + 10vw);
+  }
+
+  .home-bg-swiper .swiper-pagination-home {
+    padding-right: 2.5vw;
+  }
+
+  .home-bg-swiper .swiper-pagination-home .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+  }
+
+  .title-content h1 {
+    font-size: calc(var(--font-size-xxl) + 3px);
+  }
+
+  .title-content p {
+    font-size: calc(var(--font-size-md) + 3px);
+  }
+
+  .filter-home-header h2 {
+    font-size: var(--font-size-xl);
+    margin-bottom: var(--spacing-xs);
+  }
+
+  .filter-home-header p {
+    font-size: var(--font-size-md);
+  }
+
+  .filter-home-header span {
+    font-size: var(--font-size-md);
+  }
+
+  .filter-home .filter-item {
+    font-size: var(--font-size-md);
+  }
+
+  /* Otimização para toque em tablets */
+  .filter-home .filter-item:hover {
+    transform: translateY(-3px);
+  }
+  
+  .filter-home .filter-item:hover p {
+    transform: scale(1.04);
+  }
+
+  /* Ocultar seção about em tablets */
+  .about-section-desktop {
+    display: none;
+  }
+}
+
 /* Desktop (1024px+) */
 @media (min-width: 1024px) {
-  /* Navegação Desktop */
+  /* Header Desktop */
+  header {
+    height: 100vh;
+    min-height: 90vh;
+  }
+
+  /* Ocultar menu hamburger no desktop */
   .menu-container {
     display: none;
   }
 
+  /* Barra de navegação desktop */
   .nav-bar-container {
     position: absolute;
+    z-index: 2;
     top: 5vh;
     left: 5vw;
     display: flex;
@@ -265,12 +576,13 @@ nav ul {
     text-decoration: none;
   }
 
+  /* Mostrar navegação no desktop */
   nav {
     display: flex;
     margin-top: calc(5vh - 5px);
   }
 
-  /* Title Content Desktop */
+  /* Título desktop */
   .title-content {
     position: relative;
     margin-right: 5vh;
@@ -298,25 +610,50 @@ nav ul {
     border-radius: var(--border-radius-lg);
   }
 
-  /* Home Background Desktop */
-  .home-bg {
+  /* Background desktop */
+  .home-bg-swiper {
+    position: relative;
+    z-index: -5;
+    width: 100vw;
+    height: 90vh;
+  }
+
+  .home-bg-swiper .swiper-slide {
+    width: 100vw;
+    position: relative;
+    z-index: -4;
+  }
+
+  .home-bg-swiper .swiper-slide img {
     width: 100%;
-    height: 90%;
+    position: relative;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: -3;
   }
 
   .bg-filter {
     top: 0;
     width: 100%;
-    height: 90%;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 14%, rgba(0, 0, 0, 0.26) 38%, rgba(0, 0, 0, 0) 52%, rgba(0, 0, 0, 0.28) 77%, rgba(0, 0, 0, 0.5) 97%);
+    height: 100%;
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.5) 14%,
+      rgba(0, 0, 0, 0.26) 38%,
+      rgba(0, 0, 0, 0) 52%,
+      rgba(0, 0, 0, 0.28) 77%,
+      rgba(0, 0, 0, 0.5) 97%
+    );
   }
 
-  /* Filter Home Desktop */
+  /* Filter home desktop */
   .filter-home {
     position: absolute;
     left: 10vw;
     bottom: 5px;
     width: 45vw;
+    z-index: 1;
     padding: var(--spacing-md) var(--spacing-xl);
     background-color: var(--color-dark);
     color: var(--text-inverted);
@@ -325,6 +662,7 @@ nav ul {
   .filter-home-header h2 {
     font-size: var(--font-size-xl);
     font-weight: 300;
+    color: var(--text-inverted);
   }
 
   .filter-home-header p {
@@ -339,50 +677,79 @@ nav ul {
     border-bottom: 1px solid var(--text-inverted);
   }
 
+  .filter-home .filter-content {
+    flex-direction: column;
+  }
+
   .filter-home .filter-content .grid-template {
+    flex-direction: column;
     gap: var(--spacing-sm);
-  }
-
-  .filter-home .filter-content  {
-    flex-direction: column;
-  }
-
-  .filter-home .filter-content .grid-template{
-    flex-direction: column;
+    margin-top: 0;
   }
 
   .filter-home .filter-item {
     display: flex;
     flex-direction: row;
     gap: var(--spacing-xxs);
-    padding: var(--spacing-md) var(--spacing-sm);
+    padding: var(--spacing-lg) var(--spacing-sm);
     border: 1px solid var(--color-primary);
-  }
-
-    .filter-home .filter-content .grid-template{
-    gap: var(--spacing-sm);
-    margin-top: 0;
-  }
-
-  .filter-item {
     margin-top: 5px;
   }
 
-   .filter-home .filter-item {
-    padding: var(--spacing-lg) var(--spacing-sm);
+  /* Animações específicas do desktop */
+  .filter-home .filter-item:hover {
+    transform: translateX(3px) translateY(-1px);
   }
 
+  .filter-home .filter-item::before {
+    transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .filter-home .filter-item:hover p {
+    transform: scale(1.03);
+  }
+
+  .filter-home .filter-item:hover img {
+    transform: scale(1.05) translateX(2px);
+  }
+
+  .home-bg-swiper .swiper-pagination-home {
+    padding-right: 1.5vw;
+
+}
 }
 
+/* Laptops e Desktops Menores (1024px - 1535px) */
+@media (min-width: 1023px) and (max-width: 1535px) {
+  .home-bg-swiper .swiper-pagination-home {
+    margin-right: 1.5em;
+  }
 
-
-
-/* Laptops e desktops menores (1024px - 1535px) */
-@media (min-width: 1024px) and (max-width: 1535px) {
   .filter-home {
     left: 8vw;
     bottom: 5px;
     padding: var(--spacing-md) var(--spacing-lg);
+  }
+
+  .nav-bar-container {
+    top: 2vh;
+    left: 1vw;
+    gap: var(--spacing-lg);
+  }
+
+  .nav-bar-container ul {
+    font-size: var(--font-size-sm);
+  }
+
+  .title-content h1 {
+    font-size: calc(var(--font-size-lg) - 3px);
+    font-weight: 300;
+  }
+
+  .title-content p {
+    font-size: var(--font-size-xs);
+    font-weight: 200;
+    text-align: right;
   }
 
   .filter-home-header h2 {
@@ -403,16 +770,20 @@ nav ul {
   .filter-home .filter-content {
     gap: var(--spacing-xs);
   }
+
+  .filter-home .filter-content .grid-template {
+    gap: var(--spacing-xs);
+  }
 }
 
-/* Desktop grandes (1536px+) */
+/* Desktop Grandes (1536px+) */
 @media (min-width: 1536px) {
   .filter-home {
     padding: var(--spacing-xl) var(--spacing-xxl);
     width: 40vw;
   }
 
-  .filter-home .filter-content .grid-template{
+  .filter-home .filter-content .grid-template {
     gap: var(--spacing-sm);
     margin-top: 0;
   }
@@ -422,91 +793,68 @@ nav ul {
     padding: var(--spacing-md) var(--spacing-sm);
   }
   
-   .filter-home .filter-item {
+  .filter-home .filter-item {
     padding: var(--spacing-lg) var(--spacing-sm);
   }
 
+  .about-section-desktop {
+    padding: 0 35vh;
+  }
+}
+
+/* ========================================
+   OTIMIZAÇÕES DE PERFORMANCE
+======================================== */
+
+/* Otimização para animações suaves */
+.filter-home .filter-item,
+.filter-home .filter-item::before,
+.filter-home .filter-item::after,
+.filter-home .filter-item img,
+.filter-home .filter-item p {
+  will-change: transform, opacity;
+}
+
+.filter-home .filter-item:not(:hover) {
+  will-change: auto;
+}
+
+/* ========================================
+   ACESSIBILIDADE
+======================================== */
+
+/* Redução de movimento para usuários sensíveis */
+@media (prefers-reduced-motion: reduce) {
+  .filter-home .filter-item,
+  .filter-home .filter-item::before,
+  .filter-home .filter-item::after,
+  .filter-home .filter-item img,
+  .filter-home .filter-item p {
+    transition-duration: 0.1s !important;
+    animation-duration: 0.1s !important;
+  }
   
+  .filter-home .filter-item:hover {
+    transform: none;
+  }
+  
+  .filter-home .filter-item:hover p,
+  .filter-home .filter-item:hover img {
+    transform: scale(1.02);
+  }
 }
 
-
-.about-section-desktop {
-    width: 100vw;
-    height: 80vh;
-
-    display: grid;
-    gap: 5vw;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    justify-content: center;
-    margin-top: 5vh;
-    padding: 5vh 10vw;
-    
-}
-
-.about-section-desktop img{
-    width: 100%;
-    height: 100%;
-    max-width: 600px;
-    max-height: 600px;
-    object-fit: cover;
-}
-
-
-
-.about-section-desktop .about-content {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    font-family: var(--font-primary);
-    justify-content: center;
-    align-items: center;
-}
-
-.about-section-desktop .about-content * {
-    color: var(--text-primary);
-    font-weight: 300;
-    text-align: center;
-}
-
-.about-section-desktop .about-content h3 {
-    font-family: var(--font-tertiary);
-    font-size: var(--font-size-md);
-    margin-bottom: var(--spacing-xs);
-}
-
-.about-section-desktop .about-content h4 {
-    font-family: var(--font-secondary);
-    font-size: var(--font-size-xxxl);
-    margin-bottom: var(--spacing-md);
-}
-
-.about-section-desktop .about-content p {
-   width: 90%;
-}
-
-.about-section-desktop .about-content button {
-   background-color: transparent;
-   border: 1px solid var(--color-dark);
-   width: max-content;
-   padding: var(--spacing-sm) var(--spacing-md);
-   margin-top: var(--spacing-md);
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   gap: var(--spacing-md);
-}
-
-@media (max-width: 1024px) {
-   .about-section-desktop {
+/* Ocultar seção about em dispositivos móveis */
+@media (max-width: 1023px) {
+  .about-section-desktop {
     display: none;
-   }
+  }
 }
 
-
-@media (min-width: 1536px) {
-   .about-section-desktop {
-      padding: 0 35vh;
-   }
-
+/* Fallback para navegadores antigos */
+@supports not (transform: translateY(-2px)) {
+  .filter-home .filter-item:hover {
+    margin-top: -2px;
+    margin-bottom: 2px;
+  }
 }

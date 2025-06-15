@@ -9,15 +9,15 @@
 #destaque {
     position: relative;
     overflow: hidden;
-    background-color: rgb(202, 168, 114, 0.7);
+    background-color: rgba(202, 168, 114, 0.702);
 }
 
 .destaque_titulo {
-    margin: 3em 0 0 4.5em;
+    margin: 3em 0 0 2em;
 }
 
 #destaque .swiper {
-    margin: 1em 0 2em 4em !important;
+    margin: 1em 0 2em 4em;
     margin-bottom: 3em;
     cursor: pointer;
     width: 100%;
@@ -31,14 +31,14 @@
 .destaque_titulo p {
     font-family: "Montserrat", sans-serif;
     font-size: 16px;
-    margin-top: 3%;
+    margin-top: 2em;
     color: #775217;
 }
 
 .destaque_buttons {
     display: flex;
     gap: 10px;
-    margin: 2em 0 0 4.5em;
+    margin: 2em 0 0 2em;
 }
 
 .destaque_buttons img {
@@ -55,9 +55,11 @@
 }
 
 #destaque .card-container {
-    width: 35em;
     height: 100%;
-    padding-top: 15px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    position: absolute;
 }
 
 #destaque .card-container img {
@@ -70,43 +72,43 @@
 }
 
 .linha-play {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
 }
 
 .linha {
-  flex: 1;
-  height: 0.1em;
-  background-color: #b58d5b;
-  max-width: 25em;
+    flex: 1;
+    height: 0.1em;
+    background-color: #b58d5b;
+    max-width: 25em;
 }
 
 .play-btn {
-  width: 10em;
-  height: 10em;
-  border-radius: 50%;
-  border: 0.2em solid #b58d5b;
-  background-color: transparent;
-  color: #b58d5b;
-  font-size: 1em;
-  cursor: pointer;
-  transition: background-color 0.3s;
+    width: 10em;
+    height: 10em;
+    border-radius: 50%;
+    border: 0.2em solid #b58d5b;
+    background-color: transparent;
+    color: #b58d5b;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 .play-btn:hover {
-  background-color: #b58d5b10;
+    background-color: #b58d5b10;
 }
 
 .video-container {
-  display: none;
+    display: none;
 }
 
 .video-container iframe {
-width: 100%;
-height: 50em;
-border: none;
+    width: 100%;
+    height: 50em;
+    border: none;
 }
 
 #destaque .card-tittle {
@@ -167,53 +169,11 @@ border: none;
     width: 100px;
 }
 
-@media (max-width: 500px) {
-    .destaque_titulo {
-        margin: 3em 0 0 1.5em;
-    }
-
-    #destaque .swiper {
-        margin: 1em 0 2em 1.5em !important;
-        margin-bottom: 3em;
-        cursor: pointer;
-        width: 100%;
-    }
-    
-    .destaque_buttons {
-        display: flex;
-        margin: 2em 0 0 1.5em;
-        gap: 1em;
-        cursor: pointer;
-    }
-}
-
-@media (min-width: 1025px) and (max-width: 1280px) {
-    .destaque_buttons {
-        display: flex;
-        margin: 2em 0 0 4.5em;
-        gap: 1em;
-        cursor: pointer;
-    }
-
-    .destaque_titulo h1 {
-        font-size: 32px;
-        font-weight: 600;
-    }
-
-    .destaque_titulo p {
-        font-size: 18px;
-        margin-top: 1em;
-    }
-
-    #destaque .swiper {
-        margin: 1em 0 0 4.5em;
-        margin-bottom: 3em;
-        cursor: pointer;
-        width: 100%;
-    }
-}
-
 @media (min-width: 1281px) and (max-width: 1535px) {
+    .destaque_titulo {
+        margin: 3em 0 0 4.5em;
+    }
+
     .destaque_buttons {
         display: flex;
         margin: 2em 0 0 4.5em;
@@ -232,10 +192,10 @@ border: none;
     }
 
     #destaque .swiper {
-        margin: 1em 0 2em 4em !important;
+        margin: 1em 0 2em 4em;
         margin-bottom: 3em;
         cursor: pointer;
-        width: 100% !important;
+        width: 100%;
     }
 }
 
@@ -261,10 +221,10 @@ border: none;
         margin-top: 1em;
     }
 
-   #destaque .swiper {
-        margin: 1em 0 2em 4em !important;
+    #destaque .swiper {
+        margin: 1em 0 2em 4em;
         margin-bottom: 3em;
         cursor: pointer;
-        width: 100% !important;
+        width: 100%;
     }
 }

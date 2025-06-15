@@ -56,7 +56,7 @@ export function criarCard(imovel) {
     featureArea.classList.add('features-area');
 
     const iconArea = document.createElement('i');
-    iconArea.classList.add('fa-solid', 'fa-ruler-vertical');
+    iconArea.classList.add('data-lucide', 'map-pin-house');
 
     const pArea = document.createElement('p');
     const areaText = document.createTextNode(imovel.area + ' ');

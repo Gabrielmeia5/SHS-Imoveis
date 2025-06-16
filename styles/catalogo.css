@@ -8,10 +8,11 @@
 #catalogo {
     position: relative;
     overflow: hidden;
-    background-color: rgb(202, 168, 114, 0.3);
+    background-color: #caa8724d;
 }
 
 .catalogo_titulo {
+    /* position: absolute; */
     margin: 3em 0 1.5em 3em;
 }
 
@@ -23,9 +24,9 @@
 
 .card_imoveis {
     display: flex;
-    justify-content: center;
     gap: 1em;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .card {
@@ -55,11 +56,13 @@
 }
 
 #catalogo .card-container {
-    width: 25em;
-    height: 35em;
+    display: flex;
+    width: 23em;
+    height: 25em;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 5px;
     position: relative;
+    margin: auto;
 }
 
 #catalogo .card-container img {
@@ -77,43 +80,43 @@
     font-weight: bold;
     font-size: 22px;
     position: absolute;
-    margin: 9em 0 0 15px;
+    margin: 8.5em 0 0 2.3em;
 }
 
 #catalogo .card-type-Venda {
     display: flex;
     width: 100px;
-    height: 50px;
+    height: 40px;
     background-color: #9CDD8F;
     border-radius: 5px;
-    margin: 1em 0 0 2em;
+    margin: 1.5em 0 0 3em;
     justify-content: center;
     flex-direction: column;
+    position: absolute;
 }
 
 #catalogo .card-type-Venda p {
     display: flex;
     justify-content: center;
     color: #fff;
-    font-weight: bold;
+    font-weight: 600;
     font-family: "Montserrat", sans-serif;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 #catalogo .card-value p {
     display: flex;
     color: #fff;
     font-family: "Montserrat", sans-serif;
-    font-size: 23px;
-    margin: 16em 0 0 1.5em;
-    position: absolute;
+    margin: 0.7em 0 0 2.3em;
+    font-size: 20px;
 }
 
 #catalogo .card-localization {
     display: flex;
     align-items: center;
-    margin: 20em 0 0 0;
-    position: absolute;
+    margin: 19em 0 0 3em;
+    gap: 0.7em;
 }
 
 #catalogo .card-localization p {
@@ -126,209 +129,42 @@
 #catalogo .card-localization .lucide-map-pin-house {
     display: flex;
     color: #b58d5b;
-    width: 100px;
 }
 
-@media (max-width: 429px) {
-    #catalogo .card-container {
-        width: 20em;
-        height: 35em;
-        margin: 0 2em 1em;
-
-    }
-
-    .card_imoveis {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-}
-
-@media (min-width: 430px) and (max-width: 768px) {
-    .catalogo_titulo {
-        margin: 3em 0 1.5em 3em;
-    }
-
-    #catalogo .card-container {
-        width: 25em;
-        height: 35em;
-        margin: 0 2em 1em;
-    }
-
-    .catalogo_titulo h1 {
-        font-family: "Advent Pro", sans-serif;
-        font-size: 32px;
-        font-weight: 600;
-    }
-
-    .card_imoveis {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-}
-
-@media (min-width: 769px) and (max-width: 800px) {
-    .catalogo_titulo {
-        margin: 3em 0 1.5em 3em;
-    }
-
-    #catalogo .card-container {
-        width: 25em;
-        height: 35em;
-        margin: 0 2em 1em;
-    }
-
-    .catalogo_titulo h1 {
-        font-family: "Advent Pro", sans-serif;
-        font-size: 32px;
-        font-weight: 600;
-    }
-
-    .card_imoveis {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-    }
-}
-
-@media (min-width: 801px) and (max-width: 1000px) {
-    .catalogo_titulo {
-        margin: 3em 0 3em 6em;
-    }
-
-    #catalogo .card-container {
-        width: 45em;
-        height: 35em;
-        margin: 0 2em 1em;
-    }
-
-    .catalogo_titulo h1 {
-        font-family: "Advent Pro", sans-serif;
-        font-size: 32px;
-        font-weight: 600;
-    }
-
-    .card_imoveis {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-    }
-}
-
-@media (min-width: 1001px) and (max-width: 1263px) {
-    .catalogo_titulo {
-        margin: 3em 0 3em 6em;
-    }
-
-    #catalogo .card-container {
-        width: 55em;
-        height: 35em;
-        margin: 0 2em 1em;
-    }
-
-    .catalogo_titulo h1 {
-        font-family: "Advent Pro", sans-serif;
-        font-size: 32px;
-        font-weight: 600;
-    }
-
-    .card_imoveis {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-    }
-}
-
-@media (min-width: 1264px) and (max-width: 1583px) {
-    .catalogo_titulo {
-        margin: 3em 0 3em 6em;
-    }
-
-    #catalogo .card-container {
-        width: 35em;
-        height: 35em;
-        margin: 0 2em 1em;
-    }
-
-    .catalogo_titulo h1 {
-        font-family: "Advent Pro", sans-serif;
-        font-size: 32px;
-        font-weight: 600;
-    }
-
-    .card_imoveis {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-    }
-}
-
-@media (min-width: 1584px) and (max-width: 1769px) {
-    .catalogo_titulo {
-        margin: 3em 0 3em 6em;
-    }
-
-    #catalogo .card-container {
-        width: 45em;
-        height: 35em;
-        margin: 0 2em 1em;
-    }
-
-    .catalogo_titulo h1 {
-        font-family: "Advent Pro", sans-serif;
-        font-size: 32px;
-        font-weight: 600;
-    }
-
-    .card_imoveis {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-    }
-}
-
-@media (min-width: 1770px) {
-    .catalogo_titulo {
-        margin: 3em 0 3em 6em;
-    }
-
-    #catalogo .card-container {
-        width: 35em;
-        height: 35em;
-    }
-
-    .catalogo_titulo h1 {
-        font-family: "Advent Pro", sans-serif;
-        font-size: 32px;
-        font-weight: 600;
-    }
-
-    .card_imoveis {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-    }
-}
-
-.custom-dropdown {
+#catalogo .card-features {
     display: flex;
-    justify-content: flex-end;
+    flex-direction: row;
+    margin: 16.5em 0 0 3em;
     position: absolute;
+    align-items: center;
+    color: #ffffff;
+}
+
+#catalogo .border {
+    width: 2px;
+    height: 2em;
+    background-color: #ffffff;
+    margin: 0 1em 0 1em;
+}
+
+#catalogo .card-features-beds {
+    display: flex;
+    color: #ffffff;
+    gap: 0.5em;
+    flex-direction: row;
+    align-items: center;
+}
+
+#catalogo .card-features-area {
+    display: flex;
+    color: #ffffff;
+    gap: 0.5em;
+    flex-direction: row;
+}
+
+/* .custom-dropdown {
     width: 200px;
-    height: 50px;
+    margin: 3em 0 3em 15em;
 }
 
 .dropdown-button {
@@ -342,14 +178,10 @@
 
 .dropdown-options {
     display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
     border: 1px solid #D8B48C;
     background-color: #F8EDE6;
     border-radius: 4px;
-    z-index: 10;
+    margin-top: 5px;
 }
 
 .dropdown-options div {
@@ -366,4 +198,4 @@
 
 #dropdown-toggle:checked~.dropdown-options {
     display: block;
-}
+} */

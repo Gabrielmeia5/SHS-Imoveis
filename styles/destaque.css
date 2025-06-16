@@ -9,7 +9,7 @@
 #destaque {
     position: relative;
     overflow: hidden;
-    background-color: rgba(202, 168, 114, 0.702);
+    background-color: #caa872b3;
 }
 
 .destaque_titulo {
@@ -17,7 +17,7 @@
 }
 
 #destaque .swiper {
-    margin: 1em 0 2em 4em;
+    /* margin: 1em 0 2em 4em; */
     margin-bottom: 3em;
     cursor: pointer;
     width: 100%;
@@ -49,17 +49,18 @@
 }
 
 #destaque .swiper {
-    width: 80em;
-    height: 32em;
-    margin: 0.5em 2em 2em 2em;
+    width: 70em;
+    height: 25em;
+    margin: 0.5em 2em 2em 1em;
 }
 
 #destaque .card-container {
-    height: 100%;
-    width: 100%;
+    display: flex;
+    width: 22em;
+    height: 25em;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 5px;
-    position: absolute;
+    position: relative;
 }
 
 #destaque .card-container img {
@@ -117,43 +118,43 @@
     font-weight: bold;
     font-size: 22px;
     position: absolute;
-    margin: 9em 0 0 15px;
+    margin: 8.5em 0 0 2.3em;
 }
 
 #destaque .card-type-Venda {
     display: flex;
     width: 100px;
-    height: 50px;
+    height: 40px;
     background-color: #9CDD8F;
     border-radius: 5px;
-    margin: 1em 0 0 2em;
+    margin: 1.5em 0 0 3em;
     justify-content: center;
     flex-direction: column;
+    position: absolute;
 }
 
 #destaque .card-type-Venda p {
     display: flex;
     justify-content: center;
     color: #fff;
-    font-weight: bold;
+    font-weight: 600;
     font-family: "Montserrat", sans-serif;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 #destaque .card-value p {
     display: flex;
     color: #fff;
     font-family: "Montserrat", sans-serif;
-    font-size: 23px;
-    margin: 16em 0 0 1.5em;
-    position: absolute;
+    margin: 0.7em 0 0 2.3em;
+    font-size: 20px;
 }
 
 #destaque .card-localization {
     display: flex;
     align-items: center;
-    margin: 20em 0 0 0;
-    position: absolute;
+    margin: 19em 0 0 3em;
+    gap: 0.7em;
 }
 
 #destaque .card-localization p {
@@ -166,7 +167,42 @@
 #destaque .card-localization .lucide-map-pin-house {
     display: flex;
     color: #b58d5b;
-    width: 100px;
+}
+
+#destaque .border {
+    width: 2px;
+    height: 2em;
+    background-color: #ffffff;
+    margin: 0 1em 0 1em;
+}
+
+#destaque .card-features {
+    display: flex;
+    flex-direction: row;
+    margin: 16.5em 0 0 3em;
+    position: absolute;
+    align-items: center;
+    color: #ffffff;
+}
+
+#destaque .border {
+    border-right: 2px solid #fff;
+    margin-left: 1em;
+}
+
+#destaque .card-features-beds {
+    display: flex;
+    color: #ffffff;
+    gap: 0.5em;
+    flex-direction: row;
+    align-items: center;
+}
+
+#destaque .card-features-area {
+    display: flex;
+    color: #ffffff;
+    gap: 0.5em;
+    flex-direction: row;
 }
 
 @media (min-width: 1281px) and (max-width: 1535px) {

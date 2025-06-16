@@ -35,36 +35,39 @@ export function criarCard(imovel) {
 
     // Quartos
     const featureBeds = document.createElement('div');
-    featureBeds.classList.add('feature-beds');
+    featureBeds.classList.add('card-features-beds');
+    const border = document.createElement('div');
+    border.classList.add('border');
     const iconBed = document.createElement('i');
-    iconBed.classList.add('fa-solid', 'fa-bed');
+    iconBed.setAttribute('data-lucide', 'bed-single');
     const pBeds = document.createElement('p');
     pBeds.textContent = imovel.quartos.toString();
-    featureBeds.append(iconBed, pBeds);
+    featureBeds.append(iconBed, pBeds, border);
+    cardFeatures.append(featureBeds);
+    lucide.createIcons();
 
     // Vagas
     const featureCars = document.createElement('div');
-    featureCars.classList.add('features-cars');
+    featureCars.classList.add('card-features-cars');
+    const borderCar = document.createElement('div');
+    borderCar.classList.add('border');
     const iconCar = document.createElement('i');
-    iconCar.classList.add('fa-solid', 'fa-car');
-    const pCars = document.createElement('p');
-    pCars.textContent = imovel.vagasGaragem.toString();
-    featureCars.append(iconCar, pCars);
+    iconCar.setAttribute('data-lucide', 'car-front');
+    const pCar = document.createElement('p');
+    pCar.textContent = imovel.quartos.toString();
+    featureBeds.append(iconCar, pCar, borderCar);
+    cardFeatures.append(featureCars);
+    lucide.createIcons();
 
     // Área
     const featureArea = document.createElement('div');
-    featureArea.classList.add('features-area');
-
+    featureArea.classList.add('card-features-area');
     const iconArea = document.createElement('i');
-    iconArea.classList.add('data-lucide', 'map-pin-house');
-
-    const pArea = document.createElement('p');
-    const areaText = document.createTextNode(imovel.area + ' ');
-    const spanM2 = document.createElement('span');
-    spanM2.textContent = 'm²';
-
-    pArea.append(areaText, spanM2);
-    featureArea.append(iconArea, pArea);
+    iconArea.setAttribute('data-lucide', 'ruler');;
+    const areaText = document.createTextNode(imovel.area + 'm²');
+    featureArea.append(iconArea, areaText);
+    cardFeatures.append(featureArea);
+    lucide.createIcons();
 
     // Localização
     const cardLocalization = document.createElement('div');

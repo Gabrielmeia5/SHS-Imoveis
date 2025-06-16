@@ -4,27 +4,49 @@ import { inicializarSwiper } from '../utils/destaque.js';
 
 let imoveis = [];
 let currentVisible = 0;
-const batchSize = 5;
+let batchSize = 5;
 
 export default async function initHome() {
   imoveis = await fetchImoveis();
 
+  updateBatchSize();          // Define o batchSize baseado na tela
   renderizarLote();
   configurarEventos();
   inicializarSwiper();
 
+  // Se quiser: Atualizar batchSize se o usuário redimensionar a tela
+  window.addEventListener('resize', handleResize);
+}
 
+function updateBatchSize() {
+  const width = window.innerWidth;
+
+  if (width <= 600) {
+    batchSize = 3;
+  } else if (width <= 1024) {
+    batchSize = 4;
+  } else if (width <= 1440) {
+    batchSize = 6;
+  } else {
+    batchSize = 8
+  }
+}
+
+function handleResize() {
+  // Opcional: Atualizar o batchSize sempre que o usuário redimensionar a tela
+  updateBatchSize();
 }
 
 function renderizarLote() {
   const catalogo = document.querySelector('.card_imoveis');
   const destaques = document.querySelector('#destaque .swiper-wrapper');
 
+  updateBatchSize();   // Atualiza o batchSize antes de cada renderização (caso a tela tenha sido redimensionada)
+
   const proximoLote = imoveis.slice(currentVisible, currentVisible + batchSize);
 
   proximoLote.forEach(imovel => {
     const card = criarCard(imovel);
-    console.log(card)
     catalogo.appendChild(card);
 
     if (imovel.destaque && currentVisible === 0) {
@@ -43,5 +65,3 @@ function renderizarLote() {
 function configurarEventos() {
   document.getElementById('verMaisBtn').addEventListener('click', renderizarLote);
 }
-
-

@@ -170,10 +170,10 @@
 }
 
 #destaque .border {
-    width: 2px;
-    height: 2em;
+    width: 1px;
+    height: 1.5em;
     background-color: #ffffff;
-    margin: 0 1em 0 1em;
+    margin: 0 .8em;
 }
 
 #destaque .card-features {
@@ -186,22 +186,15 @@
 }
 
 #destaque .border {
-    border-right: 2px solid #fff;
-    margin-left: 1em;
+    border-right: 1px solid #fff;
 }
 
-#destaque .card-features-beds {
+
+#destaque .card-features-area, #destaque .card-features-beds, #destaque .card-features-cars {
     display: flex;
     color: #ffffff;
-    gap: 0.5em;
-    flex-direction: row;
+    gap: 0.3em;
     align-items: center;
-}
-
-#destaque .card-features-area {
-    display: flex;
-    color: #ffffff;
-    gap: 0.5em;
     flex-direction: row;
 }
 

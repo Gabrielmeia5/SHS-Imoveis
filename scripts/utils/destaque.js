@@ -1,7 +1,7 @@
 export function inicializarSwiper() {
   new Swiper(".mySwiper", {
     autoplay: {
-      delay: 2500,
+      delay: 15000,
       disableOnInteraction: false,
     },
     breakpoints: {

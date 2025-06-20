@@ -55,7 +55,7 @@ export function criarCard(imovel) {
     iconCar.setAttribute('data-lucide', 'car-front');
     const pCar = document.createElement('p');
     pCar.textContent = imovel.quartos.toString();
-    featureBeds.append(iconCar, pCar, borderCar);
+    featureCars.append(iconCar, pCar, borderCar);
     cardFeatures.append(featureCars);
     lucide.createIcons();
 

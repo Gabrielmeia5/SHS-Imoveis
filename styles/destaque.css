@@ -190,7 +190,7 @@
 }
 
 
-#destaque .card-features-area, #destaque .card-features-beds, #destaque .card-features-cars {
+#destaque .card-features-area, #destaque .card-features-beds, .card-features-cars {
     display: flex;
     color: #ffffff;
     gap: 0.3em;

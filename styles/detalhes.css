@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url(styles.css);
 
 * {
     margin: 0;
     padding: 0;
 }
 html, body {
+    background-color: #FFEFE3;
     margin: 0;
     overflow-x: hidden;
     font-family: var(--font-primary, 'Montserrat', sans-serif);
@@ -87,7 +88,7 @@ html, body {
   display: flex;
   }
 .Texto1 p{
-  font-size: 1.5em;
+    font-size: var(--font-size-md);
     color: white;
     text-align: left;
 }
@@ -104,9 +105,9 @@ html, body {
   font-size: 1em;
   margin: 0 2.7em;
 }
-.area{
 
-    gap: 5px;
+.area{
+  gap: 5px;
   display: flex;
   font-size: 1em;
   margin: 0 2.7em;
@@ -138,14 +139,11 @@ html, body {
     display: flex;
     gap: 5em;
 }
-.esquerda-caracteristicas {
-    margin: 0 0 3em 6em;
-    padding: 3em;
+.esquerda-caracteristicas{
+    margin: 0 0;
     font-size: 0.8em;
     background-color:#E5CCAB;
     flex: 0.5; /* Reduz o tamanho relativo da div esquerda */
-    max-width: 25%; /* Define um limite máximo para o tamanho */
-    max-height: 45%;
 }
 .esquerda-caracteristicas h4{
     margin: 1em;
@@ -165,11 +163,13 @@ html, body {
 
 .direita-caracteristicas h2 {
     font-size: 1.5em;
+    color: #000000;
+    text-align: center;
 }
 .direita-caracteristicas li {
-    margin: 0.4em;
+    margin: 0.4em 0;
     font-size: 1.0em;
-    text-align: left;
+    text-align: center;
 }
 
 #descricao{
@@ -177,6 +177,9 @@ html, body {
     font-size: 1.0em;
     text-align: center;
     align-items: center;
+}
+#descricao h2{
+  color: #000;
 }
 .desc-detalhe{
     margin: 1em auto;
@@ -365,17 +368,20 @@ html, body {
     display: flex;
   }
 
-    .esquerda-valor {  
+    .esquerda-valor { 
+    padding:  0 3em;
+    max-width: 25%; 
     display:inline;
     font-size: 1.4em;
     color: white;
-    margin: 1.2em 0 0 11.5rem;
-    text-align: left;
+    margin: 1.2em 48px;
+    text-align: center;
     flex: 1;
     }
 
     .direita-valor{
-    margin: 1.2em 11.5rem 0 0;
+      text-align: end;
+      margin: 1.2em 0 0 40%;
     }
 
 
@@ -395,22 +401,35 @@ html, body {
     #caracteristicas {
         flex-direction: row; /* Linha no desktop */
         align-items: flex-start; /* Alinha os itens ao topo */
-        margin: 0 var(--spacing-xl,7rem);
         gap: 2rem;
 
     }
 
     .esquerda-caracteristicas {
-      margin: 0;
+        margin: 0 0 3em 6em;
+        padding: 3em;
+        font-size: 0.8em;
+        background-color:#E5CCAB;
+        flex: 0.5; /* Reduz o tamanho relativo da div esquerda */
+        max-width: 25%; /* Define um limite máximo para o tamanho */
+        max-height: 45%;
     }
 
     .direita-caracteristicas {
-        margin: var(--font-size-xl,2.25rem) 0 var(--font-size-xl,2.5rem) var(--font-size-xl,2.25rem);
+        background-color: #FFEFE3;
+        margin: 3% 0 0 10%;
         flex: 1; /* Ocupa o espaço restante */
         max-width: 600px;
     }
-
+    .direita-caracteristicas h2{
+      text-align: left;
+      color: #000000;
+    }
+    #descricao h2{
+      color: #000;
+    }
     .Imovel-corre{
+      display: none;
       margin:var(--spacing-lg,2.5rem) 0;
       font-size: var(--font-size-lg,0.875rem);
       font-weight: bold;
@@ -421,7 +440,7 @@ html, body {
     /* Seção da Corretora: vira duas colunas */
     #helen-info {
         color: #2D2D2D;
-        background-color: #fff;
+        background-color: #FFEFE3;
         flex-direction: row; /* Linha no desktop */
         justify-content: center;
         align-items: center;
@@ -437,6 +456,9 @@ html, body {
         background-color: #000000;
     }
     
+    #info-corretora {
+      background-color: #FFEFE3;
+    }
     .info-corretora-imagem {
         max-width: 480px;
     }
@@ -446,19 +468,21 @@ html, body {
         max-width: 450px;
     }
           .info-corretora-texto h2 {
-          font-size: var(--font-size-lg, 2rem);
-          color: var(--text-primary, #CAA872);
+            font-weight: 500;
+            font-family: playfair;
+            font-size:var(--font-size-xl);
+            color: var(--text-primary, #CAA872);
       }
 
-      •.info-corretora-texto h4 {
-          font-size: var(--font-size-xxl, 1rem);
-          color: var(--color-primary, #2D2D2D);
+      .info-corretora-texto h4 {
+          font-size: var(--font-size-sm);
+          color:#2D2D2D;
           margin-bottom: 1rem;
-          font-weight:lighter;
+          font-weight:300;
       }
       .info-corretora-texto p{
           margin: var(--spacing-lg,2rem) 0;
-          font-size: var(--font-size-md,1.25rem);
+          font-size: var(--font-size-md);
           font-weight: normal;
           color: #2D2D2D;
       }
@@ -531,7 +555,10 @@ html, body {
     flex-direction: column;
   }
 
-  .esquerda-caracteristicas,
+  #info-corretora{
+    background-color: #FFEFE3;
+  }
+
   .direita-caracteristicas {
     max-width: 100%;
     margin: 0 0;

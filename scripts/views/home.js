@@ -27,8 +27,10 @@ function updateBatchSize() {
     batchSize = 4;
   } else if (width <= 1440) {
     batchSize = 6;
-  } else {
+  } else if (width <= 1756) {
     batchSize = 8
+  } else {
+    batchSize = 10;
   }
 }
 

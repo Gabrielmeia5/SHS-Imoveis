@@ -3,14 +3,12 @@ export function formatarPreco(valor) {
 }
 
 export function filtrarImoveis(imoveis, criterio) {
-  // Exemplo de filtro futuro
   return imoveis.filter(imovel => imovel.bairro === criterio);
 }
 
-
 export function checkScreenSize() {
     const navList = document.querySelector('.nav-list');
-    const menuCheckbox = document.getElementById('menuBtn'); // você esqueceu de declarar isso aqui!
+    const menuCheckbox = document.getElementById('menuBtn');
     
     if (window.innerWidth <= 768) {
       navList.classList.add('hidden');

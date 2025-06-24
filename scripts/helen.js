@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
     // Imagem da Helen
     const img = document.createElement('img');
-    img.src = '../assets/images/helen.png'; // Atualize se precisar
+    img.src = '../assets/images/HELEN.svg'; // Atualize se precisar
     img.alt = 'Corretora Helen';
     helenContainer.appendChild(img);
   

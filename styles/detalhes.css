@@ -55,23 +55,48 @@ html, body {
 }
 
 .images-topo {
-    white-space: nowrap;
-    overflow-x: auto;
-    width: 100%;
-    max-width: 600px;
+    display: flex;
+    width: 100vw;
+
     height: 300px;
-    overflow: hidden;
 }
 
 .images-topo img{
-  width: 100%;
+  width: 25vw;
   height: 100%;
   object-fit: cover;
 }
-.images-topo {
-    display: flex;
-    overflow: hidden;
-}
+
+
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #444;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+
+
+
+
+
+
+
 
 .imovel-info{
     display: flex;
@@ -107,6 +132,7 @@ html, body {
 
 
 .area{
+  color: white;
   gap: 5px;
   display: flex;
   font-size: 1em;
@@ -118,7 +144,7 @@ html, body {
 }
 
 .icone-area{
-  margin: 10px 0;
+  margin: 5px 0;
 }
 .Texto2 p{
     color: white;
@@ -135,67 +161,113 @@ html, body {
 }
 
 .direita-valor {
-  font-size:1.4em;
+    font-weight: 200;
+    font-size:calc(var(--font-size-xs) - 1px);
     color: white;
     display: flex;
-    margin: auto;
+    margin: auto 0 auto auto;
+}
+.preco{
+    font-weight: 800;
+    font-size: var(--font-size-sm);
+    color: white;
+    display: flex;
+    margin: auto auto auto 2%;
 }
 #caracteristicas{
     font-family: "Montserrat", sans-serif;
     background-color: #FFEFE3;
     display: flex;
-    gap: 5em;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2em;
 }
 .esquerda-caracteristicas{
-    margin: 0 0;
-    font-size: 0.8em;
+    order: 1;
+    margin: 0 0 ;
+    font-family: var(--font-primary);
+    font-size: var(--font-size-sm);
+    font-weight: 700;
     background-color:#E5CCAB;
     flex: 0.5; /* Reduz o tamanho relativo da div esquerda */
 }
-.esquerda-caracteristicas h4{
+.esquerda-caracteristicas p{
+  margin: 1em;
+}
+.esquerda-p h4{
   font-size: var(--font-size-sm);
   font-family: "Montserrat", sans-serif;
-  font-weight: 200px;
-  margin: 1em;
+  font-weight: 500;
+  margin: 1.50em 1.50em 0 1.50em;
 }
-.esquerda-caracteristicas p{
+.esquerda-p p{
   font-size:calc(var(--font-size-sm) - 1px) ;
-  margin: 1em;
+  font-weight: 600;
+  margin: 0.70em 1.50em ;
 }
 .direita-caracteristicas {
+    order: 5;
     margin: 0 3em 5em 1em; /* Adiciona espaço entre as duas divs */
-    padding: 2.7em;
-    background-color: #F5F5F5;
+    background-color: #FFEFE3;
     flex: 0.5; /* Define o tamanho relativo da div direita */
-    align-items: center; /* Centraliza horizontalmente */
     word-wrap: break-word; /* Permite que o texto quebre e desça */
     overflow-wrap: break-word; /* Compatibilidade adicional para quebra de texto */
 }
 
 .direita-caracteristicas h2 {
+    font-weight: 700;
+    text-align: center;
     font-size: var(--font-size-sm);
     color: #2D2D2D;
-    text-align: center;
 }
-.direita-caracteristicas li {
-    margin: 0.4em 0;
+.direita-caracteristicas li{
+    margin: 15px;
+    text-align:center;
+    list-style: none;
+    font-weight: 500;
     font-size: calc(var(--font-size-sm) - 1px);
-    text-align: center;
+}
+.direita-caracteristicas img{
+  margin-bottom: 5px;
+  margin-right: 5px;
 }
 
-#descricao{
-    font-family: "Montserrat", sans-serif;
-    font-size: 1.0em;
-    text-align: center;
-    align-items: center;
+.minus-color{
+  color: #CAA872;
 }
-#descricao h2{
-  font-size: var(--font-size-sm);
-  color: #2D2D2D;
+.botao-video{
+  order: 3;
+  text-align: center;
 }
-#descricao p{
-  font-size: calc(var(--font-size-sm) - 1px);
+.linha-video{
+  margin:  10px auto auto auto;
+  display: block;
+  order: 4;
+  height: 1px;
+  width: 80%;
+  background-color: #ECD5B9;
 }
+      .mais_sobre{
+          order: 2;
+          font-family: "Montserrat", sans-serif;
+          text-align: center;
+          align-items: center;
+          margin: auto;
+          align-items: center;
+        }
+
+      .mais_sobre h2{
+        text-align: center;
+        font-size: var(--font-size-sm);
+        color: #2D2D2D;
+      }
+      .mais_sobre p{
+        text-align: center;
+        font-weight: 500;
+        font-size: calc(var(--font-size-sm));
+      }
+
 .desc-detalhe{
     margin: 1em auto;
      width: 40em;
@@ -229,48 +301,119 @@ html, body {
   border: none;
 }
 
-#caracteristicas {
-    display: flex;
-    flex-direction: column; /* Coluna no mobile */
-    gap: 1.5rem; /* Espaçamento entre os blocos */
-    background-color: var(--color-background, #FFEFE3); /* Usando variável do seu styles.css */
-}
-
-.esquerda-caracteristicas, .direita-caracteristicas {
-    width: 100%; /* Ocupa toda a largura no mobile */
-    box-sizing: border-box; /* Garante que padding não afete a largura */
-}
-  .Imovel-corre{
-    padding:var(--spacing-lg,2.5rem) 0 0 0  ;
-    color: #fff;
-    background-color:#CAA872 ;
-  }
-  .Imovel-corre h2{
-    font-size: calc(var(--font-size-xl) - 2px) !important;
-  }
-
 /* Seção da Corretora: empilhada por padrão */
 #helen-info {
+    position: relative;
     color: #FFF;
     background-color: #CAA872;
     display: flex;
     flex-direction: column-reverse; /* Coluna no mobile */
     align-items: center; /* Centraliza tudo */
     text-align: center;
-    padding:0 0 3rem 1rem;
     gap: 1.5rem;
 }
 
-.info-corretora-imagem {
-    max-width: 280px; /* Um tamanho razoável para a imagem no mobile */
-    height: auto;
-    border-radius: 8px; /* Borda levemente arredondada como no figma */
+  .Imovel-corre{
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+    padding:var(--spacing-lg,2.5rem) 0 0 0  ;
+    color: #fff;
+    background-color:#CAA872 ;
+    margin-bottom: 2rem;
+  }
+  .Imovel-corre h2{
+    font-weight: 600;
+    font-size: calc(var(--font-size-xl) - 2px) !important;
+  }
+  .imovel-corre p{
+    font-size: var(--font-size-sm);
+    font-weight: 500;
+  }
+  .Imovel-corre button{
+    margin: auto;
+    text-align: center;
+    width: 300px;
+  }
+ /*  BOTÂO DE ENTRAR EM CONTATO */
+ .btn-contato {
+  background-color: transparent; /* Fundo transparente para o efeito "fantasma" */
+  border: 2px solid #fff; /* Borda sólida com a cor do texto principal */
+  color:#FFF; /* Cor do texto igual à da borda */
+  padding: 0.8rem 1.8rem; /* Espaçamento interno (vertical e horizontal). Ajuste com o Figma! */
+  font-family: var(--font-primary, 'Montserrat', sans-serif);
+  font-size: var(--font-size-sm); /* Tamanho da fonte */
+  font-weight: 500; /* Um pouco mais forte que o normal */
+  letter-spacing: 1px; /* Leve espaçamento entre as letras */
+  cursor: pointer; /* Muda o cursor para a "mãozinha" */
+  transition: all 0.3s ease;
+}
+.btn-contato:hover {
+  background-color: var(--text-primary, #2D2D2D); /* O fundo se torna a cor da borda */
+  color: var(--color-surface, #FFFFFF); /* O texto se torna branco (ou a cor do fundo da página) */
 }
 
-.linha-vertical {
-  width: 3rem;
-  color: #2D2D2D;
+
+.helen-pic{
+  z-index: 2;
+  position: relative;
+  width: 90%;
+  background-color: #CAA872 ;
+  margin: 0;
+  padding: 0;
 }
+
+.cor-helen{
+  z-index: 1;
+  width: 100%;
+  height: 10vh;
+  position:absolute;
+  background-color: #FFEFE3;
+  bottom: 0;
+}
+.info-corretora-imagem{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.nome-corretora{
+  position: absolute;
+  bottom: 0;
+  text-align: left;
+  margin: 80px 40px ;
+  left: 0;
+}
+.nome-corretora h3{
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+  font-size: calc(var(--font-size-md) + 4px);
+}
+.nome-corretora p{
+  font-family: var(--font-primary);
+  font-size: var(--font-size-sm);
+  font-weight: 200;
+}
+.contatos-corretora{
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 50px 40px ;
+  gap: 10px;
+}
+.linha-vertical-helen{
+  position: absolute;
+  width: 0.55px;
+  height: 90px;
+  background-color: #FFF;
+  left: 0;
+  bottom: 0;
+  margin: 40px 30px;
+}
+
 
 .info-corretora-texto h2 {
     display: none;
@@ -297,50 +440,19 @@ html, body {
   flex-direction: column; /* Padrão mobile: empilhado */
   gap: 1.5rem; /* Espaço entre os cards no mobile */
   padding: 3rem 1.5rem; /* Espaçamento da seção (vertical e horizontal) */
-  background-color: var(--color-light, #F9F6F2); /* Cor de fundo da seção */
+  background-color: var(--color-light, #F9F6F2);
   justify-content: center;
 }
-.btn-contato {
-  /* Cores e Borda */
-  background-color: transparent; /* Fundo transparente para o efeito "fantasma" */
-  border: 2px solid var(--text-primary, #FFF); /* Borda sólida com a cor do texto principal */
-  color: var(--text-primary, #FFF); /* Cor do texto igual à da borda */
-
-  /* Espaçamento e Tamanho */
-  padding: 0.8rem 1.8rem; /* Espaçamento interno (vertical e horizontal). Ajuste com o Figma! */
-  
-  /* Tipografia */
-  font-family: var(--font-primary, 'Montserrat', sans-serif);
-  font-size: var(--font-size,1rem); /* Tamanho da fonte */
-  font-weight: 600; /* Um pouco mais forte que o normal */
-  letter-spacing: 1px; /* Leve espaçamento entre as letras */
-
-  /* Outros */
-  cursor: pointer; /* Muda o cursor para a "mãozinha" */
-  border-radius: 8px; /* Bordas levemente arredondadas. Ajuste com o Figma! */
-  
-  /* Transição suave para o efeito de hover */
-  transition: all 0.3s ease;
-}
-
-/* Efeito ao passar o mouse por cima */
-.btn-contato:hover {
-  background-color: var(--text-primary, #2D2D2D); /* O fundo se torna a cor da borda */
-  color: var(--color-surface, #FFFFFF); /* O texto se torna branco (ou a cor do fundo da página) */
-}
-/* Estilo para o container da seção inteira */
 
 
 /* Estilo para CADA CARD individual */
 .caracteristicas-corretoras {
-  background-color: var(--color-surface, #FFFFFF); /* Fundo branco do card */
+  background-color: transparent; /* Fundo branco do card */
   border: 1px solid #E0CDB6; /* Cor da borda, pegue a cor exata do Figma */
   border-radius: 12px; /* Cantos arredondados */
   padding: 2rem; /* Espaçamento interno do card */
   text-align: center; /* Centraliza o texto */
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Sombra suave para dar profundidade */
-  
-  /* Transição suave para o efeito de hover */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 

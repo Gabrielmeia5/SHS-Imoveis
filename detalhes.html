@@ -9,57 +9,67 @@
 </head>
 <body>
 
-  <div id="loading-overlay">
+ <!--- <div id="loading-overlay">
     <div class="loader"></div>
-  </div>
+  </div>-->
 
 
 
     <main id="main-content">
+
+      <!--- Carrocel de Imagens e informaçoes principais-->
+
         <section id="detalhes-topo">
-        <div class="images-topo"> <!--Imagem Principal + Imagens extras-->
-          <div class="img-topo">
-
+          <div class="images-topo"> <!--Imagem Principal + Imagens extras-->
+            <img src="assets/images/imovel-1.jpg" alt="Imagem 5 do imovel">
+            <img src="assets/images/imovel-2.jpg" alt="Imagem 2 do imovel">
+            <img src="assets/images/imovel-3.jpg" alt="Imagem 3 do imovel">
+            <img src="assets/images/imovel-4.jpg" alt="Imagem 4 do imovel">
           </div>
-        </div>
         
-        <div class="imovel-info"> <!--Nome, Quantia de CARROS E QUARTOS E AREA-->
-          <div class="Texto1 ">
-            <div>
-            <p>Imovel DO DANIEL SAORES</p>
+          <div class="imovel-info"> <!--Nome, Quantia de CARROS E QUARTOS E AREA-->
+            <div class="Texto1 ">
+              <p>C202 - Casa Porteira Fechada</p>
+              <div class="area">
+                <i data-lucide="maximize-2"></i>
+                <p class="icone-area">210m²</p>
+              </div>
             </div>
-            <div class="area">
-              <img src="assets/icons/move-diagonal.svg">
+            <div class="icones-infotopo">
+              <div class="icone-topo">
+              <i data-lucide="bed"></i>
+              <p class="icone-quartos">02</p>   
+              </div>
+              <div class="icone-topo">
+              <i data-lucide="car-front"></i>
+              <p class="icone-garagem">02</p>
+              </div>
+              <div class="icone-topo">
+              <i data-lucide="maximize-2"></i>
               <p class="icone-area">210m²</p>
+              </div>
             </div>
-          </div>
-          <div class="icones-infotopo">
-            <div class="icone-topo">
-            <i data-lucide="bed"></i>
-            <p class="icone-quartos">02</p>   
-            </div>
-            <div class="icone-topo">
-            <i data-lucide="car-front"></i>
-            <p class="icone-garagem">02</p>
-            </div>
-            <div class="icone-topo">
-            <i data-lucide="maximize-2"></i>
-            <p class="icone-area">210m²</p>
-            </div>
-          </div>
 
-        </div>
-        <div class="imovel-valor">
-          <div class="esquerda-valor">
-          <p>Fixa do Imovel</p>
-          </div>  
-          <div class="direita-valor">
-          <p>Valor do Imovel:</p>
           </div>
-        </div>
-      </section>
+          <div class="imovel-valor">
+            <div class="esquerda-valor">
+            <p>Fixa do Imovel</p>
+            </div>  
+            <div class="direita-valor">
+              <p>Valor do Imovel:</p>
+            </div>
+            <div class="preco">
+              <p>R$ 1.800.350,00</p>
+            </div>
+          </div>
+        </section>
+
+        <!---FICHA CARACTERISTICAS E MAIS SOBRE O IMOVEL-->
+
+
       <section id="caracteristicas">
         <div class="esquerda-caracteristicas">
+          <p>Ficha Imovel</p>
           <div class="esquerda-p">
             <h4>Codigo do imovel</h4>
             <p>747346383</p>
@@ -73,24 +83,28 @@
         </div>
         <div class="direita-caracteristicas">
         <h2>Características</h2>
-        <ul id="lista-caracteristicas">
-          <li><i data-lucide="minus"></i>KKKKKKKKKKKKKKKKKKKKKKKKKKKKKK</li>
-          <li><i data-lucide="minus"></i>KKKKKKKKKKKKKKKKKKKKKKKKKKKKKK</li>
-          <li><i data-lucide="minus"></i>KKKKKKKKKKKKKKKKKKKKKKKKKKKKKK</li>
-          <li><i data-lucide="minus"></i>KKKKKKKKKKKKKKKKKKKKKKKKKKKKKK</li>
-          <li><i data-lucide="minus"></i>KKKKKKKKKKKKKKKKKKKKKKKKKKKKKK</li>
-          <li><i data-lucide="minus"></i>KKKKKKKKKKKKKKKKKKKKKKKKKKKKKK</li>
-        </ul>
+          <ul class="lista-caracteristicas">
+            <li><img src="assets/icons/Line 70.svg" alt="">KKKKKKKKKKKKKKKKKKKKKKKKKKKKKK</li>
+            <li><img src="assets/icons/Line 70.svg" alt="">KKKKKKKKKKKKKKKKKKKKKKKKKKKKKK</li>
+            <li><img src="assets/icons/Line 70.svg" alt="">KKKKKKKKKKKKKKKKKKKKKKKKKKKKKK</li>
+            <li><img src="assets/icons/Line 70.svg" alt="">KKKKKKKKKKKKKKKKKKKKKKKKKKKKKK</li>
+            <li><img src="assets/icons/Line 70.svg" alt="">KKKKKKKKKKKKKKKKKKKKKKKKKKKKKK</li>
+            <li><img src="assets/icons/Line 70.svg" alt="">KKKKKKKKKKKKKKKKKKKKKKKKKKKKKK</li>
+          </ul>
+        </div>
+        <div class="mais_sobre">
+            <h2>Mais sobre esse imóvel</h2>
+          <div class="desc-detalhe">
+            <p>Uma casa que une conforto, tecnologia e estilo de vida moderno. Com 250m² de área construída e 435m² de terreno, este imóvel foi projetado para quem busca o equilíbrio perfeito entre privacidade e funcionalidade.</p>
+          </div>
+        </div>
+        <div class="botao-video">
+          <img src="assets/icons/botaoplay.svg" alt="">
+          <div class="linha-video"></div>
         </div>
       </section>
-    
-      <section id="descricao">
-        <h2>Mais sobre esse imóvel</h2>
-        <div class="desc-detalhe">
-        <p>Uma casa que une conforto, tecnologia e estilo de vida moderno. Com 250m² de área construída e 435m² de terreno, este imóvel foi projetado para quem busca o equilíbrio perfeito entre privacidade e funcionalidade.
-        </div>
-        </p>
-      </section>
+
+      <!-- SEÇÂO PARA O VIDEO / POPUP-->
 
       <section id="videos">
         <div class="linha-play">
@@ -98,31 +112,32 @@
           <button class="play-btn" onclick="mostrarVideo()">▶</button>
           <div class="linha"></div>
         </div>
-
-
       </section>
       
       <!-- AQUI a div onde o JS da Helen vai colocar o conteúdo -->
-      <div class="Imovel-corre">
-        <h2 style="text-align: center; font-size: 2.6em;">Imóvel sob consultoria de...</h2>
-      </div>
-      <section id="helen-info" >
-        <div class="helen-pic">
-
-          <i  class="insta-helen-pic" src="assets/images/icone.insta.svg"></i>
-        <img src="assets/images/HELEN.svg" alt="Foto da corretora Helen" class="info-corretora-imagem">
-          <h3>Helen Cassia</h3>
-          <h4>Corretora</h4>
-        </div>
-
-        <div class="linha-vertical"></div>
-
-        <div class="info-corretora-texto">
-          <div></div>
-          <h2>Hellen Cássia</h2>
-          <h4>Corretora de Imoveis</h4>
+      <section id="helen-info">
+        <div class="Imovel-corre">
+          <h2>Imóvel sob consultoria de Helen Cássia</h2>
           <p>Nada diz “Eu te amo” como o lar dos sonhos! Imagine começar uma nova fase com quem você ama em uma casa deslumbrante, perfeita para criar memórias inesquecíveis.</p> 
           <button class="btn-contato">ENTRE EM CONTATO <i data-lucide="move-up-right"></i></button> </div>
+        </div>
+        <div class="helen-pic">
+            <img src="assets/images/HELEN.svg" alt="Foto da corretora Helen" class="info-corretora-imagem">
+             <div class="nome-corretora">
+              <h3>Hellen Cássia</h3>
+              <p>Corretora</p>
+             </div> 
+             <div class="contatos-corretora">
+              <a href="">
+                <img src="assets/icons/inta.svg" alt="Icone Intagram">
+              </a>
+              <a href="">
+                <img src="assets/icons/zap.svg" alt="Icone Whastapp">
+              </a>
+             </div>
+            <div class="linha-vertical-helen"></div>
+        </div>
+        <div class="cor-helen"></div>
       </section>
 
       <section id="info-corretora">
@@ -159,8 +174,10 @@
   </section>
       <footer></footer> <!-- Criar um componente para adicionar em todas paginas-->
     </main>
-    <script src="./scripts/detalhes.js" type="module"></script>
+   <!-- <script src="./scripts/detalhes.js" type="module"></script>-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="scripts/swdetalhes.js"></script>
   <script>
     lucide.createIcons();
   </script>

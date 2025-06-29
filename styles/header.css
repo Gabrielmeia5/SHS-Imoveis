@@ -3,7 +3,7 @@
 ======================================== */
 
 /* Header Principal */
-header-home {
+.header-home {
   position: relative;
   width: 100vw;
 }
@@ -713,7 +713,7 @@ input[type="radio"]:checked ~ * {
 /* Desktop (1024px+) */
 @media (min-width: 1024px) {
   /* Header Desktop */
-  header-home {
+  .header-home {
     height: 100vh;
     min-height: 90vh;
   }

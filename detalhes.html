@@ -6,6 +6,10 @@
   <title>Detalhes do Imóvel</title>
 <link rel="stylesheet" href="styles/detalhes.css">
 <link rel="stylesheet" href="styles/destaque.css">
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
 </head>
 <body>
 
@@ -16,14 +20,44 @@
     <main id="main-content">
 
       <!--- Carrocel de Imagens e informaçoes principais-->
-
+      <div id="image-popup" class="image-popup hidden">
+        <div class="popup-content">
+          <button id="close-popup" class="close-btn" aria-label="Fechar imagem ampliada">×</button>
+          <img id="popup-img" src="" alt="Imagem ampliada">
+        </div>
+      </div>
         <section id="detalhes-topo">
-          <div class="images-topo"> <!--Imagem Principal + Imagens extras-->
-              <img src="assets/images/imovel-1.jpg" alt="Imagem 5 do imovel" class="image-number1">
-              <img src="assets/images/imovel-2.jpg" alt="Imagem 2 do imovel" class="image-number2">
-              <img src="assets/images/imovel-3.jpg" alt="Imagem 3 do imovel" class="image-number3">
-              <img src="assets/images/imovel-4.jpg" alt="Imagem 4 do imovel" class="image-number4">
+          <div class="swiper-imgs-imovel">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img src="assets/images/imovel-1.jpg" alt="Imagem 5 do imovel" class="image-number1">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/imovel-2.jpg" alt="Imagem 2 do imovel" class="image-number2">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/imovel-3.jpg" alt="Imagem 5 do imovel" class="image-number1">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/imovel-1.jpg" alt="Imagem 5 do imovel" class="image-number1">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/imovel-2.jpg" alt="Imagem 2 do imovel" class="image-number2">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/imovel-3.jpg" alt="Imagem 5 do imovel" class="image-number1">
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev-img"><i data-lucide="chevron-left" class="prev-next-button"></i></div>
+            <div class="swiper-button-next-img"><i data-lucide="chevron-right" class="prev-next-button"></i></div>
           </div>
+
         
           <div class="imovel-info"> <!--Nome, Quantia de CARROS E QUARTOS E AREA-->
             <div class="Texto1 ">
@@ -182,6 +216,7 @@
    <!-- <script src="./scripts/detalhes.js" type="module"></script>-->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="scripts/swdetalhes.js" type="module"></script>
   <script>
     lucide.createIcons();
   </script>

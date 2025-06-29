@@ -89,3 +89,8 @@ function renderImovel(imovel) {
   // Descrição
   document.querySelector(".desc-detalhe p").textContent = imovel.descricao;
 }
+
+
+
+
+

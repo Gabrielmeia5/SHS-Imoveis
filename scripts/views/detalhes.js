@@ -67,3 +67,24 @@ popup.addEventListener('click', (e) => {
     popupImg.src = '';
   }
 });
+
+const swiper = new Swiper('.swiper-imgs-imovel', {
+  slidesPerView: 4,
+  loop: true,
+  navigation: {
+    nextEl: '.swiper-button-next-img',
+    prevEl: '.swiper-button-prev-img',
+  },
+  keyboard: {
+    enabled: true,
+    onlyInViewport: true,
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    769: {
+      slidesPerView: 4,
+    }
+  }
+});

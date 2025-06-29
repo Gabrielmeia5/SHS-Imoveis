@@ -3,6 +3,7 @@ export function renderImovel(imovel) {
   document.querySelector('.Texto1 p').textContent = imovel.titulo;
   document.querySelector('.icone-area').textContent = `${imovel.area}m²`;
   document.querySelector('.icone-quartos').textContent = imovel.quartos;
+  document.querySelector('.icone-area2').textContent = `${imovel.area}m²`;
   document.querySelector('.icone-garagem').textContent = imovel.vagasGaragem;
 
   // Preço

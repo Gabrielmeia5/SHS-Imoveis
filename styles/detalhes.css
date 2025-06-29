@@ -45,8 +45,6 @@ html, body {
   to { transform: rotate(360deg); }
 }
 
-
-
 #detalhes-topo{
     font-family: "Montserrat", sans-serif;
     background-color:#2D2D2D ;
@@ -66,37 +64,6 @@ html, body {
   height: 100%;
   object-fit: cover;
 }
-
-
-
-    .swiper {
-      width: 100%;
-      height: 100%;
-    }
-
-    .swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      background: #444;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .swiper-slide img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-
-
-
-
-
-
-
 
 .imovel-info{
     display: flex;
@@ -118,8 +85,6 @@ html, body {
 }
 .icones-infotopo{
   display: none;
-  color: white;
-  margin: 0.7em 0 0 36em;
 }
 
 .icone-topo{
@@ -302,6 +267,17 @@ html, body {
 }
 
 /* Seção da Corretora: empilhada por padrão */
+
+.h2-helen-pc{
+  display: none;
+}
+.h3-helen-pc{
+  display: none;
+}
+.p-helen-pc{
+  display: none;
+}
+
 #helen-info {
     position: relative;
     color: #FFF;
@@ -440,7 +416,7 @@ html, body {
   flex-direction: column; /* Padrão mobile: empilhado */
   gap: 1.5rem; /* Espaço entre os cards no mobile */
   padding: 3rem 1.5rem; /* Espaçamento da seção (vertical e horizontal) */
-  background-color: var(--color-light, #F9F6F2);
+  background-color: var( #FFEFE3);
   justify-content: center;
 }
 
@@ -462,213 +438,279 @@ html, body {
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08); /* Aumenta um pouco a sombra */
 }
 
-/* Estilo do título H3 dentro do card */
 .caracteristicas-corretoras h3 {
   color: var(--color-primary, #CAA872); /* Cor de destaque para o título */
   font-weight: 600;
   text-transform: uppercase;
-  margin-bottom: 0.8rem; /* Espaço abaixo do título */
+  margin-bottom: 0.8rem; 
 }
 
-/* Estilo do parágrafo dentro do card */
 .caracteristicas-corretoras p {
-  color: var( #000000); /* Cor de texto mais suave */
+  color: var( #000000); 
   line-height: 1.6;
 }
 
-/* ================================================= */
-/* ADAPTAÇÃO PARA DESKTOP                */
-/* A partir de 1024px, baseado em Desktop.jpg   */
-/* ================================================= */
 
-@media (min-width: 1024px) {
+/*  TENTANDO Copiar O Destaques*/
 
-  .imovel-valor{
-    display: flex;
-  }
-
-    .esquerda-valor { 
-    padding:  0 3em;
-    max-width: 25%; 
-    display:inline;
-    font-size: 1.4em;
-    color: white;
-    margin: 1.2em 48px;
-    text-align: center;
-    flex: 1;
-    }
-
-    .direita-valor{
-      text-align: end;
-      margin: 1.2em 0 0 40%;
-    }
-
-
-    .icones-infotopo{
-      display: flex;
-      color: white;
-      margin: 0.7em 0 0 36em;
-    }
-
-    .area{
-      display: none;
-    }
-
-
-
-    /* Seção de Características: vira duas colunas */
-    #caracteristicas {
-        flex-direction: row; /* Linha no desktop */
-        align-items: flex-start; /* Alinha os itens ao topo */
-        gap: 2rem;
-
-    }
-
-    .esquerda-caracteristicas {
-        margin: 0 0 3em 6em;
-        padding: 3em;
-        font-size: 0.8em;
-        background-color:#E5CCAB;
-        flex: 0.5; /* Reduz o tamanho relativo da div esquerda */
-        max-width: 25%; /* Define um limite máximo para o tamanho */
-        max-height: 45%;
-    }
-
-    .direita-caracteristicas {
-        background-color: #FFEFE3;
-        margin: 3% 0 0 10%;
-        flex: 1; /* Ocupa o espaço restante */
-        max-width: 600px;
-    }
-    .direita-caracteristicas h2{
-      text-align: left;
-      color: #000000;
-    }
-    #descricao h2{
-      color: #000;
-    }
-    .Imovel-corre{
-      display: none;
-      margin:var(--spacing-lg,2.5rem) 0;
-      font-size: var(--font-size-lg,0.875rem);
-      font-weight: bold;
-      color: #2D2D2D;
-      background-color: #FFF;
-    }
-
-    /* Seção da Corretora: vira duas colunas */
-    #helen-info {
-        color: #2D2D2D;
-        background-color: #FFEFE3;
-        flex-direction: row; /* Linha no desktop */
-        justify-content: center;
-        align-items: center;
-        text-align: left; /* Alinha o texto à esquerda no desktop */
-        gap: 3rem;
-        padding: 5rem 2rem;
-    }
-    .helen-pic{
-      background-image:url("/SHS-Imoveis/assets/images/HELEN.svg") ;
-    }  
-    .linha-vertical {
-        display: block; /* Mostra a linha no desktop */
-        width: 1px;
-        height: 15rem; /* Ajuste a altura conforme necessário */
-        background-color: #000000;
-    }
-    
-    #info-corretora {
-      background-color: #FFEFE3;
-    }
-    .info-corretora-imagem {
-        max-width: 480px;
-    }
-    
-    .info-corretora-texto {
-        color: #2D2D2D !important;
-        max-width: 450px;
-    }
-        .info-corretora-texto h2 {
-            display: inline;
-            font-weight: 500;
-            font-family: playfair;
-            font-size:var(--font-size-xl);
-            color: var(--text-primary, #CAA872);
-      }
-
-      .info-corretora-texto h4 {
-          display: block;
-          font-size: var(--font-size-sm);
-          color:#2D2D2D;
-          margin-bottom: 1rem;
-          font-weight:300;
-      }
-      .info-corretora-texto p{
-          margin: var(--spacing-lg,2rem) 0;
-          font-size: var(--font-size-md);
-          font-weight: normal;
-          color: #2D2D2D;
-      }
-
-    /* Cards de Busca/Suporte: viram três colunas */
-    #info-corretora {
-        color: #2D2D2D;
-        flex-direction: row; /* Linha no desktop */
-        justify-content: center;
-        align-items: stretch; /* Faz todos terem a mesma altura */
-        padding: 3rem 2rem;
-    }
-
-        #info-corretora-texto p {
-        color: #2D2D2D;    
-    }
-
-    .caracteristicas-corretoras {
-        flex: 1; /* Divide o espaço igualmente */
-        max-width: 380px; /* Limita a largura máxima de cada card */
-    }
-
-    .btn-contato {
-      /* Cores e Borda */
-      background-color: transparent; /* Fundo transparente para o efeito "fantasma" */
-      border: 2px solid var(--text-primary, #2D2D2D); /* Borda sólida com a cor do texto principal */
-      color: var(--text-primary, #2D2D2D); /* Cor do texto igual à da borda */
-    }
-
-
- /*FIM DO MODO PC*/
+#destaque {
+    position: relative;
+    overflow: hidden;
+    background-color: #caa872b3;
 }
 
+.destaque_titulo {
+    margin: 3em 0 0 2em;
+}
 
-/* MEDIA QUERY */
-@media (max-width: 1145px) {
-  .play-btn {
-    width: 2em;
-    height: 2em;
-    font-size: 1.5em;
-  }
+#destaque .swiper {
+    /* margin: 1em 0 2em 4em; */
+    margin-bottom: 3em;
+    cursor: pointer;
+    width: 100%;
+}
 
-  .video-container iframe {
+.destaque_titulo h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+}
+
+.destaque_titulo p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
     margin-top: 2em;
-    height: 2em;
-  }
+    color: #775217;
+}
 
-  .desc-detalhe {
-    width: 90%;
-  }
+.destaque_buttons {
+    display: flex;
+    gap: 10px;
+    margin: 2em 0 0 2em;
+}
+
+.destaque_buttons img {
+    width: 40px;
+    padding: 10px;
+    border: 1px black solid;
+    border-radius: 5px;
+}
+
+#destaque .swiper {
+    width: 70em;
+    height: 25em;
+    margin: 0.5em 2em 2em 1em;
+}
+
+#destaque .card-container {
+    display: flex;
+    width: 22em;
+    height: 25em;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    position: relative;
+}
+
+#destaque .card-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    border-radius: 5px;
+    z-index: -1;
+}
+
+.linha-play {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.linha {
+    flex: 1;
+    height: 0.1em;
+    background-color: #b58d5b;
+    max-width: 25em;
+}
+
+.play-btn {
+    width: 10em;
+    height: 10em;
+    border-radius: 50%;
+    border: 0.2em solid #b58d5b;
+    background-color: transparent;
+    color: #b58d5b;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.play-btn:hover {
+    background-color: #b58d5b10;
+}
+
+.video-container {
+    display: none;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 50em;
+    border: none;
+}
+
+#destaque .card-tittle {
+    display: flex;
+    color: #fff;
+    font-weight: bold;
+    font-size: 22px;
+    position: absolute;
+    margin: 8.5em 0 0 2.3em;
+}
+
+#destaque .card-type-Venda {
+    display: flex;
+    width: 100px;
+    height: 40px;
+    background-color: #9CDD8F;
+    border-radius: 5px;
+    margin: 1.5em 0 0 3em;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+}
+
+#destaque .card-type-Venda p {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+}
+
+#destaque .card-value p {
+    display: flex;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    margin: 0.7em 0 0 2.3em;
+    font-size: 20px;
+}
+
+#destaque .card-localization {
+    display: flex;
+    align-items: center;
+    margin: 19em 0 0 3em;
+    gap: 0.7em;
+}
+
+#destaque .card-localization p {
+    display: flex;
+    font-family: "Advent Pro", sans-serif;
+    font-size: 23px;
+    color: #b58d5b;
+}
+
+#destaque .card-localization .lucide-map-pin-house {
+    display: flex;
+    color: #b58d5b;
+}
+
+#destaque .border {
+    width: 1px;
+    height: 1.5em;
+    background-color: #ffffff;
+    margin: 0 .8em;
+}
+
+#destaque .card-features {
+    display: flex;
+    flex-direction: row;
+    margin: 16.5em 0 0 3em;
+    position: absolute;
+    align-items: center;
+    color: #ffffff;
+}
+
+#destaque .border {
+    border-right: 1px solid #fff;
 }
 
 
+#destaque .card-features-area, #destaque .card-features-beds, .card-features-cars {
+    display: flex;
+    color: #ffffff;
+    gap: 0.3em;
+    align-items: center;
+    flex-direction: row;
+}
+
+@media (min-width: 1281px) and (max-width: 1535px) {
+    .destaque_titulo {
+        margin: 3em 0 0 4.5em;
+    }
+
+    .destaque_buttons {
+        display: flex;
+        margin: 2em 0 0 4.5em;
+        gap: 1em;
+        cursor: pointer;
+    }
+
+    .destaque_titulo h1 {
+        font-size: 32px;
+        font-weight: 600;
+    }
+
+    .destaque_titulo p {
+        font-size: 18px;
+        margin-top: 1em;
+    }
+
+    #destaque .swiper {
+        margin: 1em 0 2em 4em;
+        margin-bottom: 3em;
+        cursor: pointer;
+        width: 100%;
+    }
+}
+
+@media (min-width: 1536px) {
+    .destaque_titulo {
+        margin: 3em 0 0 4.5em;
+    }
+
+    .destaque_buttons {
+        display: flex;
+        margin: 2em 0 0 4.5em;
+        gap: 1em;
+        cursor: pointer;
+    }
+
+    .destaque_titulo h1 {
+        font-size: 32px;
+        font-weight: 600;
+    }
+
+    .destaque_titulo p {
+        font-size: 18px;
+        margin-top: 1em;
+    }
+
+    #destaque .swiper {
+        margin: 1em 0 2em 4em;
+        margin-bottom: 3em;
+        cursor: pointer;
+        width: 100%;
+    }
+}
+
+
+
+
+
+
 @media (max-width: 1145px) {
-
-  #caracteristicas {
-    flex-direction: column;
-  }
-
-  #info-corretora{
-    background-color: #FFEFE3;
-  }
-
   .direita-caracteristicas {
     max-width: 100%;
     margin: 0 0;
@@ -684,3 +726,199 @@ html, body {
   
 }
 
+
+/* ================================================= */
+/* ADAPTAÇÃO PARA DESKTOP                */
+/* A partir de 1024px, baseado em Desktop.jpg   */
+/* ================================================= */
+
+@media (min-width: 1024px) {
+
+.Texto1{
+  text-align: center;
+}
+
+.area{
+  display: none;
+}
+
+.icones-infotopo{
+  margin-left: auto;
+  display: flex;
+  color: #FFF;
+}
+.esquerda-valor{
+  max-width: 436px;
+  text-align: center;
+  display: block;
+  font-size: var(--font-size-md);
+  font-weight: 700;
+  margin-left: 7.4vw;
+}
+
+/* SEÇÂO DAS CARACTERISTICAS ABAIXO GUYS */
+
+
+#caracteristicas{
+  display: grid;
+  flex-direction:initial;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "esquerda direita"
+    "mais-sobre mais-sobre"
+    "video video";
+  gap:5vw ;
+  
+}
+
+.esquerda-caracteristicas{
+  grid-area: esquerda;
+  max-width: 436px;
+  max-height: 376px;
+  margin-left: 7.4vw;
+}
+.fichaimovel{
+  display: none;
+}
+.direita-caracteristicas{
+  grid-area: direita;
+  margin-top: 70px;
+  margin-right: 15vw;
+}
+
+.direita-caracteristicas h2{
+  font-size: var(--font-size-md);
+  font-weight: 700;
+  margin-left: 15px;
+  text-align:left;
+}
+.direita-caracteristicas li{
+  font-weight: 500;
+  text-align: left;
+  margin: auto;
+  margin-top: 10px ;
+}
+
+.mais_sobre{
+  grid-area: mais-sobre;
+}
+
+.botao-video{
+  grid-area: video;
+}
+
+/*SEÇÂO DA HELENNN */
+
+#helen-info{
+  margin-top: var(--spacing-xxl);
+  background-color: #FFEFE3 ;
+  display: flex;
+  flex-direction: initial;
+}
+
+.Imovel-corre{
+  order: 3;
+  gap: 0px;
+  margin-right: 15vw;
+  max-width: 415px;
+  text-align: start;
+  color: #2D2D2D;
+  background-color: #FFEFE3;
+}
+.helen-pic{
+  background-color: #FFEFE3;
+}
+.helen-pic img{
+  order: 1;
+  margin: auto;
+  max-width: 505px;
+  max-height: 793px;
+}
+.linha-vertical-helen-pc{
+  order: 2;
+  width: 1px;
+  height: 400px;
+  background-color: #000;
+}
+.texto-pc{
+  font-weight: 500 ;
+  font-size: var(--font-size-md);
+  margin: 3vh 0;
+  word-wrap: break-word;
+}
+.h2-helen-pc{
+  margin-top:var(--spacing-xxl) ;
+  display: block;
+  text-align: center;
+}
+.h3-helen-pc{
+  font-weight: 500;
+  font-family:'Playfair Display', serif;
+  font-size: var(--font-size-xl) ;
+  display: block;
+}
+.p-helen-pc{
+  font-family: var(--font-primary);
+  font-size: var(--font-size-sm);
+  font-weight: 300;
+  display: block;
+}
+.linha-vertical-helen{
+  display: none;
+}
+.Imovel-corre button{
+  margin: 0;
+}
+.h2-helen-mobile{
+  display: none;
+}
+.h3-helen-mobile{
+  display: none;
+}
+.p-helen-mobile{
+  display: none;
+}
+.contatos-corretora{
+  display: none;
+}
+
+ .btn-contato {
+  background-color: transparent; /* Fundo transparente para o efeito "fantasma" */
+  border: 2px solid #000; /* Borda sólida com a cor do texto principal */
+  color:#000; /* Cor do texto igual à da borda */
+  padding: 0.8rem 1.8rem; /* Espaçamento interno (vertical e horizontal). Ajuste com o Figma! */
+  font-family: var(--font-primary, 'Montserrat', sans-serif);
+  font-size: var(--font-size-sm); /* Tamanho da fonte */
+  font-weight: 500; /* Um pouco mais forte que o normal */
+  letter-spacing: 1px; /* Leve espaçamento entre as letras */
+  cursor: pointer; /* Muda o cursor para a "mãozinha" */
+  transition: all 0.3s ease;
+}
+.btn-contato:hover {
+  background-color: var(--text-primary, #2D2D2D); /* O fundo se torna a cor da borda */
+  color: var(--color-surface, #FFFFFF); /* O texto se torna branco (ou a cor do fundo da página) */
+}
+/* SEÇÂO CARACTERISTICAS 2 */
+
+#info-corretora{
+  background-color: #FFEFE3;
+  display: flex;
+  flex-direction: initial;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

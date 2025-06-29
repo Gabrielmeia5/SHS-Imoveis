@@ -13,18 +13,16 @@
     <div class="loader"></div>
   </div>-->
 
-
-
     <main id="main-content">
 
       <!--- Carrocel de Imagens e informaçoes principais-->
 
         <section id="detalhes-topo">
           <div class="images-topo"> <!--Imagem Principal + Imagens extras-->
-            <img src="assets/images/imovel-1.jpg" alt="Imagem 5 do imovel">
-            <img src="assets/images/imovel-2.jpg" alt="Imagem 2 do imovel">
-            <img src="assets/images/imovel-3.jpg" alt="Imagem 3 do imovel">
-            <img src="assets/images/imovel-4.jpg" alt="Imagem 4 do imovel">
+              <img src="assets/images/imovel-1.jpg" alt="Imagem 5 do imovel" class="image-number1">
+              <img src="assets/images/imovel-2.jpg" alt="Imagem 2 do imovel" class="image-number2">
+              <img src="assets/images/imovel-3.jpg" alt="Imagem 3 do imovel" class="image-number3">
+              <img src="assets/images/imovel-4.jpg" alt="Imagem 4 do imovel" class="image-number4">
           </div>
         
           <div class="imovel-info"> <!--Nome, Quantia de CARROS E QUARTOS E AREA-->
@@ -69,7 +67,7 @@
 
       <section id="caracteristicas">
         <div class="esquerda-caracteristicas">
-          <p>Ficha Imovel</p>
+          <p class="fichaimovel">Ficha Imovel</p>
           <div class="esquerda-p">
             <h4>Codigo do imovel</h4>
             <p>747346383</p>
@@ -84,6 +82,9 @@
         <div class="direita-caracteristicas">
         <h2>Características</h2>
           <ul class="lista-caracteristicas">
+            <li><img src="assets/icons/Line 70.svg" alt="">KKKKKKKKKKKKKKKKKKKKKKKKKKKKKK</li>
+            <li><img src="assets/icons/Line 70.svg" alt="">KKKKKKKKKKKKKKKKKKKKKKKKKKKKKK</li>
+            <li><img src="assets/icons/Line 70.svg" alt="">KKKKKKKKKKKKKKKKKKKKKKKKKKKKKK</li>
             <li><img src="assets/icons/Line 70.svg" alt="">KKKKKKKKKKKKKKKKKKKKKKKKKKKKKK</li>
             <li><img src="assets/icons/Line 70.svg" alt="">KKKKKKKKKKKKKKKKKKKKKKKKKKKKKK</li>
             <li><img src="assets/icons/Line 70.svg" alt="">KKKKKKKKKKKKKKKKKKKKKKKKKKKKKK</li>
@@ -115,17 +116,21 @@
       </section>
       
       <!-- AQUI a div onde o JS da Helen vai colocar o conteúdo -->
+       <h2 class="h2-helen-pc">Imovel sob consultoria de...</h2>
       <section id="helen-info">
+        <div class="linha-vertical-helen-pc"></div>
         <div class="Imovel-corre">
-          <h2>Imóvel sob consultoria de Helen Cássia</h2>
-          <p>Nada diz “Eu te amo” como o lar dos sonhos! Imagine começar uma nova fase com quem você ama em uma casa deslumbrante, perfeita para criar memórias inesquecíveis.</p> 
+          <h2 class="h2-helen-mobile">Imóvel sob consultoria de Helen Cássia</h2>
+            <h3 class="h3-helen-pc">Giaana Borges</h3>
+            <p class="p-helen-pc">Corretora de imoveis</p>
+          <p class="texto-pc">Nada diz “Eu te amo” como o lar dos sonhos! Imagine começar uma nova fase com quem você ama em uma casa deslumbrante, perfeita para criar memórias inesquecíveis.</p> 
           <button class="btn-contato">ENTRE EM CONTATO <i data-lucide="move-up-right"></i></button> </div>
         </div>
         <div class="helen-pic">
-            <img src="assets/images/HELEN.svg" alt="Foto da corretora Helen" class="info-corretora-imagem">
+            <img src="assets/images/mulher.jpg" alt="Foto da corretora Helen" class="info-corretora-imagem">
              <div class="nome-corretora">
-              <h3>Hellen Cássia</h3>
-              <p>Corretora</p>
+              <h3 class="h3-helen-mobile">Giaana Borges</h3>
+              <p class="p-helen-mobile">Corretora</p>
              </div> 
              <div class="contatos-corretora">
               <a href="">
@@ -177,7 +182,6 @@
    <!-- <script src="./scripts/detalhes.js" type="module"></script>-->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
-    <script src="scripts/swdetalhes.js"></script>
   <script>
     lucide.createIcons();
   </script>

@@ -34,7 +34,9 @@
     "midias": [
       "assets/images/imovel-9.jpg",
       "assets/images/imovel-6.jpg",
-      "assets/images/imovel-4.jpg"
+      "assets/images/imovel-4.jpg",
+      "assets/images/imovel-6.jpg",
+      "assets/images/imovel-6.jpg"
     ],
     "videos": [
       "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
@@ -77,8 +79,9 @@
     "imagemPrincipal": "assets/images/imovel-5.jpg",
     "midias": [
       "assets/images/imovel-6.jpg",
-      "assets/images/imovel-2.jpg",
-      "assets/images/imovel-3.jpg"
+      "assets/images/imovel-4.jpg",
+      "assets/images/imovel-6.jpg",
+      "assets/images/imovel-6.jpg"
     ],
     "videos": [
       "https://www.youtube.com/watch?v=dQw4w9WgXcQ",

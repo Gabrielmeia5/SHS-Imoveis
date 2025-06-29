@@ -1,6 +1,7 @@
 import { fetchImoveis } from '../services/api.js';
 import { delay, showError, toggleLoading } from '../utils/utilsDetalhes.js';
 import { renderImovel } from '../components/render.js';
+import { checkboxMenuMobile } from '../utils/checkboxHome.js';
 
 
 const popup = document.getElementById('image-popup');
@@ -11,6 +12,7 @@ const closeBtn = document.getElementById('close-popup');
 document.addEventListener('DOMContentLoaded', init);
 
 async function init() {
+  checkboxMenuMobile();
   toggleLoading(true);
   const urlParams = new URLSearchParams(window.location.search);
   const idImovel = urlParams.get("id");
@@ -32,6 +34,9 @@ async function init() {
     }
 
     renderImovel(imovel);
+    
+    swiperHeader.update(); // Atualiza o swiper após renderizar o imóvel
+    openPopup()
   } catch (erro) {
     console.error("Erro ao carregar dados:", erro);
     showError("Erro ao carregar os dados do imóvel.");
@@ -43,32 +48,7 @@ async function init() {
 
 
 
-
-
-
-// Abrir popup ao clicar na imagem
-document.querySelectorAll('.swiper-imgs-imovel img').forEach(img => {
-  img.addEventListener('click', () => {
-    popupImg.src = img.src;
-    popup.classList.remove('hidden');
-  });
-});
-
-// Fechar ao clicar no botão
-closeBtn.addEventListener('click', () => {
-  popup.classList.add('hidden');
-  popupImg.src = '';
-});
-
-// Fechar ao clicar fora da imagem
-popup.addEventListener('click', (e) => {
-  if (!e.target.closest('.popup-content')) {
-    popup.classList.add('hidden');
-    popupImg.src = '';
-  }
-});
-
-const swiper = new Swiper('.swiper-imgs-imovel', {
+const swiperHeader = new Swiper('.swiper-imgs-imovel', {
   slidesPerView: 4,
   loop: true,
   navigation: {
@@ -88,3 +68,33 @@ const swiper = new Swiper('.swiper-imgs-imovel', {
     }
   }
 });
+
+
+
+
+// Abrir popup ao clicar na imagem
+function openPopup() {
+  document.querySelectorAll('.swiper-imgs-imovel .swiper-slide img').forEach(img => {
+    img.addEventListener('click', () => {
+
+      popupImg.src = img.src;
+      popup.classList.remove('hidden');
+    });
+  });
+
+  // Fechar ao clicar no botão
+  closeBtn.addEventListener('click', () => {
+    popup.classList.add('hidden');
+    popupImg.src = '';
+  });
+
+  // Fechar ao clicar fora da imagem
+  popup.addEventListener('click', (e) => {
+    if (!e.target.closest('.popup-content')) {
+      popup.classList.add('hidden');
+      popupImg.src = '';
+    }
+  });
+
+
+}

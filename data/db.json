@@ -838,7 +838,7 @@
   {
     "id": "AP126",
     "titulo": "Apartamento Moderno no Centro",
-    "tipo": "Apartamento",
+    "tipo": "Case",
     "finalidade": "Venda",
     "descricao": "Uma casa que une conforto, tecnologia e estilo de vida moderno. Com 250m² de área construída e 435m² de terreno, este imóvel foi projetado para quem busca o equilíbrio perfeito entre privacidade e funcionalidade.",
     "preco": 450000,
@@ -1014,7 +1014,7 @@
   {
     "id": "AP130",
     "titulo": "Apartamento Moderno no Centro",
-    "tipo": "Apartamento",
+    "tipo": "Lote",
     "finalidade": "Venda",
     "descricao": "Uma casa que une conforto, tecnologia e estilo de vida moderno. Com 250m² de área construída e 435m² de terreno, este imóvel foi projetado para quem busca o equilíbrio perfeito entre privacidade e funcionalidade.",
     "preco": 450000,
@@ -1146,7 +1146,7 @@
   {
     "id": "AP125",
     "titulo": "Apartamento Moderno no Centro",
-    "tipo": "Apartamento",
+    "tipo": "Vip",
     "finalidade": "Venda",
     "descricao": "Uma casa que une conforto, tecnologia e estilo de vida moderno. Com 250m² de área construída e 435m² de terreno, este imóvel foi projetado para quem busca o equilíbrio perfeito entre privacidade e funcionalidade.",
     "preco": 450000,
@@ -1278,7 +1278,7 @@
   {
     "id": "AP128",
     "titulo": "Apartamento Moderno no Centro",
-    "tipo": "Apartamento",
+    "tipo": "Casa",
     "finalidade": "Venda",
     "descricao": "Uma casa que une conforto, tecnologia e estilo de vida moderno. Com 250m² de área construída e 435m² de terreno, este imóvel foi projetado para quem busca o equilíbrio perfeito entre privacidade e funcionalidade.",
     "preco": 450000,

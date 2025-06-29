@@ -96,32 +96,34 @@
                 <h2>Encontre o Imóvel Ideal</h2>
                 <p>Selecione os tipos de imóvel que você procura</p>
             </div>
-            <span>busca-avançada</span>
         </div>
         <div class="filter-content">
-            <label for="filter_vip" class="filter-item item1">
-                <input type="checkbox" name="filter-input" id="filter_vip">
-                <img src="./assets/icons/icon-diamond.svg" alt="Icone">
-                <p>Imóvel Vip</p>
+        <label for="filter_vip" class="filter-item item1">
+            <input type="radio" name="filter-radio" id="filter_vip" value="Vip">
+            <img src="./assets/icons/icon-diamond.svg" alt="Ícone">
+            <p>Imóvel Vip</p>
+        </label>
+
+        <div class="grid-template">
+            <label for="filter_apartament" class="filter-item item2">
+                <input type="radio" name="filter-radio" id="filter_apartament" value="Apartamento">
+                <img src="./assets/icons/icon-apartament.svg" alt="Ícone">
+                <p>Apartamentos</p>
             </label>
-            <div class="grid-template">
-                <label for="filter_apartament" class="filter-item item2">
-                    <input type="checkbox" name="filter-input" id="filter_apartament">
-                    <img src="./assets/icons/icon-apartament.svg" alt="Icone">
-                    <p>Apartamentos</p>
-                </label>
-                <label for="filter_home" class="filter-item item3">
-                    <input type="checkbox" name="filter-input" id="filter_home">
-                    <img src="./assets/icons/icon-home.svg" alt="Icone">
-                    <p>Casas</p>
-                </label>
-                <label for="filter_layer" class="filter-item item4">
-                    <input type="checkbox" name="filter-input" id="filter_layer">
-                    <img src="./assets/icons/icon-layer.svg" alt="Icone">
-                    <p>Terrenos</p>
-                </label>
-            </div>
+
+            <label for="filter_home" class="filter-item item3">
+                <input type="radio" name="filter-radio" id="filter_home" value="Casa">
+                <img src="./assets/icons/icon-home.svg" alt="Ícone">
+                <p>Casas</p>
+            </label>
+
+            <label for="filter_layer" class="filter-item item4">
+                <input type="radio" name="filter-radio" id="filter_layer" value="Lote">
+                <img src="./assets/icons/icon-layer.svg" alt="Ícone">
+                <p>Terrenos</p>
+            </label>
         </div>
+    </div>
     </div>
 </header>
 <section id="sobre-nos" class="about-section-desktop">
@@ -280,6 +282,7 @@
   <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="scripts/index.js" type="module"></script>
+  <script src="./scripts/detalhes.js"></script>
   <script src="https://unpkg.com/lucide@latest"></script>
   <script>
     lucide.createIcons();

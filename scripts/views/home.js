@@ -1,6 +1,6 @@
-import { createCardOutstanding, criarCard } from '../components/Card.js';
-import { fetchImoveis } from '../services/api.js';
-import { inicializarSwiper } from '../utils/destaque.js';
+import { createCardOutstanding, criarCard } from "../components/Card.js";
+import { fetchImoveis } from "../services/api.js";
+import { inicializarSwiper } from "../utils/destaque.js";
 
 let imoveis = [];
 let currentVisible = 0;
@@ -9,13 +9,12 @@ let batchSize = 5;
 export default async function initHome() {
   imoveis = await fetchImoveis();
 
-  updateBatchSize();          // Define o batchSize baseado na tela
+  updateBatchSize();
   renderizarLote();
   configurarEventos();
   inicializarSwiper();
 
-  // Se quiser: Atualizar batchSize se o usuário redimensionar a tela
-  window.addEventListener('resize', handleResize);
+  window.addEventListener("resize", handleResize);
 }
 
 function updateBatchSize() {
@@ -28,7 +27,7 @@ function updateBatchSize() {
   } else if (width <= 1440) {
     batchSize = 6;
   } else if (width <= 1756) {
-    batchSize = 8
+    batchSize = 8;
   } else {
     batchSize = 10;
   }
@@ -40,14 +39,14 @@ function handleResize() {
 }
 
 function renderizarLote() {
-  const catalogo = document.querySelector('.card_imoveis');
-  const destaques = document.querySelector('#destaque .swiper-wrapper');
+  const catalogo = document.querySelector(".card_imoveis");
+  const destaques = document.querySelector("#destaque .swiper-wrapper");
 
-  updateBatchSize();   // Atualiza o batchSize antes de cada renderização (caso a tela tenha sido redimensionada)
+  updateBatchSize(); // Atualiza o batchSize antes de cada renderização (caso a tela tenha sido redimensionada)
 
   const proximoLote = imoveis.slice(currentVisible, currentVisible + batchSize);
 
-  proximoLote.forEach(imovel => {
+  proximoLote.forEach((imovel) => {
     const card = criarCard(imovel);
     catalogo.appendChild(card);
 
@@ -56,14 +55,15 @@ function renderizarLote() {
       destaques.appendChild(slide);
     }
   });
+  lucide.createIcons();
 
   currentVisible += batchSize;
 
   if (currentVisible >= imoveis.length) {
-    document.getElementById('verMaisBtn').style.display = 'none';
+    document.getElementById("verMaisBtn").style.display = "none";
   }
 }
 
 function configurarEventos() {
-  document.getElementById('verMaisBtn').addEventListener('click', renderizarLote);
+  document.getElementById("verMaisBtn").addEventListener("click", renderizarLote);
 }

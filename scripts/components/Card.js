@@ -44,7 +44,7 @@ export function criarCard(imovel) {
     pBeds.textContent = imovel.quartos.toString();
     featureBeds.append(iconBed, pBeds, border);
     cardFeatures.append(featureBeds);
-    lucide.createIcons();
+
 
     // Vagas
     const featureCars = document.createElement('div');
@@ -57,7 +57,7 @@ export function criarCard(imovel) {
     pCar.textContent = imovel.quartos.toString();
     featureCars.append(iconCar, pCar, borderCar);
     cardFeatures.append(featureCars);
-    lucide.createIcons();
+  
 
     // Área
     const featureArea = document.createElement('div');
@@ -67,7 +67,7 @@ export function criarCard(imovel) {
     const areaText = document.createTextNode(imovel.area + 'm²');
     featureArea.append(iconArea, areaText);
     cardFeatures.append(featureArea);
-    lucide.createIcons();
+
 
     // Localização
     const cardLocalization = document.createElement('div');
@@ -77,7 +77,7 @@ export function criarCard(imovel) {
     const pLocal = document.createElement('p');
     pLocal.textContent = imovel.endereco.bairro;
     cardLocalization.append(iconLocation, pLocal);
-    lucide.createIcons();
+
 
     // Valor
     const cardValue = document.createElement('div');
@@ -91,8 +91,7 @@ export function criarCard(imovel) {
     // Montando o card
     cardContent.append(cardTitle, cardFeatures, cardLocalization, cardValue);
     cardContainer.append(cardImage, cardType, cardContent);
-
-    console.log(cardContainer)
+    
     return cardContainer;
 }
 

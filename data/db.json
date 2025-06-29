@@ -60,7 +60,7 @@
       "cidade": "São Paulo",
       "estado": "SP"
     },
-    "area": 120,
+    "area": 252,
     "areaConstruida": 100,
     "quartos": 3,
     "suites": 1,
@@ -106,7 +106,7 @@
     },
     "area": 120,
     "areaConstruida": 100,
-    "quartos": 3,
+    "quartos": 5,
     "suites": 1,
     "banheiros": 2,
     "vagasGaragem": 2,

@@ -12,8 +12,7 @@
 }
 
 .catalogo_titulo {
-    /* position: absolute; */
-    margin: 3em 0 1.5em 3em;
+    margin: 3em 0 1.5em 6vw;
 }
 
 .catalogo_titulo h1 {
@@ -121,30 +120,23 @@
     gap: 0.7em;
 }
 
-#catalogo .card-localization p {
+#catalogo .card-content {
     display: flex;
+}
+
+#catalogo .card-localization p {
     font-family: "Advent Pro", sans-serif;
     font-size: 23px;
     color: #b58d5b;
 }
 
 #catalogo .card-localization .lucide-map-pin-house {
-    display: flex;
     color: #b58d5b;
-}
-
-#catalogo .card-features {
-    display: flex;
-    flex-direction: row;
-    margin: 16.5em 0 0 3em;
-    position: absolute;
-    align-items: center;
-    color: #fff;
 }
 
 #catalogo .border {
     width: 2px;
-    height: 2em;
+    height: 1.5em;
     background-color: #fff;
     margin: 0 1em 0 1em;
 }
@@ -162,42 +154,187 @@
     color: #fff;
     gap: 0.5em;
     flex-direction: row;
+    align-items: center;
 }
 
-/* .custom-dropdown {
-    width: 200px;
-    margin: 3em 0 3em 15em;
+#catalogo .card-features-cars {
+    display: flex;
+    color: #fff;
+    gap: 0.5em;
+    flex-direction: row;
+    align-items: center;
 }
 
-.dropdown-button {
-    display: block;
-    padding: 10px;
-    border: 1px solid #D8B48C;
-    border-radius: 4px;
-    background-color: #F8EDE6;
-    cursor: pointer;
+@media (min-width: 0px) {
+    #catalogo .card_imoveis {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1vw;
+        margin: 0 5vw;
+        position: relative;
+    }
+
+    #catalogo .card-container {
+        display: flex;
+        width: 28vw;
+        height: calc(28vw + 5vh);
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 5px;
+        position: relative;
+        margin: auto;
+    }
+
+    #catalogo .card-content {
+        display: flex;
+        flex-direction: column;
+        margin-top: 5em;
+        gap: calc(1vh + .5vw);
+        bottom: calc(5vh + 1vw);
+        left: 5vh;
+        position: absolute;
+    }
+
+    #catalogo .card-tittle {
+        position: relative;
+        width: 80%;
+        margin: 0;
+        font-size: 1.3rem;
+    }
+
+    #catalogo .card-type-Venda {
+        display: flex;
+        width: 100px;
+        height: 40px;
+        background-color: #9cdd8f;
+        position: absolute;
+        left: 4vh;
+        top: 3vh;
+        border-radius: 5px;
+        margin: 0;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #catalogo .card-type-Venda p {
+        display: flex;
+        justify-content: center;
+        color: #fff;
+        font-weight: 600;
+        font-family: "Montserrat", sans-serif;
+        font-size: 20px;
+        position: relative;
+    }
+
+    #catalogo .card-value p {
+        display: flex;
+        color: #fff;
+        font-family: "Montserrat", sans-serif;
+        margin: 0;
+        font-size: 22px;
+    }
+
+    #catalogo .card-localization {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        gap: 0.7em;
+    }
+
+    #catalogo .card-localization p {
+        font-weight: 500;
+    }
+
+    #catalogo .card-features {
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        position: relative;
+        align-items: center;
+        color: #fff;
+    }
 }
 
-.dropdown-options {
-    display: none;
-    border: 1px solid #D8B48C;
-    background-color: #F8EDE6;
-    border-radius: 4px;
-    margin-top: 5px;
+@media (max-width: 1280px) {
+    #catalogo .card_imoveis {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #catalogo .card-container {
+        display: flex;
+        width: 42vw;
+        height: calc(42vw + 5vh);
+    }
+
+    #catalogo .card-tittle {
+        position: relative;
+        width: 80%;
+        margin: 0;
+        font-size: 1.3rem;
+    }
 }
 
-.dropdown-options div {
-    padding: 10px;
+@media (max-width: 900px) {
+    #catalogo .card-tittle {
+        font-size: 1.2rem;
+    }
+
+    #catalogo .card-value p {
+        font-size: 18px;
+    }
 }
 
-.dropdown-options div:hover {
-    background-color: #EAD4C2;
+
+@media (max-width: 768px) {
+    #catalogo .card_imoveis {
+        grid-template-columns: 1fr;
+        gap: 2vh;
+    }
+
+    #catalogo .card-container {
+        display: flex;
+        width: 80vw;
+        height: calc(80vw + 5vh);
+    }
+
+    #catalogo .card-tittle {
+        font-size: 1.5rem;
+    }
+
+    #catalogo .card-value p {
+        font-size: 20px;
+    }
 }
 
-#dropdown-toggle {
-    display: none;
+@media (max-width: 464px) {
+    #catalogo .card-container {
+        display: flex;
+        width: 84vw;
+        height: calc(84vw + 5vh);
+    }
+
+    #catalogo .card-tittle {
+        font-size: 1rem;
+    }
+
+    #catalogo .card-value p {
+        font-size: 18px;
+    }
+
+    #catalogo .card-features-beds {
+        gap: 0.2em;
+    }
+    
+    #catalogo .card-features-area {
+        gap: 0.2em;
+    }
+    
+    #catalogo .card-features-cars {
+        gap: 0.2em;
+    }
 }
 
-#dropdown-toggle:checked~.dropdown-options {
-    display: block;
-} */
+@media (max-width: 320px) {
+    #catalogo .card-content {
+        display: none;
+    }
+}

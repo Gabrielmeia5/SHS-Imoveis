@@ -1,75 +1,260 @@
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&display=swap');
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-.depoimentos {
+body {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6;
+  background-color: #FFEFE3;
+  color: #333;
+}
+
+/* Seção de Depoimentos */
+.testimonial-section {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.testimonial-section h2 {
+  font-family: 'Dosis', sans-serif;
+  font-size: 1.5rem;
+  color: #DF8C01;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.testimonial-section .subtitle {
+  font-family: 'Cormorant Upright', serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 0.5rem 0 1.5rem;
+}
+
+/* Carrossel */
+.testimonial-carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.testimonial-card {
+  flex: 0 0 90%;
+  scroll-snap-align: center;
+  max-width: 600px;
+  background-color: #FFEFE3;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  border: 1.5px solid #d5b892;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.testimonial-card .quote {
+  font-style: italic;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.person {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-weight: bold;
+}
+
+.person img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+/* Indicadores */
+.indicators {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.indicators span {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin: 0 4px;
+  background-color: #d5b892;
+  border-radius: 50%;
+  opacity: 0.5;
+  transition: opacity 0.3s;
+}
+
+.indicators span.active {
+  opacity: 1;
+}
+
+/* Footer */
+.main-footer {
+  background-color: #CAA872;
+  color: #fff;
+  padding: 2rem 1rem;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+
+}
+
+.stats {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+  margin: 2rem 0;
+}
+
+.info-block {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.2;
+}
+
+.info-prefix {
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+.info-number {
+  font-size: 2.2rem;
+  font-weight: 400;
+}
+
+.info-description {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.mission {
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  position: relative;
+}
+
+.mission h4 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  position: relative;
+  padding-top: 2rem;
+}
+
+
+
+.mission p {
+  line-height: 1.6;
+  font-size: 1rem;
+  color: #fff;
+  text-align: center;
+}
+
+.contact {
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.contact h1 {
+  color: #fff;
+  position: relative;
+  padding-top: 2rem;
+  text-transform: capitalize;
+}
+
+
+
+.contact ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact li a {
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-weight: 400;
+  font-size: 0.95rem;
+}
+
+.contact li {
+  margin-bottom: 20px;
+}
+
+.contact h2 {
+  color: #fff;
+}
+
+.barra {
+  width: 90vw;
+  height: 1px;
+  background-color: #fff;
+}
+
+.elipse-decorativa {
+  position: absolute;
+  top: -100px;
+  right: -90px;
+  width: 250px;
+  background-image: url('assets/icons/Ellipse-top-right.svg');
+
+}
+
+.linha-dupla {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+.linha {
+  height: 1px;
+  background-color: #F5E4D5;
+  flex: 1;
+}
+
+.linha + .linha {
+  margin-left: 40px; /* Espaçamento entre as duas linhas */
+}
+
+
+.copyright {
+  font-size: 0.75rem;
+  color: #fff;
+  text-align: center;
+  margin-top: 1.5rem;
+  line-height: 1.4;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  .stats {
     display: flex;
-    margin: 2em 0 0 0;
     flex-direction: column;
-    justify-content: center;
-    padding: 20px;
-}
+    align-items: center;
+    gap: 2.5rem;
+    margin: 2rem 0 ;
+  }
 
-
-.title {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-bottom: 20px;
-}
-
-.depoimentos h1 {
-    display: flex;
-    justify-content: center;
-    font-family: "Dosis", sans-serif;
-    color: #CAA872;
-    font-size: 20px;
-    font-weight: 300;
-    margin-bottom: 0.7em;
-}
-
-.depoimentos h2 {
-    display: flex;
-    justify-content: center;
-    font-family: "Cormorant Upright", serif;
-}
-
-.cardDepoimentos {
-    background-color: none;
-    border: #D2B68A solid 1px;
-    border-radius: 0.5em;
-    width: 100%;
-    max-width: 600px;
-    height: 300px;
-    padding: 1.7em;
-}
-
-.cardDepoimentos .img {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 1.5em;
-}
-
-.cardDepoimentos p {
-    display: flex;
-    text-align: center;
-    font-size: 16px;
-    color: #000;
-    font-family: "Montserrat", sans-serif;
-}
-
-.cardDepoimentos .imgUser {
-    display: flex;
-    justify-content: center;
-    margin: 0.7em 0 0 0;
-}
-
-.cardDepoimentos .user img {
-    width: 2em;
-}
-
-.cardDepoimentos h3 {
-    display: flex;
-    justify-content: center;
-    font-size: 15px;
-    font-family: "Montserrat", sans-serif;
+  .testimonial-card {
+    padding: 1rem;
+  }
 }

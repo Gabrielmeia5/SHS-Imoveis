@@ -209,4 +209,34 @@
         font-size: 16px;
         margin-bottom: 0.5em;
     }
+
+    #footer .textos {
+        display: flex;
+        justify-content: center;
+        gap: 5em;
+    }
+
+    #footer .textExperiencia {
+        width: 15em;
+        border: #fff 1px solid;
+        border-radius: 15px;
+        padding: 1em;
+        margin-top: 2em;
+    }
+
+    #footer .textVendas {
+        width: 15em;
+        border: #fff 1px solid;
+        border-radius: 15px;
+        padding: 1em;
+        margin-bottom: 2em;
+    }
+
+    #footer .textAnuncios {
+        width: 15em;
+        border: #fff 1px solid;
+        border-radius: 15px;
+        padding: 1em;
+        margin-top: 2em;
+    }
 }

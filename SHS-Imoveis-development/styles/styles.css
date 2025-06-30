@@ -1,0 +1,96 @@
+@import url('./catalogo.css');
+@import url('./footer.css');
+@import url('./header.css');
+@import url('./destaque.css');
+@import url('./depoimentos.css');
+@import url('./footer.css');
+
+:root {
+   /* ========================================
+      Cores
+   ======================================== */
+   --color-primary: #caa872;
+   --color-background: #ffefe3;
+   --color-surface: #ffffff;
+   --color-dark: #2d2d2d;
+   --color-light: #f9f6f2;
+   --color-rent: #9cdd8f;
+   --color-accent-1: #df8c01;
+   --color-accent-2: #775217;
+ 
+   /* Texto */
+   --text-primary: #2d2d2d;
+   --text-inverted: #ffffff;
+   --text-muted: #8a8a8a;
+ 
+   /* ========================================
+      Tipografia
+   ======================================== */
+   --font-primary: "Montserrat", sans-serif;
+   --font-secondary: "Advent Pro", sans-serif;
+   --font-tertiary: "Cormorant Garamond", sans-serif;
+ 
+   /* Base para rem (1rem = 16px) */
+   --font-size-xs: 0.875rem; /* 14px */
+   --font-size-sm: 1rem; /* 16px */
+   --font-size-md: 1.25rem; /* 20px */
+   --font-size-lg: 1.75rem; /* 28px */
+   --font-size-xl: 2rem; /* 32px */
+   --font-size-xxl: 2.25rem; /* 36px */
+   --font-size-xxxl: 2.5rem; /* 40px */
+ 
+   /* ========================================
+      Espaçamentos (Padding / Margin)
+      Base de 4px = 0.25rem
+   ======================================== */
+   --spacing-xxs: 0.25rem; /* 4px */
+   --spacing-xs: 0.5rem; /* 8px */
+   --spacing-sm: 1rem; /* 16px */
+   --spacing-md: 1.5rem; /* 24px */
+   --spacing-lg: 2rem; /* 32px */
+   --spacing-xl: 3rem; /* 48px */
+   --spacing-xxl: 4rem; /* 64px */
+ 
+   /* ========================================
+      Bordas e Radius
+   ======================================== */
+   --border-radius-sm: 0.25rem; /* 4px */
+   --border-radius-md: 0.6rem; /* 10px */
+   --border-radius-lg: 1rem; /* 16px */
+   --border-radius-xl: 1.25rem; /* 20px */
+ 
+   /* ========================================
+      Sombras
+   ======================================== */
+   --shadow-soft: 0 2px 4px rgba(0, 0, 0, 0.04);
+   --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
+   --shadow-lg: 0 6px 20px rgba(0, 0, 0, 0.15);
+ }
+
+
+
+/* ========================================
+   Reset e Base
+======================================== */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
+ 
+ body,
+ html {
+   overflow-x: hidden;
+   scroll-behavior: smooth;
+ }
+ 
+ body {
+    overflow-y: hidden;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--text-primary);
+    background-color: var(--color-background);
+ }
+
+ .show {
+   display: flex !important;
+ }

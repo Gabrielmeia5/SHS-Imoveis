@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&display=swap');
+
+.depoimentos {
+    display: flex;
+    margin: 2em 0 0 0;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.depoimentos h1 {
+    display: flex;
+    justify-content: center;
+    font-family: "Dosis", sans-serif;
+    color: #CAA872;
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 0.7em;
+}
+
+.depoimentos h2 {
+    display: flex;
+    justify-content: center;
+    font-family: "Cormorant Upright", serif;
+}
+
+.cardDepoimentos {
+    background-color: none;
+    border: #D2B68A solid 1px;
+    border-radius: 0.5em;
+    width: 100%;
+    max-width: 600px;
+    height: 300px;
+    padding: 1.7em;
+}
+
+.cardDepoimentos .img {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5em;
+}
+
+.cardDepoimentos p {
+    display: flex;
+    text-align: center;
+    font-size: 16px;
+    color: #000;
+    font-family: "Montserrat", sans-serif;
+}
+
+.cardDepoimentos .imgUser {
+    display: flex;
+    justify-content: center;
+    margin: 0.7em 0 0 0;
+}
+
+.cardDepoimentos .user img {
+    width: 2em;
+}
+
+.cardDepoimentos h3 {
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif;
+}

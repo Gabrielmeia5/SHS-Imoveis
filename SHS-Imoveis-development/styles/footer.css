@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+#footer {
+    display: flex;
+    background-color: #CAA872;
+    color: #F8F8F8;
+    flex-direction: column;
+    padding: 20px;
+    height: 70%;
+}
+
+#footer .introducao {
+    text-align: center;
+    margin: 2.5em 0 0 0;
+}
+
+#footer h1 {
+    font-size: 2em;
+    font-weight: 400;
+}
+
+#footer .linhas {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 50px;
+    width: 100%;
+    opacity: 0.5;
+}
+
+#footer .linha {
+    width: 150px;
+    height: 2px;
+    background-color: #F8F8F8;
+}
+
+#footer .text {
+    text-align: center;
+    margin: 3em 0 0 0;
+}
+
+#footer .text h1 {
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+}
+
+#footer .text p {
+    margin: 2em 0 0 0;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+}
+
+#footer .contatos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#footer .contatos h1 {
+    font-size: 24px;
+    font-family: "Playfair Display", serif;
+    margin: 1.5rem 0 0 0;
+}
+
+#footer .linhaContato {
+    border: #fff 1px solid;
+    opacity: 0.5;
+    width: 16em;
+    margin: 0.5em 0 1em 0;
+}
+
+#footer .contato p img {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+#footer .contato a {
+    text-decoration: none;
+    color: #fff;
+    /* border: #fff 1px solid; */
+
+}
+
+#footer .linhaFooter {
+    border: #fff 1px solid;
+    opacity: 0.5;
+    width: 100%;
+    margin: 3em 0 0 0;
+}
+
+#footer .copy {
+    font-size: 13px;
+    margin: 1.5em 0 0 1em;
+}
+
+#footer .copy a {
+    color: #fff;
+}
+
+.md {
+    display: none;
+}
+
+@media (min-width: 769px) and (max-width: 1224px) {
+    #footer .md {
+        display: flex;
+        text-align: left;
+        justify-content: space-around;
+    }
+
+    #footer .md h1 {
+        font-size: var(--font-size-lg);
+        font-family: var(--font-primary);
+    }
+
+    #footer .contatos {
+        display: none;
+    }
+
+    #footer .title-md {
+        margin: 1.5em 0 2em 0;
+    }
+
+    #footer .contato-md .contato h1 {
+        font-size: 20px;
+        font-family: var(--font-secondary);
+    }
+
+    #footer .contato-md p {
+        font-size: 16px;
+        font-family: var(--font-secondary);
+    }
+
+    #footer .linhaContato {
+        width: 13em;
+    }
+
+    #footer .politica,
+    #footer .contato-nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #footer .contato-nav a,
+    #footer .politica a {
+        color: #fff;
+        font-family: var(--font-secondary);
+        font-size: 16px;
+        margin-bottom: 0.5em;
+    }
+}
+
+@media (min-width: 1225px) {
+    #footer .md {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #footer .md h1 {
+        font-size: var(--font-size-lg);
+        font-family: var(--font-primary);
+    }
+
+    #footer .contatos {
+        display: none;
+    }
+
+    #footer .title-md {
+        margin: 1.5em 0 2em 0;
+    }
+
+    #footer .contato-md {
+        display: flex;
+        gap: 2em;
+    }
+
+    #footer .contato-md .contato h1 {
+        font-size: 20px;
+        font-family: var(--font-secondary);
+    }
+
+    #footer .contato-md p {
+        display: flex !important;
+        font-size: 16px;
+        font-family: var(--font-secondary);
+        flex-direction: row !important;
+    }
+
+    #footer .linhaContato {
+        display: none;
+    }
+
+    #footer .politica,
+    #footer .contato-nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #footer .contato-nav a,
+    #footer .politica a {
+        color: #fff;
+        font-family: var(--font-secondary);
+        font-size: 16px;
+        margin-bottom: 0.5em;
+    }
+}

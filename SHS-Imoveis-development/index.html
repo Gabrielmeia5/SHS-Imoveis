@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Catálogo de Imóveis | Imóveis de Alto Padrão Patos de Minas</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100..900&family=Montserrat:wght@100..900&family=Cormorant+Upright:wght@600&family=Dosis:wght@600&display=swap"
+    rel="stylesheet">
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="styles/styles.css">
+
+  <!-- Swiper (slider) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <meta name="description" content="Casas, apartamentos e terrenos à venda em Patos de Minas com a equipe SHS Imóveis. Atendimento exclusivo, imóveis de alto padrão para você e sua família." />
+  <meta name="keywords" content="imóveis Patos de Minas, casas alto padrão, apartamentos Patos de Minas, terrenos Patos de Minas, SHS Imóveis, corretoras, compra de imóvel MG" />
+  <meta name="author" content="SHS Imóveis - Sheila, Hellen e Sara" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="SHS Imóveis - Imóveis de Alto Padrão em Patos de Minas" />
+  <meta property="og:description" content="Encontre casas, apartamentos e terrenos à venda em Patos de Minas com atendimento personalizado de Sheila, Hellen e Sara." />
+  <meta property="og:url" content="https://www.seusite.com.br/" />
+  <meta property="og:type" content="website" />
+</head>
+
+<body>
+
+  <header class="header-home" role="banner">
+
+    <div class="nav-bar-container">
+        <div class="title-content">
+            <h1>Catálogo de <span>Imóveis</span></h1>
+            <p>Cuidado e exclusividade</p>
+        </div>
+        <nav role="navigation">
+            <ul class="nav-ul">
+              <li class="nav-item">
+                <a href="#sobre-nos" accesskey="s">SOBRE NÓS</a>
+              </li>
+              <li class="nav-item">
+                <a href="#destaque">IMÓVEIS EM DESTAQUE</a>
+              </li>
+              <li class="nav-item">
+                <a href="#catalogo">GALERIA</a>
+              </li>
+              <li class="nav-item">
+                <a href="#footer" accesskey="c">CONTATO</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" aria-label="Página para cadastrar novo imóvel">CADASTRAR IMÓVEL</a>
+              </li>
+            </ul>
+        </nav>
+        <div class="menu-container">
+            <label class="menu" for="menu" role="button" aria-label="Abrir ou fechar menu de navegação" tabindex="0">
+                <input type="checkbox" id="menu" aria-controls="nav-ul" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+    </div>
+
+    <div class="swiper home-bg-swiper" aria-label="Slides com imagens ilustrativas de imóveis">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="assets/images/swipper/swiperinicial-imagem1.jpg" alt="Fachada de casa moderna ao entardecer" aria-hidden="true">
+          <div class="bg-filter"></div>
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/images/swipper/swiperinicial-imagem2.jpg" alt="Interior sofisticado de sala com pé-direito alto" aria-hidden="true">
+          <div class="bg-filter"></div>
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/images/swipper/swiperinicial-imagem3.jpg" alt="Varanda com vista panorâmica urbana ao pôr do sol" aria-hidden="true">
+          <div class="bg-filter"></div>
+        </div>
+      </div>
+      <div class="swiper-pagination-home"></div>
+    </div>
+
+    <div class="filter-home" role="region" aria-label="Filtros para busca de imóveis">
+        <div class="filter-home-header">
+            <div>
+                <h2>Encontre o Imóvel Ideal</h2>
+                <p>Selecione os tipos de imóvel que você procura</p>
+            </div>
+        </div>
+        <div class="filter-content" role="radiogroup" aria-label="Tipos de imóveis disponíveis">
+        <label for="filter_vip" class="filter-item item1" role="radio" aria-checked="false">
+            <input type="radio" name="filter-radio" id="filter_vip" value="Vip">
+            <img src="./assets/icons/icon-diamond.svg" alt="Ímoveis Vip">
+            <p>Imóvel Vip</p>
+        </label>
+
+        <div class="grid-template">
+            <label for="filter_apartament" class="filter-item item2" role="radio" aria-checked="false">
+                <input type="radio" name="filter-radio" id="filter_apartament" value="Apartamento">
+                <img src="./assets/icons/icon-apartament.svg" alt="Apartamentos">
+                <p>Apartamentos</p>
+            </label>
+
+            <label for="filter_home" class="filter-item item3" role="radio" aria-checked="false">
+                <input type="radio" name="filter-radio" id="filter_home" value="Casa">
+                <img src="./assets/icons/icon-home.svg" alt="Casas">
+                <p>Casas</p>
+            </label>
+
+            <label for="filter_layer" class="filter-item item4" role="radio" aria-checked="false">
+                <input type="radio" name="filter-radio" id="filter_layer" value="Lote">
+                <img src="./assets/icons/icon-layer.svg" alt="Terrenos">
+                <p>Terrenos</p>
+            </label>
+        </div>
+    </div>
+    </div>
+  </header>
+
+  <!-- Seção de Destaque -->
+  <section id="destaque">
+    <div class="destaque_titulo">
+      <h1>Imóveis em destaque</h1>
+      <p>Conheça algumas das melhores oportunidades de negócios de imóveis de Patos de Minas.</p>
+    </div>
+    <div class="destaque_buttons">
+      <div class="setae" tabindex="0" role="button" aria-label="Ver imóvel anterior">
+        <img src="assets/images/setae.svg" alt="" aria-hidden="true">
+      </div>
+      <div class="setad" tabindex="0" role="button" aria-label="Ver próximo imóvel">
+        <img src="assets/images/setad.svg" alt="" aria-hidden="true">
+      </div>
+    </div>
+    <div class="destaque_imoveis">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper" id="destaques">
+          <!-- os slides dos imóveis serão inseridos aqui via JS -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Catálogo -->
+  <section id="catalogo">
+    <div class="catalogo_titulo">
+      <h1>Catálogo de Imóveis</h1>
+    </div>
+    <div class="card_imoveis">
+      <!-- os cards serão inseridos aqui via JS -->
+    </div>
+    <div class="verMais">
+      <button id="verMaisBtn">Carregar mais</button>
+    </div>
+      <div class="depoimentos">
+        <div class="title">
+          <h1>DEPOIMENTOS</h1>
+          <h2>O QUE AS PESSOAS DIZEM</h2>
+        </div>
+        <div class="cardDepoimentos">
+          <div class="img">
+            <img src="assets/images/linhas.svg">
+          </div>
+          <p>Lorem Ipsum é simplesmente uma simulação de da indústria tipográfica e de impressos, e vem sendo utilizado
+            desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um
+            livro de modelos de tipos.</p>
+          <div class="imgUser">
+            <img src="assets/images/user.png">
+          </div>
+          <h3>Usuario 1</h3>
+        </div>
+      </div>
+    </section>
+    <section id="footer">
+      <div class="introducao">
+        <p>+ de</p><br>
+        <h1>02</h1><br>
+        <p>anos de experiência</p><br>
+        <p>+ de</p><br>
+        <h1>1000</h1><br>
+        <p>casas vendidas</p>
+        </p>
+      </div>
+      <div class="linhas">
+        <div class="linha"></div>
+        <div class="linha"></div>
+      </div>
+      <div class="text">
+        <h1>Transformando a experiência em oportunidades</h1>
+        <p>Nada diz “Eu te amo” como o lar dos sonhos! Imagine começar uma nova fase com quem você ama em uma casa
+          deslumbrante, perfeita para criar memórias inesquecíveis.</p>
+      </div>
+      <div class="linhas">
+        <div class="linha"></div>
+        <div class="linha"></div>
+      </div>
+      <div class="md">
+        <div class="contato-md">
+          <h1 class="title-md">CONTATO</h1>
+          <div class="contato">
+            <h1>Hellen</h1>
+            <p><img src="assets/images/icone.zap.svg" alt="icone-whatsapp">(34) 99999-9999</p>
+            <p><img src="assets/images/icone.insta.svg" alt="icone-instagram">@hellensousa.corretora</p>
+          </div>
+          <div class="contato">
+            <div class="linhaContato"></div>
+            <h1>Hellen</h1>
+            <p><img src="assets/images/icone.zap.svg" alt="icone-whatsapp">(34) 99999-9999</p>
+            <p><img src="assets/images/icone.insta.svg" alt="icone-instagram">@hellensousa.corretora</p>
+          </div>
+          <div class="contato">
+            <div class="linhaContato"></div>
+            <h1>Hellen</h1>
+            <p><img src="assets/images/icone.zap.svg" alt="icone-whatsapp">(34) 99999-9999</p>
+            <p><img src="assets/images/icone.insta.svg" alt="icone-instagram">@hellensousa.corretora</p>
+          </div>
+        </div>
+        <div class="contato-nav">
+          <h1 class="title-md">NAVEGAÇÃO</h1>
+          <a href="">Sobre nós</a>
+          <a href="">Imóveis em destaque</a>
+          <a href="">Catálogo de imóveis</a>
+          <a href="">Cadastrar imóvel</a>
+        </div>
+      
+        <div class="politica">
+          <h1 class="title-md">POLÍTICAS</h1>
+          <a href="">Imóveis em destaque</a>
+          <a href="">Termos de serviço</a>
+        </div>
+      </div>
+      <div class="contatos">
+        <div class="contato">
+          <h1>Hellen</h1>
+          <div class="linhaContato"></div>
+          <p><img src="assets/images/icone.zap.svg" alt="icone-whatsapp">(34) 99999-9999</p>
+          <p><img src="assets/images/icone.insta.svg" alt="icone-instagram">@exemplo1.corretora</p>
+          <a href="">ENTRE EM CONTATO</a>
+        </div>
+        <div class="contato">
+          <h1>Hellen</h1>
+          <div class="linhaContato"></div>
+          <p><img src="assets/images/icone.zap.svg" alt="icone-whatsapp">(34) 99999-9999</p>
+          <p><img src="assets/images/icone.insta.svg" alt="icone-instagram">@exemplo2.corretora</p>
+          <a href="">ENTRE EM CONTATO</a>
+        </div>
+        <div class="contato">
+          <h1>Hellen</h1>
+          <div class="linhaContato"></div>
+          <p><img src="assets/images/icone.zap.svg" alt="icone-whatsapp">(34) 99999-9999</p>
+          <p><img src="assets/images/icone.insta.svg" alt="icone-instagram">@exemplo3.corretora</p>
+          <a href="">ENTRE EM CONTATO</a>
+        </div>
+      </div>
+      <div class="linhaFooter"></div>
+      <div class="copy">
+        <p>© 2025 SHS Imoveis</p>
+        <p>Todos os direitos reservados</p>
+        <a href="">Desenvolvido por X</a>
+      </div>
+    </section>
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="scripts/index.js" type="module"></script>
+  <script src="./scripts/detalhes.js"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+  </section>
+
+</body>
+
+</html>

@@ -7,3 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
   checkboxFilterItems()
 });
 
+document.getElementById('btn-anuncia').addEventListener('click', () => {
+  const url = 'https://wa.me/5599999999999';
+  window.open(url, '_blank');
+})

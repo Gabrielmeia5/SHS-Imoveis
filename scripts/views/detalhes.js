@@ -45,9 +45,6 @@ async function init() {
   }
 }
 
-
-
-
 const swiperHeader = new Swiper('.swiper-imgs-imovel', {
   slidesPerView: 4,
   loop: true,
@@ -68,9 +65,6 @@ const swiperHeader = new Swiper('.swiper-imgs-imovel', {
     }
   }
 });
-
-
-
 
 // Abrir popup ao clicar na imagem
 function openPopup() {

@@ -80,7 +80,6 @@
     text-decoration: none;
     color: #fff;
     /* border: #fff 1px solid; */
-
 }
 
 #footer .linhaFooter {
@@ -156,6 +155,11 @@
     #footer .md {
         display: flex;
         justify-content: space-around;
+        margin: 3em 0 0 0;
+    }
+
+    #footer .linhas {
+        gap: 15em;
     }
 
     #footer .md h1 {

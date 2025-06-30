@@ -5,7 +5,7 @@ import { inicializarSwiper } from "../utils/swipers.js";
 let imoveis = [];
 let listaFiltrada = [];
 let currentVisible = 0;
-let batchSize = 5;
+let batchSize = 6;
 let tipoFiltroAtivo = null;
 
 const catalogo = document.querySelector(".card_imoveis");
@@ -20,7 +20,6 @@ export default async function initHome() {
   renderizarLote();
   configurarEventos();
   inicializarSwiper();
-  window.addEventListener("resize", handleResize);
 }
 
 function updateBatchSize() {
@@ -28,17 +27,10 @@ function updateBatchSize() {
   if (width <= 600) batchSize = 3;
   else if (width <= 1024) batchSize = 4;
   else if (width <= 1440) batchSize = 6;
-  else if (width <= 1756) batchSize = 8;
-  else batchSize = 10;
+  else if (width <= 1756) batchSize = 9;
 }
 
-function handleResize() {
-  clearTimeout(resizeTimeout);
-  resizeTimeout = setTimeout(() => {
-    updateBatchSize();
-    // opcional: re-renderizar com base no novo batchSize
-  }, 300);
-}
+
 
 function renderizarDestaques() {
   imoveis.filter(i => i.destaque).forEach(imovel => {

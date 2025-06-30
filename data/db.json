@@ -1,52 +1,5 @@
 [
   {
-    "id": "CO302",
-    "titulo": "Cobertura Duplex com Vista Panorâmica",
-    "tipo": "Cobertura",
-    "finalidade": "Venda",
-    "descricao": "Desfrute de uma vista incrível com esta cobertura duplex de 180m². Possui jacuzzi na varanda, sala com pé-direito duplo e acabamento em porcelanato. Localizada próxima a bares e restaurantes.",
-    "preco": 890000,
-    "condominio": 1100,
-    "andar": 15,
-    "aceitaFinanciamento": false,
-    "mobiliado": false,
-    "anoConstrucao": 2015,
-    "endereco": {
-      "bairro": "Savassi",
-      "cidade": "Belo Horizonte",
-      "estado": "MG"
-    },
-    "area": 180,
-    "areaConstruida": 180,
-    "quartos": 2,
-    "suites": 2,
-    "banheiros": 3,
-    "vagasGaragem": 2,
-    "caracteristicas": [
-      "Varanda com jacuzzi",
-      "Pé-direito duplo na sala principal",
-      "Cozinha americana com bancada de granito",
-      "Vista panorâmica da cidade",
-      "Elevador privativo"
-    ],
-    "corretor": "Sara",
-    "imagemPrincipal": "assets/images/imovel-1.jpg",
-    "midias": [
-      "assets/images/cobertura-2.jpg",
-      "assets/images/cobertura-3.jpg",
-      "assets/images/cobertura-4.jpg"
-    ],
-    "videos": [
-      "https://www.youtube.com/watch?v=coberturaTop123",
-      "https://www.youtube.com/watch?v=CO302tour"
-    ],
-    "destaque": false,
-    "relacionados": [
-      "CO303",
-      "AP124"
-    ]
-  },
-  {
     "id": "CS220",
     "titulo": "Casa Luxuosa em Condomínio Fechado",
     "tipo": "Casa",
@@ -79,9 +32,11 @@
     "corretor": "Sheila",
     "imagemPrincipal": "assets/images/imovel-2.jpg",
     "midias": [
-      "assets/images/imovel-luxo2.jpg",
-      "assets/images/imovel-luxo3.jpg",
-      "assets/images/imovel-luxo4.jpg"
+      "assets/images/casa-1.jpg",
+      "assets/images/casa-2.jpg",
+      "assets/images/casa-3.jpg",
+      "assets/images/casa-4.jpg",
+      "assets/images/casa-5.jpg"
     ],
     "videos": [
       "https://www.youtube.com/watch?v=abcd1234xyz",
@@ -126,8 +81,10 @@
     "corretor": "Hellen",
     "imagemPrincipal": "assets/images/IMG/Apartamento/apartment-2094645_1920.jpg",
     "midias": [
-      "assets/images/apto-simples2.jpg",
-      "assets/images/apto-simples3.jpg"
+      "assets/images/apartamento-1.jpg",
+      "assets/images/apartamento-2.jpg",
+      "assets/images/apartamento-4.jpg",
+      "assets/images/IMG/Apartamento/apartment-2094659_1920.jpg"
     ],
     "videos": [
       "https://www.youtube.com/watch?v=ap045video"
@@ -171,8 +128,11 @@
     "corretor": "Sheila",
     "imagemPrincipal": "assets/images/IMG/Casas/house-1836070_1920.jpg",
     "midias": [
+      "assets/images/casa-1.jpg",
       "assets/images/casa-2.jpg",
-      "assets/images/casa-3.jpg"
+      "assets/images/casa-3.jpg",
+      "assets/images/casa-4.jpg",
+      "assets/images/casa-5.jpg"
     ],
     "videos": [
       "https://www.youtube.com/watch?v=CS198tour"
@@ -184,53 +144,9 @@
     ]
   },
   {
-    "id": "ST089",
-    "titulo": "Studio Prático e Bem Localizado",
-    "tipo": "Studio",
-    "finalidade": "Venda",
-    "descricao": "Compacto, funcional e perto de tudo. Este studio é ideal para solteiros ou estudantes que desejam morar com conforto e praticidade em uma das regiões mais valorizadas da cidade.",
-    "preco": 175000,
-    "condominio": 250,
-    "andar": 8,
-    "aceitaFinanciamento": true,
-    "mobiliado": true,
-    "anoConstrucao": 2019,
-    "endereco": {
-      "bairro": "Centro",
-      "cidade": "Curitiba",
-      "estado": "PR"
-    },
-    "area": 38,
-    "areaConstruida": 38,
-    "quartos": 1,
-    "suites": 0,
-    "banheiros": 1,
-    "vagasGaragem": 0,
-    "caracteristicas": [
-      "Mobília completa",
-      "Portaria 24h",
-      "Academia no prédio",
-      "Lavanderia compartilhada",
-      "Elevador moderno"
-    ],
-    "corretor": "Sara",
-    "imagemPrincipal": "assets/images/IMG/Apartamento/home-2486092_1920.jpg",
-    "midias": [
-      "assets/images/studio-2.jpg"
-    ],
-    "videos": [
-      "https://www.youtube.com/watch?v=ST089apresentacao"
-    ],
-    "destaque": false,
-    "relacionados": [
-      "AP045",
-      "ST090"
-    ]
-  },
-  {
     "id": "CH007",
     "titulo": "Chácara com Piscina e Área Verde",
-    "tipo": "Chácara",
+    "tipo": "Lote",
     "finalidade": "Venda",
     "descricao": "Uma bela chácara com 2000m² de terreno, perfeita para finais de semana ou moradia permanente. Conta com piscina, salão de festas, pomar e casa principal mobiliada.",
     "preco": 850000,
@@ -258,10 +174,11 @@
       "Casa de caseiro nos fundos"
     ],
     "corretor": "Hellen",
-    "imagemPrincipal": "assets/images/IMG/Apartamento/kitchen-2094707_1920.jpg",
+    "imagemPrincipal": "assets/images/lote-3.jpg",
     "midias": [
-      "assets/images/chacara-2.jpg",
-      "assets/images/chacara-3.jpg"
+      "assets/images/lote-2.jpg",
+      "assets/images/lote-4.jpg",
+      "assets/images/lote-1.jpg"
     ],
     "videos": [
       "https://www.youtube.com/watch?v=CH007chacara"
@@ -275,7 +192,7 @@
   {
     "id": "CH007",
     "titulo": "Chácara com Piscina e Área Verde",
-    "tipo": "Chácara",
+    "tipo": "Lote",
     "finalidade": "Venda",
     "descricao": "Uma bela chácara com 2000m² de terreno, perfeita para finais de semana ou moradia permanente. Conta com piscina, salão de festas, pomar e casa principal mobiliada.",
     "preco": 850000,
@@ -303,10 +220,12 @@
       "Casa de caseiro nos fundos"
     ],
     "corretor": "Hellen",
-    "imagemPrincipal": "assets/images/IMG/Apartamento/luxury-suite-4720815_1920.jpg",
+    "imagemPrincipal": "assets/images/lote-2.jpg",
     "midias": [
-      "assets/images/chacara-2.jpg",
-      "assets/images/chacara-3.jpg"
+      
+      "assets/images/lote-3.jpg",
+      "assets/images/lote-4.jpg",
+      "assets/images/lote-1.jpg"
     ],
     "videos": [
       "https://www.youtube.com/watch?v=CH007chacara"
@@ -350,7 +269,10 @@
     "corretor": "Sheila",
     "imagemPrincipal": "assets/images/imovel-9.jpg",
     "midias": [
-      "assets/images/apto-varanda-2.jpg"
+      "assets/images/apartamento-1.jpg",
+      "assets/images/apartamento-2.jpg",
+      "assets/images/apartamento-4.jpg",
+      "assets/images/IMG/Apartamento/apartment-2094659_1920.jpg"
     ],
     "videos": [],
     "destaque": false,
@@ -392,7 +314,11 @@
     "corretor": "Sara",
     "imagemPrincipal": "assets/images/imovel-6.jpg",
     "midias": [
-      "assets/images/casa-rustica-2.jpg"
+      "assets/images/casa-1.jpg",
+      "assets/images/casa-2.jpg",
+      "assets/images/casa-3.jpg",
+      "assets/images/casa-4.jpg",
+      "assets/images/casa-5.jpg"
     ],
     "videos": [],
     "destaque": true,
@@ -434,7 +360,10 @@
     "corretor": "Hellen",
     "imagemPrincipal": "assets/images/IMG/Apartamento/furniture-998265_1920.jpg",
     "midias": [
-      "assets/images/apto-homeoffice-2.jpg"
+      "assets/images/apartamento-1.jpg",
+      "assets/images/apartamento-2.jpg",
+      "assets/images/apartamento-4.jpg",
+      "assets/images/IMG/Apartamento/apartment-2094659_1920.jpg"
     ],
     "videos": [],
     "destaque": false,
@@ -445,10 +374,10 @@
   },
   {
     "id": "SB101",
-    "titulo": "Sobrado com Quintal e Área de Churrasco",
+    "titulo": "Sobrado com Quintal",
     "tipo": "Casa",
     "finalidade": "Venda",
-    "descricao": "Sobrado com dois pavimentos, quintal espaçoso e área com churrasqueira. Ideal para famílias grandes que gostam de confraternizar em casa.",
+    "descricao": "Sobrado com dois pavimentos. Ideal para famílias grandes que gostam de confraternizar em casa.",
     "preco": 595000,
     "condominio": 0,
     "andar": null,
@@ -476,7 +405,11 @@
     "corretor": "Sheila",
     "imagemPrincipal": "assets/images/imovel-5.jpg",
     "midias": [
-      "assets/images/sobrado-2.jpg"
+      "assets/images/casa-1.jpg",
+      "assets/images/casa-2.jpg",
+      "assets/images/casa-3.jpg",
+      "assets/images/casa-4.jpg",
+      "assets/images/casa-5.jpg"
     ],
     "videos": [],
     "destaque": true,
@@ -517,7 +450,13 @@
     ],
     "corretor": "Sara",
     "imagemPrincipal": "assets/images/IMG/Casas/minecraft-655954_1920.jpg",
-    "midias": [],
+    "midias": [
+      "assets/images/casa-1.jpg",
+      "assets/images/casa-2.jpg",
+      "assets/images/casa-3.jpg",
+      "assets/images/casa-4.jpg",
+      "assets/images/casa-5.jpg"
+    ],
     "videos": [],
     "destaque": false,
     "relacionados": [
@@ -527,10 +466,10 @@
   },
   {
     "id": "AP990",
-    "titulo": "Apartamento Alto Padrão com Lazer Completo",
+    "titulo": "Apartamento Alto Padrão",
     "tipo": "Apartamento",
     "finalidade": "Venda",
-    "descricao": "Um verdadeiro clube particular dentro do seu prédio. Lazer completo, piscina com raia, quadra de esportes, espaço pet e localização privilegiada.",
+    "descricao": "Um verdadeiro clube particular dentro do seu prédio. L",
     "preco": 1190000,
     "condominio": 1400,
     "andar": 18,
@@ -558,7 +497,10 @@
     "corretor": "Hellen",
     "imagemPrincipal": "assets/images/IMG/Apartamento/apartment-2094659_1920.jpg",
     "midias": [
-      "assets/images/apto-luxo-2.jpg"
+      "assets/images/apartamento-1.jpg",
+      "assets/images/apartamento-2.jpg",
+      "assets/images/apartamento-4.jpg",
+      "assets/images/IMG/Apartamento/apartment-2094659_1920.jpg"
     ],
     "videos": [
       "https://www.youtube.com/watch?v=AP990tour"
@@ -567,6 +509,518 @@
     "relacionados": [
       "CO302",
       "AP212"
+    ]
+  },
+  {
+    "id": "AP156",
+    "titulo": "Apartamento Studio Moderno",
+    "tipo": "Apartamento",
+    "finalidade": "Venda",
+    "descricao": "Studio moderno e funcional, perfeito para jovens profissionais. Ambiente otimizado com cozinha integrada e varanda com vista urbana.",
+    "preco": 295000,
+    "condominio": 420,
+    "andar": 8,
+    "aceitaFinanciamento": true,
+    "mobiliado": true,
+    "anoConstrucao": 2019,
+    "endereco": {
+      "bairro": "Centro",
+      "cidade": "Belo Horizonte",
+      "estado": "MG"
+    },
+    "area": 45,
+    "areaConstruida": 45,
+    "quartos": 1,
+    "suites": 0,
+    "banheiros": 1,
+    "vagasGaragem": 1,
+    "caracteristicas": [
+      "Cozinha americana planejada",
+      "Varanda com vista da cidade",
+      "Ar-condicionado split",
+      "Mobiliário sob medida",
+      "Academia no condomínio"
+    ],
+    "corretor": "Sara",
+    "imagemPrincipal": "assets/images/IMG/Apartamento/apartment-2094645_1920.jpg",
+    "midias": [
+      "assets/images/apartamento-1.jpg",
+      "assets/images/apartamento-2.jpg",
+      "assets/images/apartamento-4.jpg",
+      "assets/images/IMG/Apartamento/furniture-998265_1920.jpg"
+    ],
+    "videos": [],
+    "destaque": false,
+    "relacionados": [
+      "AP310",
+      "AP045"
+    ]
+  },
+  {
+    "id": "CS445",
+    "titulo": "Casa Colonial com Charme Histórico",
+    "tipo": "Casa",
+    "finalidade": "Venda",
+    "descricao": "Casa colonial preservada com arquitetura histórica. Combina o charme do passado com comodidades modernas, ideal para quem aprecia tradição.",
+    "preco": 780000,
+    "condominio": 0,
+    "andar": null,
+    "aceitaFinanciamento": true,
+    "mobiliado": false,
+    "anoConstrucao": 1995,
+    "endereco": {
+      "bairro": "Centro Histórico",
+      "cidade": "Ouro Preto",
+      "estado": "MG"
+    },
+    "area": 350,
+    "areaConstruida": 280,
+    "quartos": 4,
+    "suites": 2,
+    "banheiros": 3,
+    "vagasGaragem": 2,
+    "caracteristicas": [
+      "Arquitetura colonial preservada",
+      "Vigas de madeira aparentes",
+      "Lareira na sala principal",
+      "Jardim com plantas nativas",
+      "Localização histórica privilegiada"
+    ],
+    "corretor": "Sheila",
+    "imagemPrincipal": "assets/images/IMG/Casas/house-1836070_1920.jpg",
+    "midias": [
+      "assets/images/casa-1.jpg",
+      "assets/images/casa-2.jpg",
+      "assets/images/casa-3.jpg",
+      "assets/images/casa-4.jpg",
+      "assets/images/casa-5.jpg"
+    ],
+    "videos": [
+      "https://www.youtube.com/watch?v=CS445colonial"
+    ],
+    "destaque": true,
+    "relacionados": [
+      "CS340",
+      "CS198"
+    ]
+  },
+  {
+    "id": "LT089",
+    "titulo": "Lote Comercial em Avenida Principal",
+    "tipo": "Lote",
+    "finalidade": "Venda",
+    "descricao": "Excelente lote comercial em avenida de grande movimento. Ideal para construção de estabelecimento comercial ou prédio residencial.",
+    "preco": 450000,
+    "condominio": 0,
+    "andar": null,
+    "aceitaFinanciamento": true,
+    "mobiliado": false,
+    "anoConstrucao": null,
+    "endereco": {
+      "bairro": "Centro Comercial",
+      "cidade": "Uberlândia",
+      "estado": "MG"
+    },
+    "area": 400,
+    "areaConstruida": 0,
+    "quartos": 0,
+    "suites": 0,
+    "banheiros": 0,
+    "vagasGaragem": 0,
+    "caracteristicas": [
+      "Frente para avenida principal",
+      "Topografia plana",
+      "Documentação regularizada",
+      "Rede elétrica e água disponível",
+      "Alto potencial comercial"
+    ],
+    "corretor": "Hellen",
+    "imagemPrincipal": "assets/images/lote-1.jpg",
+    "midias": [
+      "assets/images/lote-2.jpg",
+      "assets/images/lote-3.jpg",
+      "assets/images/lote-4.jpg"
+    ],
+    "videos": [],
+    "destaque": false,
+    "relacionados": [
+      "CH007",
+      "LT090"
+    ]
+  },
+  {
+    "id": "VIP001",
+    "titulo": "Penthouse Exclusivo com Vista Panorâmica",
+    "tipo": "Vip",
+    "finalidade": "Venda",
+    "descricao": "Penthouse único no último andar com vista panorâmica de 360°. Acabamentos de luxo importados, spa privativo e heliponto no edifício.",
+    "preco": 3500000,
+    "condominio": 2800,
+    "andar": 25,
+    "aceitaFinanciamento": false,
+    "mobiliado": true,
+    "anoConstrucao": 2024,
+    "endereco": {
+      "bairro": "Jardins",
+      "cidade": "São Paulo",
+      "estado": "SP"
+    },
+    "area": 300,
+    "areaConstruida": 300,
+    "quartos": 4,
+    "suites": 4,
+    "banheiros": 6,
+    "vagasGaragem": 5,
+    "caracteristicas": [
+      "Vista panorâmica 360 graus",
+      "Spa privativo com sauna",
+      "Adega climatizada para 500 garrafas",
+      "Terraço com jardim suspenso",
+      "Automação residencial completa",
+      "Heliponto no edifício"
+    ],
+    "corretor": "Sara",
+    "imagemPrincipal": "assets/images/imovel-9.jpg",
+    "midias": [
+      "assets/images/apartamento-1.jpg",
+      "assets/images/apartamento-2.jpg",
+      "assets/images/apartamento-4.jpg",
+      "assets/images/IMG/Apartamento/apartment-2094659_1920.jpg"
+    ],
+    "videos": [
+      "https://www.youtube.com/watch?v=VIP001penthouse",
+      "https://www.youtube.com/watch?v=VIP001tour360"
+    ],
+    "destaque": true,
+    "relacionados": [
+      "AP990",
+      "VIP002"
+    ]
+  },
+  {
+    "id": "AP267",
+    "titulo": "Apartamento Familiar com Playground",
+    "tipo": "Apartamento",
+    "finalidade": "Venda",
+    "descricao": "Apartamento espaçoso em condomínio família com excelente área de lazer. Três quartos amplos e localização estratégica próxima a escolas.",
+    "preco": 485000,
+    "condominio": 650,
+    "andar": 5,
+    "aceitaFinanciamento": true,
+    "mobiliado": false,
+    "anoConstrucao": 2018,
+    "endereco": {
+      "bairro": "Vila Madalena",
+      "cidade": "São Paulo",
+      "estado": "SP"
+    },
+    "area": 95,
+    "areaConstruida": 95,
+    "quartos": 3,
+    "suites": 1,
+    "banheiros": 2,
+    "vagasGaragem": 2,
+    "caracteristicas": [
+      "Playground no condomínio",
+      "Salão de festas infantil",
+      "Próximo a escolas de qualidade",
+      "Varanda com churrasqueira",
+      "Portaria 24 horas"
+    ],
+    "corretor": "Hellen",
+    "imagemPrincipal": "assets/images/IMG/Apartamento/furniture-998265_1920.jpg",
+    "midias": [
+      "assets/images/apartamento-1.jpg",
+      "assets/images/apartamento-2.jpg",
+      "assets/images/apartamento-4.jpg",
+      "assets/images/IMG/Apartamento/apartment-2094645_1920.jpg"
+    ],
+    "videos": [],
+    "destaque": false,
+    "relacionados": [
+      "AP212",
+      "AP156"
+    ]
+  },
+  {
+    "id": "CS612",
+    "titulo": "Casa Contemporânea com Piscina",
+    "tipo": "Casa",
+    "finalidade": "Venda",
+    "descricao": "Casa contemporânea com design arrojado. Piscina com deck, ambientes integrados e muito conforto para toda a família.",
+    "preco": 920000,
+    "condominio": 0,
+    "andar": null,
+    "aceitaFinanciamento": true,
+    "mobiliado": false,
+    "anoConstrucao": 2017,
+    "endereco": {
+      "bairro": "Alphaville",
+      "cidade": "Barueri",
+      "estado": "SP"
+    },
+    "area": 500,
+    "areaConstruida": 290,
+    "quartos": 4,
+    "suites": 3,
+    "banheiros": 4,
+    "vagasGaragem": 4,
+    "caracteristicas": [
+      "Piscina com deck de madeira",
+      "Cozinha gourmet integrada",
+      "Escritório com entrada independente",
+      "Master suíte com closet",
+      "Sistema de segurança completo"
+    ],
+    "corretor": "Sara",
+    "imagemPrincipal": "assets/images/imovel-6.jpg",
+    "midias": [
+      "assets/images/casa-1.jpg",
+      "assets/images/casa-2.jpg",
+      "assets/images/casa-3.jpg",
+      "assets/images/casa-4.jpg",
+      "assets/images/casa-5.jpg"
+    ],
+    "videos": [
+      "https://www.youtube.com/watch?v=CS612contemporanea"
+    ],
+    "destaque": true,
+    "relacionados": [
+      "CS220",
+      "CS340"
+    ]
+  },
+  {
+    "id": "LT134",
+    "titulo": "Terreno Residencial em Condomínio",
+    "tipo": "Lote",
+    "finalidade": "Venda",
+    "descricao": "Terreno plano em condomínio fechado de alto padrão. Perfeito para construir a casa dos seus sonhos com toda segurança e infraestrutura.",
+    "preco": 320000,
+    "condominio": 450,
+    "andar": null,
+    "aceitaFinanciamento": true,
+    "mobiliado": false,
+    "anoConstrucao": null,
+    "endereco": {
+      "bairro": "Residencial Bosque",
+      "cidade": "Campinas",
+      "estado": "SP"
+    },
+    "area": 600,
+    "areaConstruida": 0,
+    "quartos": 0,
+    "suites": 0,
+    "banheiros": 0,
+    "vagasGaragem": 0,
+    "caracteristicas": [
+      "Condomínio fechado de alto padrão",
+      "Portaria 24h com controle de acesso",
+      "Área verde preservada",
+      "Infraestrutura completa",
+      "Próximo a clube e escolas"
+    ],
+    "corretor": "Sheila",
+    "imagemPrincipal": "assets/images/lote-4.jpg",
+    "midias": [
+      "assets/images/lote-1.jpg",
+      "assets/images/lote-2.jpg",
+      "assets/images/lote-3.jpg"
+    ],
+    "videos": [],
+    "destaque": false,
+    "relacionados": [
+      "CS220",
+      "LT089"
+    ]
+  },
+  {
+    "id": "AP478",
+    "titulo": "Apartamento Duplex com Terraço",
+    "tipo": "Apartamento",
+    "finalidade": "Venda",
+    "descricao": "Duplex diferenciado com terraço privativo. Dois pavimentos bem distribuídos e área externa exclusiva para momentos de relaxamento.",
+    "preco": 750000,
+    "condominio": 800,
+    "andar": 12,
+    "aceitaFinanciamento": true,
+    "mobiliado": false,
+    "anoConstrucao": 2020,
+    "endereco": {
+      "bairro": "Brooklin",
+      "cidade": "São Paulo",
+      "estado": "SP"
+    },
+    "area": 140,
+    "areaConstruida": 140,
+    "quartos": 3,
+    "suites": 2,
+    "banheiros": 3,
+    "vagasGaragem": 2,
+    "caracteristicas": [
+      "Terraço privativo de 30m²",
+      "Pé-direito duplo na sala",
+      "Suíte máster no pavimento superior",
+      "Lavabo no térreo",
+      "Excelente iluminação natural"
+    ],
+    "corretor": "Hellen",
+    "imagemPrincipal": "assets/images/imovel-2.jpg",
+    "midias": [
+      "assets/images/apartamento-1.jpg",
+      "assets/images/apartamento-2.jpg",
+      "assets/images/apartamento-4.jpg",
+      "assets/images/IMG/Apartamento/apartment-2094659_1920.jpg"
+    ],
+    "videos": [
+      "https://www.youtube.com/watch?v=AP478duplex"
+    ],
+    "destaque": true,
+    "relacionados": [
+      "AP990",
+      "AP267"
+    ]
+  },
+  {
+    "id": "CS723",
+    "titulo": "Casa Econômica para Primeira Moradia",
+    "tipo": "Casa",
+    "finalidade": "Venda",
+    "descricao": "Casa simples e econômica, ideal para quem está comprando o primeiro imóvel. Bem localizada e com potencial para ampliação futura.",
+    "preco": 245000,
+    "condominio": 0,
+    "andar": null,
+    "aceitaFinanciamento": true,
+    "mobiliado": false,
+    "anoConstrucao": 2009,
+    "endereco": {
+      "bairro": "Jardim das Flores",
+      "cidade": "Poços de Caldas",
+      "estado": "MG"
+    },
+    "area": 200,
+    "areaConstruida": 90,
+    "quartos": 2,
+    "suites": 0,
+    "banheiros": 1,
+    "vagasGaragem": 1,
+    "caracteristicas": [
+      "Ótimo para primeira moradia",
+      "Terreno com espaço para ampliação",
+      "Cozinha com área de serviço",
+      "Quintal murado",
+      "Aceita financiamento habitacional"
+    ],
+    "corretor": "Sara",
+    "imagemPrincipal": "assets/images/IMG/Casas/minecraft-655954_1920.jpg",
+    "midias": [
+      "assets/images/casa-1.jpg",
+      "assets/images/casa-2.jpg",
+      "assets/images/casa-3.jpg",
+      "assets/images/casa-4.jpg",
+      "assets/images/casa-5.jpg"
+    ],
+    "videos": [],
+    "destaque": false,
+    "relacionados": [
+      "CS077",
+      "AP045"
+    ]
+  },
+  {
+    "id": "VIP002",
+    "titulo": "Mansão de Luxo com Campo de Golfe",
+    "tipo": "Vip",
+    "finalidade": "Venda",
+    "descricao": "Mansão exclusiva em condomínio de ultra luxo com campo de golfe privativo. Arquitetura assinada e acabamentos únicos importados da Europa.",
+    "preco": 8500000,
+    "condominio": 5000,
+    "andar": null,
+    "aceitaFinanciamento": false,
+    "mobiliado": true,
+    "anoConstrucao": 2023,
+    "endereco": {
+      "bairro": "Fazenda Boa Vista",
+      "cidade": "Porto Feliz",
+      "estado": "SP"
+    },
+    "area": 2500,
+    "areaConstruida": 800,
+    "quartos": 6,
+    "suites": 6,
+    "banheiros": 10,
+    "vagasGaragem": 8,
+    "caracteristicas": [
+      "Campo de golfe de 18 buracos",
+      "Spa com hidromassagem",
+      "Adega subterrânea climatizada",
+      "Cinema particular",
+      "Quadra de tênis iluminada",
+      "Heliponto privativo",
+      "Segurança 24h personalizada"
+    ],
+    "corretor": "Sara",
+    "imagemPrincipal": "assets/images/imovel-5.jpg",
+    "midias": [
+      "assets/images/casa-1.jpg",
+      "assets/images/casa-2.jpg",
+      "assets/images/casa-3.jpg",
+      "assets/images/casa-4.jpg",
+      "assets/images/casa-5.jpg"
+    ],
+    "videos": [
+      "https://www.youtube.com/watch?v=VIP002mansao",
+      "https://www.youtube.com/watch?v=VIP002golfe"
+    ],
+    "destaque": true,
+    "relacionados": [
+      "VIP001",
+      "CS220"
+    ]
+  },
+  {
+    "id": "AP589",
+    "titulo": "Apartamento Investimento Locação",
+    "tipo": "Apartamento",
+    "finalidade": "Venda",
+    "descricao": "Excelente oportunidade de investimento. Apartamento já alugado com contrato vigente e inquilino estabelecido há 2 anos.",
+    "preco": 285000,
+    "condominio": 320,
+    "andar": 3,
+    "aceitaFinanciamento": true,
+    "mobiliado": true,
+    "anoConstrucao": 2015,
+    "endereco": {
+      "bairro": "Savassi",
+      "cidade": "Belo Horizonte",
+      "estado": "MG"
+    },
+    "area": 55,
+    "areaConstruida": 55,
+    "quartos": 2,
+    "suites": 0,
+    "banheiros": 1,
+    "vagasGaragem": 1,
+    "caracteristicas": [
+      "Já alugado com renda garantida",
+      "Inquilino há 2 anos no imóvel",
+      "Mobiliado completo",
+      "Localização nobre de BH",
+      "Excelente para investidores"
+    ],
+    "corretor": "Hellen",
+    "imagemPrincipal": "assets/images/IMG/Apartamento/apartment-2094645_1920.jpg",
+    "midias": [
+      "assets/images/apartamento-1.jpg",
+      "assets/images/apartamento-2.jpg",
+      "assets/images/apartamento-4.jpg",
+      "assets/images/IMG/Apartamento/furniture-998265_1920.jpg"
+    ],
+    "videos": [], 
+    "destaque": false,
+    "relacionados": [
+      "AP156",
+      "AP310"
     ]
   }
 ]

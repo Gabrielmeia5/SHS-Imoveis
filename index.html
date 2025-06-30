@@ -27,40 +27,39 @@
   <meta property="og:description" content="Encontre casas, apartamentos e terrenos à venda em Patos de Minas com atendimento personalizado de Sheila, Hellen e Sara." />
   <meta property="og:url" content="https://www.seusite.com.br/" />
   <meta property="og:type" content="website" />
-  
 </head>
 
 <body>
 
-  <header class="header-home">
-        
+  <header class="header-home" role="banner">
+
     <div class="nav-bar-container">
         <div class="title-content">
             <h1>Catálogo de <span>Imóveis</span></h1>
             <p>Cuidado e exclusividade</p>
         </div>
-        <nav>
+        <nav role="navigation">
             <ul class="nav-ul">
               <li class="nav-item">
-                <a href="#sobre-nos">SOBRE NÓS</a>
+                <a href="#sobre-nos" accesskey="s">SOBRE NÓS</a>
               </li>
               <li class="nav-item">
                 <a href="#destaque">IMÓVEIS EM DESTAQUE</a>
               </li>
               <li class="nav-item">
-                <a href="#catalogo">CATÁLOGO</a>
+                <a href="#catalogo">GALERIA</a>
               </li>
               <li class="nav-item">
-                <a href="#footer">CONTATO</a>
+                <a href="#footer" accesskey="c">CONTATO</a>
               </li>
               <li class="nav-item">
-                <a href="https://wa.me/5599999999999" target="_blank">FALE CONOSCO</a>
+                <a href="#" aria-label="Página para cadastrar novo imóvel">CADASTRAR IMÓVEL</a>
               </li>
             </ul>
         </nav>
         <div class="menu-container">
-            <label class="menu" for="menu">
-                <input type="checkbox" id="menu">
+            <label class="menu" for="menu" role="button" aria-label="Abrir ou fechar menu de navegação" tabindex="0">
+                <input type="checkbox" id="menu" aria-controls="nav-ul" aria-expanded="false">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -68,76 +67,60 @@
         </div>
     </div>
 
-    <div class="swiper home-bg-swiper">
+    <div class="swiper home-bg-swiper" aria-label="Slides com imagens ilustrativas de imóveis">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
-          <img src="assets/images/swipper/swiperinicial-imagem1.jpg" alt="">
+          <img src="assets/images/swipper/swiperinicial-imagem1.jpg" alt="Fachada de casa moderna ao entardecer" aria-hidden="true">
           <div class="bg-filter"></div>
         </div>
         <div class="swiper-slide">
-          <img src="./assets/images/swipper/swiperinicial-imagem2.jpg" alt="">
+          <img src="./assets/images/swipper/swiperinicial-imagem2.jpg" alt="Interior sofisticado de sala com pé-direito alto" aria-hidden="true">
           <div class="bg-filter"></div>
         </div>
         <div class="swiper-slide">
-          <img src="./assets/images/swipper/swiperinicial-imagem3.jpg" alt="">
+          <img src="./assets/images/swipper/swiperinicial-imagem3.jpg" alt="Varanda com vista panorâmica urbana ao pôr do sol" aria-hidden="true">
           <div class="bg-filter"></div>
         </div>
-        <!-- Adicione mais slides conforme necessário -->
       </div>
       <div class="swiper-pagination-home"></div>
-  </div>
+    </div>
 
-    <div class="filter-home">
+    <div class="filter-home" role="region" aria-label="Filtros para busca de imóveis">
         <div class="filter-home-header">
             <div>
                 <h2>Encontre o Imóvel Ideal</h2>
                 <p>Selecione os tipos de imóvel que você procura</p>
             </div>
         </div>
-        <div class="filter-content">
-        <label for="filter_vip" class="filter-item item1">
+        <div class="filter-content" role="radiogroup" aria-label="Tipos de imóveis disponíveis">
+        <label for="filter_vip" class="filter-item item1" role="radio" aria-checked="false">
             <input type="radio" name="filter-radio" id="filter_vip" value="Vip">
-            <img src="./assets/icons/icon-diamond.svg" alt="Ícone">
+            <img src="./assets/icons/icon-diamond.svg" alt="Ímoveis Vip">
             <p>Imóvel Vip</p>
         </label>
 
         <div class="grid-template">
-            <label for="filter_apartament" class="filter-item item2">
+            <label for="filter_apartament" class="filter-item item2" role="radio" aria-checked="false">
                 <input type="radio" name="filter-radio" id="filter_apartament" value="Apartamento">
-                <img src="./assets/icons/icon-apartament.svg" alt="Ícone">
+                <img src="./assets/icons/icon-apartament.svg" alt="Apartamentos">
                 <p>Apartamentos</p>
             </label>
 
-            <label for="filter_home" class="filter-item item3">
+            <label for="filter_home" class="filter-item item3" role="radio" aria-checked="false">
                 <input type="radio" name="filter-radio" id="filter_home" value="Casa">
-                <img src="./assets/icons/icon-home.svg" alt="Ícone">
+                <img src="./assets/icons/icon-home.svg" alt="Casas">
                 <p>Casas</p>
             </label>
 
-            <label for="filter_layer" class="filter-item item4">
+            <label for="filter_layer" class="filter-item item4" role="radio" aria-checked="false">
                 <input type="radio" name="filter-radio" id="filter_layer" value="Lote">
-                <img src="./assets/icons/icon-layer.svg" alt="Ícone">
+                <img src="./assets/icons/icon-layer.svg" alt="Terrenos">
                 <p>Terrenos</p>
             </label>
         </div>
     </div>
     </div>
-</header>
-<section id="sobre-nos" class="about-section-desktop">
-    <img src="assets/images/about-img.jpg" alt="">
-    <div class="about-content">
-        <h3>UM POUCO SOBRE NÓS</h3>
-        <h4>Sheila, Lara e Hellen</h4>
-        <p>Somos uma equipe unida pela missão de transformar sonhos em conquistas no mercado imobiliário. Com acesso a todo o mercado e ampla experiência, oferecemos um atendimento personalizado, seguro e estratégico em cada etapa da sua jornada. Da escolha do imóvel ideal à negociação e finalização do negócio, estamos ao seu lado, com profissionalismo e dedicação. Confiança não é questão de sorte, é resultado — e é isso que entregamos a cada cliente.</p>
-        <button id="btn-anuncia">
-            ANUNCIE UM IMÓVEL
-            <svg width="16" height="20" viewBox="0 0 16 16" fill="none" style="vertical-align: middle;" xmlns="http://www.w3.org/2000/svg">
-                <line x1="4" y1="12" x2="12" y2="4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
-                <polyline points="7,4 12,4 12,9" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-        </button>
-    </div>
-</section>
+  </header>
 
   <!-- Seção de Destaque -->
   <section id="destaque">
@@ -146,8 +129,12 @@
       <p>Conheça algumas das melhores oportunidades de negócios de imóveis de Patos de Minas.</p>
     </div>
     <div class="destaque_buttons">
-      <div class="setae"><img src="assets/images/setae.svg"></div>
-      <div class="setad"><img src="assets/images/setad.svg"></div>
+      <div class="setae" tabindex="0" role="button" aria-label="Ver imóvel anterior">
+        <img src="assets/images/setae.svg" alt="" aria-hidden="true">
+      </div>
+      <div class="setad" tabindex="0" role="button" aria-label="Ver próximo imóvel">
+        <img src="assets/images/setad.svg" alt="" aria-hidden="true">
+      </div>
     </div>
     <div class="destaque_imoveis">
       <div class="swiper mySwiper">
@@ -157,7 +144,6 @@
       </div>
     </div>
   </section>
-
   <!-- Catálogo -->
   <section id="catalogo">
     <div class="catalogo_titulo">
@@ -275,19 +261,19 @@
           <div class="contato">
             <h1>Hellen</h1>
             <p><img src="assets/images/icone.zap.svg" alt="icone-whatsapp">(34) 99999-9999</p>
-            <p><img src="assets/images/icone.insta.svg" alt="icone-instagram">@hellensousa.corretora</p>
+            <p><img src="assets/images/icone.insta.svg" alt="icone-instagram">@exemplo1.corretora</p>
           </div>
           <div class="contato">
             <div class="linhaContato"></div>
             <h1>Hellen</h1>
             <p><img src="assets/images/icone.zap.svg" alt="icone-whatsapp">(34) 99999-9999</p>
-            <p><img src="assets/images/icone.insta.svg" alt="icone-instagram">@hellensousa.corretora</p>
+            <p><img src="assets/images/icone.insta.svg" alt="icone-instagram">@exemplo2.corretora</p>
           </div>
           <div class="contato">
             <div class="linhaContato"></div>
             <h1>Hellen</h1>
             <p><img src="assets/images/icone.zap.svg" alt="icone-whatsapp">(34) 99999-9999</p>
-            <p><img src="assets/images/icone.insta.svg" alt="icone-instagram">@hellensousa.corretora</p>
+            <p><img src="assets/images/icone.insta.svg" alt="icone-instagram">@exemplo3.corretora</p>
           </div>
         </div>
         <div class="contato-nav">
@@ -307,21 +293,21 @@
           <h1>Hellen</h1>
           <div class="linhaContato"></div>
           <p><img src="assets/images/icone.zap.svg" alt="icone-whatsapp">(34) 99999-9999</p>
-          <p><img src="assets/images/icone.insta.svg" alt="icone-instagram">@hellensousa.corretora</p>
+          <p><img src="assets/images/icone.insta.svg" alt="icone-instagram">@exemplo1.corretora</p>
           <a href="">ENTRE EM CONTATO</a>
         </div>
         <div class="contato">
           <h1>Hellen</h1>
           <div class="linhaContato"></div>
           <p><img src="assets/images/icone.zap.svg" alt="icone-whatsapp">(34) 99999-9999</p>
-          <p><img src="assets/images/icone.insta.svg" alt="icone-instagram">@hellensousa.corretora</p>
+          <p><img src="assets/images/icone.insta.svg" alt="icone-instagram">@exemplo2.corretora</p>
           <a href="">ENTRE EM CONTATO</a>
         </div>
         <div class="contato">
           <h1>Hellen</h1>
           <div class="linhaContato"></div>
           <p><img src="assets/images/icone.zap.svg" alt="icone-whatsapp">(34) 99999-9999</p>
-          <p><img src="assets/images/icone.insta.svg" alt="icone-instagram">@hellensousa.corretora</p>
+          <p><img src="assets/images/icone.insta.svg" alt="icone-instagram">@exemplo3.corretora</p>
           <a href="">ENTRE EM CONTATO</a>
         </div>
       </div>

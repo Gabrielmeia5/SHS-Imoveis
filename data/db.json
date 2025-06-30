@@ -650,7 +650,7 @@
   },
   {
     "id": "VIP001",
-    "titulo": "Penthouse Exclusivo com Vista Panorâmica",
+    "titulo": "Penthouse Exclusivo",
     "tipo": "Vip",
     "finalidade": "Venda",
     "descricao": "Penthouse único no último andar com vista panorâmica de 360°. Acabamentos de luxo importados, spa privativo e heliponto no edifício.",
@@ -744,7 +744,7 @@
   },
   {
     "id": "CS612",
-    "titulo": "Casa Contemporânea com Piscina",
+    "titulo": "Casa Contemporânea",
     "tipo": "Casa",
     "finalidade": "Venda",
     "descricao": "Casa contemporânea com design arrojado. Piscina com deck, ambientes integrados e muito conforto para toda a família.",

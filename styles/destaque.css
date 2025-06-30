@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#destaque {
+    position: relative;
+    overflow: hidden;
+    background-color: #caa872b3;
+}
+
+.destaque_titulo {
+    margin: 3em 0 0 2em;
+}
+
+#destaque .swiper {
+    /* margin: 1em 0 2em 4em; */
+    margin-bottom: 3em;
+    cursor: pointer;
+    width: 100%;
+}
+
+.destaque_titulo h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+}
+
+.destaque_titulo p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    margin-top: 2em;
+    color: #775217;
+}
+
+.destaque_buttons {
+    display: flex;
+    gap: 10px;
+    margin: 2em 0 0 2em;
+}
+
+.destaque_buttons img {
+    width: 40px;
+    padding: 10px;
+    border: 1px black solid;
+    border-radius: 5px;
+}
+
+#destaque .swiper {
+    width: 70em;
+    height: 25em;
+    margin: 0.5em 2em 2em 1em;
+}
+
+#destaque .card-container {
+    display: flex;
+    width: 22em;
+    height: 25em;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    position: relative;
+}
+
+#destaque .card-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    border-radius: 5px;
+    z-index: -1;
+}
+
+.linha-play {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.linha {
+    flex: 1;
+    height: 0.1em;
+    background-color: #b58d5b;
+    max-width: 25em;
+}
+
+.play-btn {
+    width: 10em;
+    height: 10em;
+    border-radius: 50%;
+    border: 0.2em solid #b58d5b;
+    background-color: transparent;
+    color: #b58d5b;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.play-btn:hover {
+    background-color: #b58d5b10;
+}
+
+.video-container {
+    display: none;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 50em;
+    border: none;
+}
+
+#destaque .card-tittle {
+    display: flex;
+    color: #fff;
+    font-weight: bold;
+    font-size: 22px;
+    position: absolute;
+    margin: 8.5em 0 0 2.3em;
+}
+
+#destaque .card-type-Venda {
+    display: flex;
+    width: 100px;
+    height: 40px;
+    background-color: #9CDD8F;
+    border-radius: 5px;
+    margin: 1.5em 0 0 3em;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+}
+
+#destaque .card-type-Venda p {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+}
+
+#destaque .card-value p {
+    display: flex;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    margin: 0.7em 0 0 2.3em;
+    font-size: 20px;
+}
+
+#destaque .card-localization {
+    display: flex;
+    align-items: center;
+    margin: 19em 0 0 3em;
+    gap: 0.7em;
+}
+
+#destaque .card-localization p {
+    display: flex;
+    font-family: "Advent Pro", sans-serif;
+    font-size: 23px;
+    color: #b58d5b;
+}
+
+#destaque .card-localization .lucide-map-pin-house {
+    display: flex;
+    color: #b58d5b;
+}
+
+#destaque .border {
+    width: 1px;
+    height: 1.5em;
+    background-color: #ffffff;
+    margin: 0 .8em;
+}
+
+#destaque .card-features {
+    display: flex;
+    flex-direction: row;
+    margin: 16.5em 0 0 3em;
+    position: absolute;
+    align-items: center;
+    color: #ffffff;
+}
+
+#destaque .border {
+    border-right: 1px solid #fff;
+}
+
+
+#destaque .card-features-area, #destaque .card-features-beds, .card-features-cars {
+    display: flex;
+    color: #ffffff;
+    gap: 0.3em;
+    align-items: center;
+    flex-direction: row;
+}
+
+@media (min-width: 1281px) and (max-width: 1535px) {
+    .destaque_titulo {
+        margin: 3em 0 0 4.5em;
+    }
+
+    .destaque_buttons {
+        display: flex;
+        margin: 2em 0 0 4.5em;
+        gap: 1em;
+        cursor: pointer;
+    }
+
+    .destaque_titulo h1 {
+        font-size: 32px;
+        font-weight: 600;
+    }
+
+    .destaque_titulo p {
+        font-size: 18px;
+        margin-top: 1em;
+    }
+
+    #destaque .swiper {
+        margin: 1em 0 2em 4em;
+        margin-bottom: 3em;
+        cursor: pointer;
+        width: 100%;
+    }
+}
+
+@media (min-width: 1536px) {
+    .destaque_titulo {
+        margin: 3em 0 0 4.5em;
+    }
+
+    .destaque_buttons {
+        display: flex;
+        margin: 2em 0 0 4.5em;
+        gap: 1em;
+        cursor: pointer;
+    }
+
+    .destaque_titulo h1 {
+        font-size: 32px;
+        font-weight: 600;
+    }
+
+    .destaque_titulo p {
+        font-size: 18px;
+        margin-top: 1em;
+    }
+
+    #destaque .swiper {
+        margin: 1em 0 2em 4em;
+        margin-bottom: 3em;
+        cursor: pointer;
+        width: 100%;
+    }
+}

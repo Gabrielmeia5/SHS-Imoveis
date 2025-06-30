@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Detalhes do Imóvel</title>
+<link rel="stylesheet" href="styles/detalhes.css">
+<link rel="stylesheet" href="styles/destaque.css">
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+</head>
+<body>
+
+  <div id="loading-overlay">
+    <div class="loader"></div>
+  </div>
+
+  
+  <header class="header-detalhes">
+        <div class="nav-bar-container">
+        <div class="title-content">
+            <h1>Catálogo de <span>Imóveis</span></h1>
+            <p>Cuidado e exclusividade</p>
+        </div>
+        <nav>
+            <ul class="nav-ul">
+              <li class="nav-item">
+                <a href="#sobre-nos">SOBRE NÓS</a>
+              </li>
+              <li class="nav-item">
+                <a href="#destaque">IMÓVEIS EM DESTAQUE</a>
+              </li>
+              <li class="nav-item">
+                <a href="#catalogo">GALERIA</a>
+              </li>
+              <li class="nav-item">
+                <a href="#footer">CONTATO</a>
+              </li>
+              <li class="nav-item">
+                <a href="#">CADASTRAR IMÓVEL</a>
+              </li>
+            </ul>
+        </nav>
+        <div class="menu-container">
+            <label class="menu" for="menu">
+                <input type="checkbox" id="menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+    </div>
+  </header>
+
+    <main id="main-content">
+
+      <!--- Carrocel de Imagens e informaçoes principais-->
+      <div id="image-popup" class="image-popup hidden">
+        <div class="popup-content">
+          <button id="close-popup" class="close-btn" aria-label="Fechar imagem ampliada">×</button>
+          <img id="popup-img" src="" alt="Imagem ampliada">
+        </div>
+      </div>
+        <section id="detalhes-topo">
+          <div class="swiper-imgs-imovel">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img src="assets/images/imovel-1.jpg" alt="Imagem 5 do imovel" class="image-number1">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/imovel-2.jpg" alt="Imagem 2 do imovel" class="image-number2">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/imovel-3.jpg" alt="Imagem 5 do imovel" class="image-number1">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/imovel-1.jpg" alt="Imagem 5 do imovel" class="image-number1">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/imovel-2.jpg" alt="Imagem 2 do imovel" class="image-number2">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/imovel-3.jpg" alt="Imagem 5 do imovel" class="image-number1">
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev-img"><i data-lucide="chevron-left" class="prev-next-button"></i></div>
+            <div class="swiper-button-next-img"><i data-lucide="chevron-right" class="prev-next-button"></i></div>
+          </div>
+
+        
+          <div class="imovel-info"> <!--Nome, Quantia de CARROS E QUARTOS E AREA-->
+            <div class="Texto1 ">
+              <p>--</p>
+              <div class="area">
+                <i data-lucide="maximize-2"></i>
+                <p class="icone-area">--</p>
+              </div>
+            </div>
+            <div class="icones-infotopo">
+              <div class="icone-topo">
+              <i data-lucide="bed"></i>
+              <p class="icone-quartos">--</p>   
+              </div>
+              <div class="icone-topo">
+              <i data-lucide="car-front"></i>
+              <p class="icone-garagem">--</p>
+              </div>
+              <div class="icone-topo">
+              <i data-lucide="maximize-2"></i>
+              <p class="icone-area2">--</p>
+              </div>
+            </div>
+
+          </div>
+          <div class="imovel-valor">
+            <div class="esquerda-valor">
+            <p>--</p>
+            </div>  
+            <div class="direita-valor">
+              <p>Valor do Imovel:</p>
+            </div>
+            <div class="preco">
+              <p>--</p>
+            </div>
+          </div>
+        </section>
+
+        <!---FICHA CARACTERISTICAS E MAIS SOBRE O IMOVEL-->
+
+
+      <section id="caracteristicas">
+        <div class="esquerda-caracteristicas">
+          <p class="fichaimovel">--</p>
+          <div class="esquerda-p">
+            <h4>--</h4>
+            <p>--</p>
+            <h4>--</h4>
+            <p>--</p>
+            <h4>--</h4>
+            <p>--</p>
+            <h4>--</h4>
+            <p>--</p>
+          </div>
+        </div>
+        <div class="direita-caracteristicas">
+        <h2>Características</h2>
+          <ul class="lista-caracteristicas">
+            <li><img src="assets/icons/Line 70.svg" alt="">--</li>
+            <li><img src="assets/icons/Line 70.svg" alt="">--</li>
+            <li><img src="assets/icons/Line 70.svg" alt="">--</li>
+            <li><img src="assets/icons/Line 70.svg" alt="">--</li>
+            <li><img src="assets/icons/Line 70.svg" alt="">--</li>
+            <li><img src="assets/icons/Line 70.svg" alt="">--</li>
+            <li><img src="assets/icons/Line 70.svg" alt="">--</li>
+            <li><img src="assets/icons/Line 70.svg" alt="">--</li>
+            <li><img src="assets/icons/Line 70.svg" alt="">--</li>
+          </ul>
+        </div>
+        <div class="mais_sobre">
+            <h2>Mais sobre esse imóvel</h2>
+          <div class="desc-detalhe">
+            <p>--</p>
+          </div>
+        </div>
+        <div class="botao-video">
+          <img src="assets/icons/botaoplay.svg" alt="">
+          <div class="linha-video"></div>
+        </div>
+      </section>
+
+      <!-- SEÇÂO PARA O VIDEO / POPUP-->
+
+      <section id="videos">
+        <div class="linha-play">
+          <div class="linha"></div>
+          <button class="play-btn" onclick="mostrarVideo()">▶</button>
+          <div class="linha"></div>
+        </div>
+      </section>
+      
+      <!-- AQUI a div onde o JS da Helen vai colocar o conteúdo -->
+       <h2 class="h2-helen-pc">Imovel sob consultoria de...</h2>
+      <section id="helen-info">
+        <div class="linha-vertical-helen-pc"></div>
+        <div class="Imovel-corre">
+          <h2 class="h2-helen-mobile">Imóvel sob consultoria de Helen Cássia</h2>
+            <h3 class="h3-helen-pc">--</h3>
+            <p class="p-helen-pc">Corretora de imoveis</p>
+          <p class="texto-pc"> transformamos a busca pelo seu novo lar em uma experiência guiada pelo amor e carinho. Cada detalhe, do primeiro contato à entrega das chaves, é tratado com a dedicação que você merece, garantindo que seu sonho se realize com toda a atenção e cuidado.</p> 
+          <button class="btn-contato">ENTRE EM CONTATO <i data-lucide="move-up-right"></i></button> </div>
+        </div>
+        <div class="helen-pic">
+            <img src="assets/images/mulher.jpg" alt="Foto da corretora Helen" class="info-corretora-imagem">
+             <div class="nome-corretora">
+              <h3 class="h3-helen-mobile"></h3>
+              <p class="p-helen-mobile">Corretora</p>
+             </div> 
+             <div class="contatos-corretora">
+              <a href="">
+                <img src="assets/icons/inta.svg" alt="Icone Intagram">
+              </a>
+              <a href="">
+                <img src="assets/icons/zap.svg" alt="Icone Whastapp">
+              </a>
+             </div>
+            <div class="linha-vertical-helen"></div>
+        </div>
+        <div class="cor-helen"></div>
+      </section>
+
+      <section id="info-corretora">
+          <div class="caracteristicas-corretoras">
+            <h3>BUSCA ESPECIALIZADA</h3>
+            <p>Ajudamos você a encontrar o imóvel certo, de forma rápida e alinhada às suas preferências.</p>
+          </div>
+          <div class="caracteristicas-corretoras">
+            <h3>SUPORTE COMPLETO</h3>
+            <p>Estamos ao seu lado em cada decisão, acompanhamos você em todas as etapas, com apoio claro e eficiente..</p>
+        </div>
+          <div class="caracteristicas-corretoras">
+            <h3>NEGOCIAÇÃO ESTRATÉGICA</h3>
+            <p>Negociamos com foco no seu benefício, garantindo as melhores condições possíveis.</p>
+          </div>
+      </section>
+
+<section id="destaque">
+    <div class="destaque_titulo">
+      <h1>Imóveis Relacionados</h1>
+      <p>Conheça algumas das melhores oportunidades de negócios de imóveis de Patos de Minas.</p>
+    </div>
+    <div class="destaque_buttons">
+      <div class="setae"><img src="assets/images/setae.svg"></div>
+      <div class="setad"><img src="assets/images/setad.svg"></div>
+    </div>
+    <div class="destaque_imoveis">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper" id="destaques">
+          <!-- os slides dos imóveis serão inseridos aqui via JS -->
+        </div>
+      </div>
+    </div>
+  </section>
+      <footer></footer> <!-- Criar um componente para adicionar em todas paginas-->
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="scripts/views/detalhes.js" type="module"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
